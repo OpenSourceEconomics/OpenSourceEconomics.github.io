@@ -1,0 +1,40 @@
+
+
+[
+  
+  
+    
+    
+  
+  
+  
+  {
+    "title": "About this website",
+    "excerpt": "\n",
+    "content": "I’m not sure yet what this website is about, but I’m sure I’ll work it out soon.\n",
+    "url": "/about/"
+  },
+  
+  {
+    "title": "Categories",
+    "excerpt": "Category index\n",
+    "content": "\n",
+    "url": "/categories/"
+  },
+  
+  {
+    "title": "Contact",
+    "excerpt": "\n",
+    "content": "\n  email: ?\n  zulip: https://ose.zulipchat.com\n  github: https://github.com/OpenSourceEconomics\n\n",
+    "url": "/contact/"
+  },
+  
+  {
+    "title": "About this website",
+    "excerpt": "\n",
+    "content": "I’m not sure yet what this website is about, but I’m sure I’ll work it out soon.\n",
+    "url": "/ressources/"
+  }
+  
+]
+
