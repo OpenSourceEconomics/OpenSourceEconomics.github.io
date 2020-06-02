@@ -1,10 +1,12 @@
----
-title: OpenSourceEconomics
-layout: page
-feature_image: "https://blogs.letemps.ch/garry-littman/wp-content/uploads/sites/216/2020/04/pand-matrix-750x410.jpg"
-feature_text: |
-  ##OSE
   ---
+title: OpenSourceEconomics
+feature_text: |
+  ## OSE
+  An inititive to foster collaborative research
+  feature_image: "https://picsum.photos/1300/400?image=989"
+excerpt: "Get involved."
+layout: page
+---
 
 Details on who we are
 
