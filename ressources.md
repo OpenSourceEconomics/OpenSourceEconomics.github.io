@@ -3,4 +3,7 @@ layout: page
 title: About this website
 ---
 
-I'm not sure yet what this website is about, but I'm sure I'll work it out soon.
+Ressources:
+* [OSE meetup](https://github.com/OpenSourceEconomics/ose-meetup)
+* [OSE presentation](https://nbviewer.jupyter.org/github/OpenSourceEconomics/OpenSourceEconomics.github.io/blob/master/files/ose-presentation.pdf)
+* ...
