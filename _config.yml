@@ -35,16 +35,14 @@ paginate_path: blog/page:num
 navigation_header:
 - title: Home
   url: /
-- title: About
-  url: /about/
-- title: Ressources
-  url: /ressources/
+- title: Software
+  url: /software/
 - title: Events
-  url: /about/
-- title: Contact
-  url: /contact/
-#- title: Blog
-  #url: /blog/
+  url: /events/
+- title: Infrastructure
+  url: /infrastructure/
+- title: Resources
+  url: /resources/
 
 # Footer nav
 navigation_footer:
