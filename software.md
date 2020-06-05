@@ -11,6 +11,12 @@ We maintain several software packages in support of our research and educational
 
 **Documentation** [respy.readthedocs.io](respy.readthedocs.io)
 
+### pydsge
+
+``pydsge`` is a Python package that allows to simulate, filter, and estimate DSGE models with occassionaly binding constraints. It allows to conduct full-blown Bayesian estimations (including Bayesian filtering) of macroeconomic models featuring an endogenous zero lower bound on nominal interest rates.
+
+**Documentation** [pydsge.readthedocs.io](pydsge.readthedocs.io)
+
 ### estimagic
 
 ``estimagic`` is a Python package that helps to build high-quality and user friendly implementations of (structural) econometric models. It is designed with large structural models in mind. However, it is also useful for any other estimator that numerically minimizes or maximizes a criterion function. Examples include maximum likelihood, generalized method of moments, method of simulated moments and indirect inference.
@@ -22,6 +28,12 @@ We maintain several software packages in support of our research and educational
 ``robupy`` is an open-source Python package for finding worst-case probabilities in the context of robust decision making. It aims to collect algorithms, which find for different construction methods for the ambiguity set, the worst-case distribution as fast as possible.
 
 **Documentation** [robupy.readthedocs.io](robupy.readthedocs.io)
+
+### econsieve
+
+``econsieve`` is a collection of nonlinear bayesian filters, in particular for high dimensional models. The filters are implemented in python. It provides the Transposed-Ensemble Kalman Filter (TEnKF) for state and likelihood inference, and the nonlinear path-adjustment filter (NPAS) for exact smoothed states.
+
+**Documentation** [econsieve.readthedocs.io](econsieve.readthedocs.io)
 
 ### econsa
 
