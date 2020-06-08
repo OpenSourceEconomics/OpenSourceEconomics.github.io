@@ -15,7 +15,8 @@ We provide numerous [software libraries](https://opensourceeconomics.github.io/s
 To learn more, visit us on [GitHub](https://github.com/OpenSourceEconomics) or join us at [Zulip](https://ose.zulipchat.com/#).
 
 ----------------------------------------
-**Steering committee:**
-- Philipp Eisenhauer: peisenha <ät> uni-bonn.de
-- Gregor Boehl: gboehl <ät> uni-bonn.de
-- Janos Gabler: janos.gabler <ät> gmail.com
+
+
+**Contact:** info@open-econ.org or [reach out on Zulip](https://ose.zulipchat.com/#).
+
+**Steering committee:** Philipp Eisenhauer, Gregor Boehl, Janos Gabler
