@@ -19,4 +19,4 @@ To learn more, visit us on [GitHub](https://github.com/OpenSourceEconomics) or j
 
 **Contact:** info@open-econ.org or [reach out on Zulip](https://ose.zulipchat.com/#).
 
-**Steering committee:** Philipp Eisenhauer, Gregor Boehl, Janos Gabler
+**Steering committee:** [Philipp Eisenhauer](https://peisenha.github.io), [Gregor Boehl](https://gregorboehl.com), [Janos Gabler](https://github.com/janosg)
