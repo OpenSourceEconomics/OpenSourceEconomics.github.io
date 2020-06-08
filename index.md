@@ -10,15 +10,6 @@ feature_text: |
 
 We are a group of economists using computational models in the pursuit of our research. By adopting sound software engineering practices, we hope to leverage tools from computational science and increase the transparency and extensibility of our implementations. In doing so, we expand the set of possible economic questions that we can address and improve the quality of our answers.
 
-We provide a host of various [software libraries](https://opensourceeconomics.github.io/software/) for economic simulation and analysis, mainly written in [Python](https://www.python.org/). We host several [events](https://opensourceeconomics.github.io/events/) with a focus on computational economics, e.g. a monthly [meetup](https://github.com/OpenSourceEconomics/ose-meetup) and an annual [OSE retreat](https://github.com/OpenSourceEconomics/ose-retreat). We also provide a sound compilation of [ressources](https://opensourceeconomics.github.io/resources/) for computational economics, both for new and advanced users.
+We provide numerous [software libraries](https://opensourceeconomics.github.io/software/) that we use in our research. We also host several [events](https://opensourceeconomics.github.io/events/) to facilitate the exchange of ideas with other economists. For example, we organize a monthly [OSE meetup](https://github.com/OpenSourceEconomics/ose-meetup) and an annual [OSE retreat](https://github.com/OpenSourceEconomics/ose-retreat). In support of our educational activities, we maintain a curated list of [resoures](https://opensourceeconomics.github.io/resources/).
 
-
-
-**GitHub** [https://github.com/OpenSourceEconomics](https://github.com/OpenSourceEconomics)
-
-**Zulip** [https://ose.zulipchat.com](https://ose.zulipchat.com/#)
-
-### Steering comitee:
-* [Philipp Eisenhauer](https://peisenha.github.io): `peisenha <ät> uni-bonn.de`
-* [Gregor Boehl](https://gregorboehl.com): `gboehl <ät> uni-bonn.de`
-* [Janos Gabler](https://github.com/janosg): `janos.gabler <ät> gmail.com`
+To learn more, visit us on [GitHub](https://github.com/OpenSourceEconomics) or join us at [Zulip](https://ose.zulipchat.com/#).

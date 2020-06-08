@@ -1,6 +1,10 @@
 ---
 layout: page
-title: About this website
+title: About
 ---
 
-I'm not sure yet what this website is about, but I'm sure I'll work it out soon.
+## Steering committee
+
+* [Philipp Eisenhauer](https://peisenha.github.io): `peisenha <ät> uni-bonn.de`
+* [Gregor Boehl](https://gregorboehl.com): `gboehl <ät> uni-bonn.de`
+* [Janos Gabler](https://github.com/janosg): `janos.gabler <ät> gmail.com`
