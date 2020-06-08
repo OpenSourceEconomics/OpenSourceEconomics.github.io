@@ -41,8 +41,6 @@ navigation_header:
   url: /events/
 - title: Resources
   url: /resources/
-- title: About
-  url: /about/
 
 # Footer nav
 navigation_footer:
