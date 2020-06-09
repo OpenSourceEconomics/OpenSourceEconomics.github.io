@@ -7,10 +7,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-body {
-  font-family: "IBM Plex Serif", Georgia, serif;
-}
-.typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
-  color: #115599;
-  font-family: "IBM Plex Sans", sans;
-}
+/* Basic typography */
+$heading-font-family: 'IBM Plex Sans', sans-serif;
+$body-font-family: 'IBM Plex Serif', Georgia, serif;
