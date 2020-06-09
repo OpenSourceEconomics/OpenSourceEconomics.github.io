@@ -477,7 +477,7 @@ a {
       padding-top: 0.5657994737rem; } }
 .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
   color: #242e2b;
-  font-family: "Merriweather", serif;
+  font-family: "IBM Plex Serif", serif;
   font-feature-settings: 'dlig', 'liga', 'lnum', 'kern';
   font-style: normal;
   font-weight: 700; }
@@ -723,7 +723,7 @@ a {
   font-size: 1.1916666667rem;
   margin-bottom: -0.553135rem;
   padding-top: 0.553135rem;
-  font-family: "Merriweather", serif;
+  font-family: "IBM Plex Serif", serif;
   font-feature-settings: 'liga', 'lnum', 'tnum', 'kern';
   font-style: normal;
   font-weight: 400;
@@ -780,7 +780,7 @@ a {
   font-style: italic; }
 .typeset small, .typeset .caption {
   font-size: 1.0666666667rem;
-  font-family: "Merriweather", serif;
+  font-family: "IBM Plex Serif", serif;
   font-style: normal;
   font-weight: 400; }
   @media screen and (min-width: 40em) {
