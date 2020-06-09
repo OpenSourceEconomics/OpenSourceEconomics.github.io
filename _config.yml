@@ -23,7 +23,7 @@ plugins:
 url: 'OpenSourceEconomics.github.io'
 baseurl: ''
 title: 'OpenSourceEconomics'
-description: 'The website of the OpenSourceEconomics project'
+description: 'A platform for transdisciplinary collaboration'
 permalink: pretty
 logo: "https://avatars3.githubusercontent.com/u/37739145?s=60&v=4"
 
