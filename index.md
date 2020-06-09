@@ -16,7 +16,8 @@ To learn more, visit us on [GitHub](https://github.com/OpenSourceEconomics) or j
 
 ----------------------------------------
 
-
+<div style="font-family: 'IBM Plex Serif', Georgia, serif;">
 **Contact:** [info@open-econ.org](mailto:info@open-econ.org) or [reach out on Zulip](https://ose.zulipchat.com/#).
 
 **Steering committee:** [Philipp Eisenhauer](https://peisenha.github.io), [Gregor Boehl](https://gregorboehl.com), [Janos Gabler](https://github.com/janosg)
+</div>
