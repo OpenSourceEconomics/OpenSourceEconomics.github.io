@@ -3,7 +3,8 @@
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
+/* @import url("https://fonts.googleapis.com/css?family=Merriweather:400,700"); */
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,700");
 html {
   font-family: sans-serif;
   /* 1 */
