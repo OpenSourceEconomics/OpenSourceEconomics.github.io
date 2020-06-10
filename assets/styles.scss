@@ -32,7 +32,7 @@ strong, b {
 
 /* Override font-size settings of the Theme */
 .typeset code {
-  font-size: 1.25rem /* 1.0666666667rem */;
+  font-size: inherit !important /* 1.0666666667rem */;
   line-height: 1rem;
 }
 @media screen and (min-width: 40em) {
@@ -40,7 +40,7 @@ strong, b {
     font-size: 1.2rem /* 1.2142857143rem */;
   }
   .typeset code {
-    font-size: inherit !important; /* 1.2rem */ /* 0.9714285714rem */;
+    font-size: inherit !important;
   }
 }
 @media screen and (min-width: 50em) {
@@ -48,7 +48,7 @@ strong, b {
     font-size: 1.175rem /* 1.2rem */;
   }
   .typeset code {
-    font-size: 1.175rem /* 0.96rem */;
+    font-size: inherit !important;
   }
 }
 @media screen and (min-width: 64em) {
@@ -56,7 +56,7 @@ strong, b {
     font-size: 1.15rem /* 1.1764705882rem */;
   }
   .typeset code {
-    font-size: 1.15rem /* 0.8823529412rem */;
+    font-size: inherit !important;
   }
 }
 @media screen and (min-width: 100em) {
@@ -64,7 +64,7 @@ strong, b {
     font-size: 1.1rem /* 1.1578947368rem */;
   }
   .typeset code {
-    font-size: unset !important /* 1.1rem */ /* 0.8210526316rem */;
+    font-size: inherit !important;
   }
 }
 
