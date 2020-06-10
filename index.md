@@ -1,7 +1,7 @@
 ---
 title: OpenSourceEconomics
 layout: page
-feature_image: "https://blogs.letemps.ch/garry-littman/wp-content/uploads/sites/216/2020/04/pand-matrix-750x410.jpg"
+feature_image: "assets/images/matrix.jpg"
 feature_text: |
 
 ---
