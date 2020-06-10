@@ -15,7 +15,7 @@ html, body {
 .typeset {
   font-family: inherit !important;
 }
-.typeset small, .typeset .caption {
+.typeset .small, .typeset .caption {
   font-family: inherit !important;
 }
 .footer {
@@ -110,4 +110,7 @@ a:hover, a:active, a:focus {
 }
 .logo img {
   height: 5rem;
+}
+.sansserif {
+  font-family: 'IBM Plex Sans', Verdana, sans-serif; 
 }
