@@ -36,6 +36,19 @@ body {
     font-size: 1.1rem /* 1.1578947368rem */;
   }
 }
+/* Enable automatic hyphenation */
+.typeset {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -webkit-hyphenate-limit-before: 2;
+  -webkit-hyphenate-limit-after: 4;
+  -ms-hyphens: auto;
+  -ms-hyphenate-limit-chars: 7 2 4;
+  -moz-hyphens: auto;
+}
 .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
   font-family: 'IBM Plex Sans', Verdana, sans-serif;
+  hyphens: manual;  /* No automatic hyphenation in the headings */
 }
