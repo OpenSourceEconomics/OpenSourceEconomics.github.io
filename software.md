@@ -43,7 +43,7 @@ We maintain several software packages in support of our research and educational
 
 ### ``ruspy``
 
-``ruspy`` is an open-source package for the simulation and estimation of a prototypical infinite-horizon dynamic discrete choice model based on [https://doi.org/10.2307/1911259](Rust (1987)){:target="_blank"}.
+``ruspy`` is an open-source package for the simulation and estimation of a prototypical infinite-horizon dynamic discrete choice model based on [Rust (1987)](https://doi.org/10.2307/1911259){:target="_blank"}.
 
 **Documentation** [ruspy.readthedocs.io](https://ruspy.readthedocs.io)
 
