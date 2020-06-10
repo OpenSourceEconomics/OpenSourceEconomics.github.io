@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Events
-feature_image: "/assets/images/OSE_bonn_clean.svg"
 ---
 
 We organize several events in support of our efforts.
