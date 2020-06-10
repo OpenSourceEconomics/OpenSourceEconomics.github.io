@@ -114,3 +114,6 @@ a:hover, a:active, a:focus {
 .sansserif {
   font-family: 'IBM Plex Sans', Verdana, sans-serif; 
 }
+.sansserif b, .sansserif strong {
+  font-weight: 600;
+}
