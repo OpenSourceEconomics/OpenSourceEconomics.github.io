@@ -15,6 +15,7 @@ html {
 body {
   font-family: 'IBM Plex Serif', Georgia, serif;
   font-size: 1.25rem /* Theme: 1.3333333333rem; */;
+  hanging-punctuation: first last force-end;
 }
 @media screen and (min-width: 40em) {
   body {
@@ -51,4 +52,15 @@ body {
 .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
   font-family: 'IBM Plex Sans', Verdana, sans-serif;
   hyphens: manual;  /* No automatic hyphenation in the headings */
+}
+/* Make hyperlinks blue and remove all decoration */
+a {
+  color: #115599;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
+}
+a:hover, a:active, a:focus {
+  text-decoration: underline;
 }
