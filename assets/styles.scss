@@ -10,7 +10,10 @@
 
 /* Basic typography */
 html, body, .typeset {
-  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-family: inherit !important;
+}
+.typeset small, .typeset .caption {
+  font-family: inherit !important;
 }
 .footer {
   font-family: 'IBM Plex Sans', Verdana, sans-serif;
