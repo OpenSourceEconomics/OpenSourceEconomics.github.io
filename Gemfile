@@ -10,3 +10,4 @@ gem "jekyll-default-layout", "~> 0.1"
 gem "jekyll-feed", "~> 0.9"
 gem "jemoji", "~> 0.9"
 gem "jekyll-remote-theme", "~> 0.3"
+gem 'jekyll-favicon', '~> 0.2.1', group: :jekyll_plugins
