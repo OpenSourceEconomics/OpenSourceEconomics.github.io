@@ -9,11 +9,10 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 /* Basic typography */
-html {
+html, body, .footer {
   font-family: 'IBM Plex Serif', Georgia, serif;
 }
 body {
-  font-family: 'IBM Plex Serif', Georgia, serif;
   font-size: 1.25rem /* Theme: 1.3333333333rem; */;
   hanging-punctuation: first last force-end;
 }
