@@ -7,7 +7,7 @@ We organize several events in support of our efforts.
 
 ### OSE meetup
 
-We arrange monthly events which provide participants with an opportunity to present and learn about different software solutions, as well as to receive feedback on their current research projects. The events usually take place on the third Monday of every month at 6pm at the Institute of Applied Microeconomics. Please see our [website](https://github.com/OpenSourceEconomics/ose-meetup) for details.
+We arrange monthly events which provide participants with an opportunity to present and learn about different software solutions, as well as to receive feedback on their current research projects. The events usually take place on the third Monday of every month at 6&nbsp;p.m. at the [Institute of Applied Microeconomics](https://www.iame.uni-bonn.de){:target="_blank"}. Please see our [website](https://github.com/OpenSourceEconomics/ose-meetup) for details.
 
 ### OSE retreat
 
@@ -15,7 +15,7 @@ We host an annual retreat in support of our research activities. We organize the
 
 ### OSE primer
 
-We organize an computation primer, which is essentially an introduction to (Python-) programming. The course covers basic concepts such as variables, loops, functions, plotting, basics of scientific programming and data analysis, and some perspectives. The last iteration can be found [here](https://github.com/OpenSourceEconomics/ose-course-primer).
+We organize a computation primer, which is essentially an introduction to (Python) programming. The course covers basic concepts such as variables, loops, functions, plotting, basics of scientific programming and data analysis, and some perspectives. The last iteration can be found [here](https://github.com/OpenSourceEconomics/ose-course-primer).
 
 ### DSE summer school
 
