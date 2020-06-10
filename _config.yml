@@ -11,11 +11,9 @@ exclude:
 plugins:
 - jekyll-sitemap
 - jekyll-mentions
-#- jekyll-paginate
 - jekyll-seo-tag
 - jekyll-redirect-from
 - jekyll-default-layout
-- jekyll-feed
 - jemoji
 - jekyll-remote-theme
 
@@ -26,10 +24,6 @@ title: 'OpenSourceEconomics'
 description: 'A platform for transdisciplinary collaboration'
 permalink: pretty
 logo: "https://avatars3.githubusercontent.com/u/37739145?s=60&v=4"
-
-# Pagination
-#paginate: 5
-#paginate_path: blog/page:num
 
 # Header nav
 navigation_header:
@@ -44,15 +38,5 @@ navigation_header:
 
 # Footer nav
 navigation_footer:
-- title: Back to top
-  url: "#top"
-
-# Collections
-collections:
-  posts:
-    title: Posts
-    output: true
-    description: "My thoughts and ideas"
-    feature_text: |
-      Welcome to my blog
-    feature_image: "https://picsum.photos/2560/600?image=866"
+- title: Contact us
+  url: "mailto:info@open-econ.org"
