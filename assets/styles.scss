@@ -18,7 +18,7 @@ html, body {
 .typeset .small, .typeset .caption {
   font-family: inherit !important;
 }
-.footer {
+.header, .footer {
   font-family: 'IBM Plex Sans', Verdana, sans-serif;
   hyphens: manual;  /* No automatic hyphenation in the headings */
 }
