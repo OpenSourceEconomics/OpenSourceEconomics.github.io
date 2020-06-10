@@ -6,7 +6,6 @@ feature_text: |
 
 ---
 
-<link rel="shortcut icon" type="image/png" href="/favicon.png">
 
 **A platform for transdisciplinary collaboration**
 
