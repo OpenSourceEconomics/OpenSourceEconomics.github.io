@@ -99,7 +99,7 @@ a {
   background-image: none !important;
 }
 a:hover, a:active, a:focus {
-  /* color: #115599; */
+  color: inherit !important /* #115599 */;
   text-decoration: underline;
 }
 .icon, .icon--nav {
