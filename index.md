@@ -1,5 +1,5 @@
 ---
-title: OpenSourceEconomics
+title: Open Source Economics
 layout: page
 feature_image: "assets/images/matrix.jpg"
 feature_text: |
