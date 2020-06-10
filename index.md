@@ -6,6 +6,8 @@ feature_text: |
 
 ---
 
+<link rel="shortcut icon" type="image/png" href="/favicon.png">
+
 **A platform for transdisciplinary collaboration**
 
 We are a group of economists using computational models in the pursuit of our research. By adopting sound software engineering practices, we hope to leverage tools from computational science and increase the transparency and extensibility of our im&shy;ple&shy;men&shy;ta&shy;tions. In doing so, we expand the set of possible economic questions that we can address and improve the quality of our answers.
