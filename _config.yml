@@ -23,7 +23,8 @@ baseurl: ''
 title: 'OpenSourceEconomics'
 description: 'A platform for transdisciplinary collaboration'
 permalink: pretty
-logo: "http://open-econ.org/assets/images/OSE_bonn_clean.svg"
+#logo: "http://open-econ.org/assets/images/OSE_bonn_clean.svg"
+logo: "assets/images/OSE_bonn_clean_transparent_compressed.png"
 #logo: "assets/images/OSE_bonn_clean.svg"
 #logo: "https://avatars3.githubusercontent.com/u/37739145?s=60&v=4"
 
