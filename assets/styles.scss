@@ -59,7 +59,7 @@ a {
   font-weight: 500;
   text-decoration: none;
   background-color: transparent;
-  background-image: none;
+  background-image: none !important;
 }
 a:hover, a:active, a:focus {
   text-decoration: underline;
