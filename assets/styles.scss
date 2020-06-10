@@ -11,11 +11,11 @@
 /* Basic typography */
 html {
   font-family: 'IBM Plex Serif', Georgia, serif;
-  font-size: 90%;
 }
 body {
   font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 90%;
 }
-h1, h2, h3, h4, h5, h6 {
+.typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
   font-family: 'IBM Plex Sans', Verdana, sans-serif;
 }
