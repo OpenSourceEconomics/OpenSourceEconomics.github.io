@@ -1670,6 +1670,9 @@ code, pre, .typeset code, .typeset pre {
   background-color: #F3F3F3;
   font-family: 'IBM Plex Mono', Menlo, monospace; }
 
+strong, b {
+  letter-spacing: 0.015em; }
+
 /* Override font-size settings of the Theme */
 .typeset code {
   font-size: 1.25rem;
@@ -1728,3 +1731,6 @@ a:hover, a:active, a:focus {
   width: 1.1em;
   height: 1.1em;
   color: #004385; }
+
+.logo img {
+  height: 5rem; }
