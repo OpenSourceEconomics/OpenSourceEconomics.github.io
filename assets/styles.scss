@@ -55,12 +55,13 @@ body {
 }
 /* Make hyperlinks blue and remove all decoration */
 a {
-  color: #115599;
+  color: #004385;
   font-weight: 500;
   text-decoration: none;
   background-color: transparent;
   background-image: none !important;
 }
 a:hover, a:active, a:focus {
+  color: #115599;
   text-decoration: underline;
 }
