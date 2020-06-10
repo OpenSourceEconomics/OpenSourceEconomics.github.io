@@ -27,7 +27,7 @@ permalink: pretty
 logo: "/assets/images/OSE_bonn_mdli.svg"
 #logo: "/assets/images/Magenta.svg"  # For debugging only
 #logo: "https://avatars3.githubusercontent.com/u/37739145?s=60&v=4"
-favicon: "assets/images/OSE_bonn_clean.ico"
+favicon: "/assets/images/OSE_bonn_clean.ico"
 
 # Header nav
 navigation_header:
