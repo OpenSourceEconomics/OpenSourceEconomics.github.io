@@ -18,9 +18,10 @@ plugins:
 - jekyll-remote-theme
 
 # Site settings
-url: 'OpenSourceEconomics.github.io'
+url: 'open-econ.org'
+#url: 'OpenSourceEconomics.github.io'
 baseurl: ''
-title: 'OpenSourceEconomics'
+title: 'Open Source Economics'
 description: 'A platform for transdisciplinary collaboration'
 permalink: pretty
 #logo: "/assets/images/OSE_bonn_clean.svg"
