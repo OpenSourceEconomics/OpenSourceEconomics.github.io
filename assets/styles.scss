@@ -17,27 +17,54 @@ body {
   font-size: 1.25rem /* Theme: 1.3333333333rem; */;
   hanging-punctuation: first last force-end;
 }
+h1, h2, h3, h4, h5, h6, .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
+  font-family: 'IBM Plex Sans', Verdana, sans-serif;
+  hyphens: manual;  /* No automatic hyphenation in the headings */
+}
+code, pre, .typeset code, .typeset pre {
+  background-color: #eeeeee;
+  font-family: 'IBM Plex Mono', Menlo, monospace;
+}
+
+/* Override font-size settings of the Theme */
+.typeset code {
+  font-size: 1.25rem /* 1.0666666667rem */;
+  line-height: 1rem;
+}
 @media screen and (min-width: 40em) {
   body {
     font-size: 1.2rem /* 1.2142857143rem */;
+  }
+  .typeset code {
+    font-size: 1.2rem /* 0.9714285714rem */;
   }
 }
 @media screen and (min-width: 50em) {
   body {
     font-size: 1.175rem /* 1.2rem */;
   }
+  .typeset code {
+    font-size: 1.175rem /* 0.96rem */;
+  }
 }
 @media screen and (min-width: 64em) {
   body {
     font-size: 1.15rem /* 1.1764705882rem */;
+  }
+  .typeset code {
+    font-size: 1.15rem /* 0.8823529412rem */;
   }
 }
 @media screen and (min-width: 100em) {
   body {
     font-size: 1.1rem /* 1.1578947368rem */;
   }
+  .typeset code {
+    font-size: 1.1rem /* 0.8210526316rem */;
+  }
 }
-/* Enable automatic hyphenation */
+
+/* Enable automatic hyphenation for the body text */
 .typeset {
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -49,14 +76,7 @@ body {
   -ms-hyphenate-limit-chars: 7 2 4;
   -moz-hyphens: auto;
 }
-h1, h2, h3, h4, h5, h6, .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
-  font-family: 'IBM Plex Sans', Verdana, sans-serif;
-  hyphens: manual;  /* No automatic hyphenation in the headings */
-}
-code, pre, .typeset code, .typeset pre {
-  background-color: #fafafa;
-  font-family: 'IBM Plex Mono', Menlo, monospace;
-}
+
 /* Make hyperlinks blue and remove all decoration */
 a {
   color: #004385;
