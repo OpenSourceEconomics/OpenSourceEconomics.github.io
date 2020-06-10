@@ -40,7 +40,7 @@ strong, b {
     font-size: 1.2rem /* 1.2142857143rem */;
   }
   .typeset code {
-    font-size: 1.2rem /* 0.9714285714rem */;
+    font-size: inherit; /* 1.2rem */ /* 0.9714285714rem */;
   }
 }
 @media screen and (min-width: 50em) {
@@ -64,7 +64,7 @@ strong, b {
     font-size: 1.1rem /* 1.1578947368rem */;
   }
   .typeset code {
-    font-size: 1.1rem /* 0.8210526316rem */;
+    font-size: inherit /* 1.1rem */ /* 0.8210526316rem */;
   }
 }
 
