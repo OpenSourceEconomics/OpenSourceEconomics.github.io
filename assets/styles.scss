@@ -14,7 +14,27 @@ html {
 }
 body {
   font-family: 'IBM Plex Serif', Georgia, serif;
-  font-size: 105%;
+  font-size: 1.25rem /* Theme: 1.3333333333rem; */;
+}
+@media screen and (min-width: 40em) {
+  body {
+    font-size: 1.2rem /* 1.2142857143rem */;
+  }
+}
+@media screen and (min-width: 50em) {
+  body {
+    font-size: 1.175rem /* 1.2rem */;
+  }
+}
+@media screen and (min-width: 64em) {
+  body {
+    font-size: 1.15rem /* 1.1764705882rem */;
+  }
+}
+@media screen and (min-width: 100em) {
+  body {
+    font-size: 1.1rem /* 1.1578947368rem */;
+  }
 }
 .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
   font-family: 'IBM Plex Sans', Verdana, sans-serif;
