@@ -31,7 +31,7 @@ We maintain several software packages in support of our research and educational
 
 ### ``econsieve``
 
-``econsieve`` is a collection of nonlinear bayesian filters, in particular for high dimensional models. The filters are implemented in python. It provides the Transposed-Ensemble Kalman Filter (TEnKF) for state and likelihood inference, and the nonlinear path-adjustment filter (NPAS) for exact smoothed states.
+``econsieve`` is a collection of nonlinear Bayesian filters, in particular for high dimensional models. The filters are implemented in python. It provides the Transposed-Ensemble Kalman Filter (TEnKF) for state and likelihood inference, and the nonlinear path-adjustment filter (NPAS) for exact smoothed states.
 
 **Documentation** [econsieve.readthedocs.io](https://econsieve.readthedocs.io)
 
@@ -53,7 +53,7 @@ We maintain several software packages in support of our research and educational
 
 **Documentation** [grmpy.readthedocs.io](https://grmpy.readthedocs.io)
 
-### ``temfpy
+### ``temfpy``
 
 ``temfpy`` is an open-source package providing test models and functions for standard numerical components in computational economic models.
 
