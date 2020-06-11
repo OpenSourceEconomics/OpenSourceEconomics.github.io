@@ -65,14 +65,14 @@ strong, b {
 
 /* Override font-size and line-height settings of the Theme */
 .button--nav {
-  line-height: 15rem;
+  line-height: 5rem; /* to increase height of navigation when hamburger menu is shown */
 }
 @media screen and (min-width: 40em) {
   body {
     font-size: 1.2rem /* 1.2142857143rem */;
   }
   .list--nav {
-    line-height: 5rem;  /* to increase height of the horizontal navigation */
+    line-height: 5rem;  /* to increase height of navigation when entire list is shown */
   }
 }
 @media screen and (min-width: 50em) {
