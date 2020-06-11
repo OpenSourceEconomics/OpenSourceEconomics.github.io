@@ -9,7 +9,7 @@ We now present some additional resources that turned out to be useful.
 
 ### Econ-Ark
 
-The [Econ-ARK](Econ-ARK) project provides open-source toolkits for researchers trying to understand how economic and social outcomes result from the actions of heterogeneous individuals. The primary goals of the project are to (1) make entry into the world of such modeling easy, (2) accelerate the development of this kind of modeling for policy-making and academic research, and (3) increase the openness, replicability, and interoperability of modeling tools. Econ-Ark is headed by Christopher D. Carroll, Professor of Economics at the Johns Hopkins University.
+The [Econ-ARK](https://econ-ark.org) project provides open-source toolkits for researchers trying to understand how economic and social outcomes result from the actions of heterogeneous individuals. The primary goals of the project are to (1) make entry into the world of such modeling easy, (2) accelerate the development of this kind of modeling for policy-making and academic research, and (3) increase the openness, replicability, and interoperability of modeling tools. Econ-Ark is headed by Christopher D. Carroll, Professor of Economics at the Johns Hopkins University.
 
 ### QuantEcon
 
