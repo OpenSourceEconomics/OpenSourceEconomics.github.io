@@ -66,11 +66,13 @@ strong, b {
   }
   .typeset code {
     font-size: inherit !important;
+    line-height: 1.9rem;
   }
 }
 @media screen and (min-width: 100em) {
   body {
     font-size: 1rem /* 1.1578947368rem */;
+    line-height: 1.8rem;
   }
   .typeset code {
     font-size: inherit !important;
