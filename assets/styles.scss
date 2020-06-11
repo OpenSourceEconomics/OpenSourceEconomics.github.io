@@ -64,7 +64,7 @@ strong, b {
 }
 
 /* Override font-size and line-height settings of the Theme */
-.logo {
+.button--nav {
   line-height: 15rem;
 }
 @media screen and (min-width: 40em) {
@@ -80,9 +80,6 @@ strong, b {
     font-size: 1.175rem /* 1.2rem */;
   }
   .list--nav {
-    line-height: 4.8rem;
-  }
-  .logo {
     line-height: 4.8rem;
   }
 }
