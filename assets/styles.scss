@@ -18,6 +18,10 @@ html, body {
 .typeset .small, .typeset .caption {
   font-family: inherit !important;
 }
+.typeset p {
+  margin-bottom: 1rem;
+  padding-top: 0.25rem;
+}
 .header, .footer {
   font-family: 'IBM Plex Sans', Verdana, sans-serif;
   hyphens: manual;  /* No automatic hyphenation in the headings */
@@ -25,7 +29,6 @@ html, body {
 body {
   font-size: 1.25rem /* Theme: 1.3333333333rem; */;
   hanging-punctuation: first last force-end;
-  line-height: 2.5rem;
 }
 h1, h2, h3, h4, h5, h6, .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
   font-family: 'IBM Plex Sans', Verdana, sans-serif;
@@ -56,10 +59,16 @@ strong, b {
   body {
     font-size: 1.1rem /* 1.1764705882rem */;
   }
+  .typeset p {
+    line-height: 1.9rem;
+  }
 }
 @media screen and (min-width: 100em) {
   body {
     font-size: 1rem /* 1.1578947368rem */;
+  }
+  .typeset p {
+    line-height: 1.8rem;
   }
 }
 
