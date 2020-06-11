@@ -87,4 +87,5 @@ We maintain several software packages in support of our research and educational
 
 ------------------
 
+{:.sansserif}
 Do not hesitate to contact us if you would like to see your package listed here as well. We also welcome pull request.
