@@ -43,24 +43,40 @@ code, pre, .typeset code, .typeset pre {
 strong, b {
   letter-spacing: 0.015em;
 }
+.sansserif {
+  font-family: 'IBM Plex Sans', Verdana, sans-serif; 
+}
+.sansserif b, .sansserif strong {
+  font-weight: 600;
+}
+
+/* Enable automatic hyphenation for the body text */
+.typeset {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -webkit-hyphenate-limit-before: 2;
+  -webkit-hyphenate-limit-after: 4;
+  -ms-hyphens: auto;
+  -ms-hyphenate-limit-chars: 7 2 4;
+  -moz-hyphens: auto;
+}
 
 /* Override font-size and line-height settings of the Theme */
-.nav--header {
-  line-height: 5rem;
-}
-.list--nav {
-  line-height: 2rem;
-}
 @media screen and (min-width: 40em) {
   body {
     font-size: 1.2rem /* 1.2142857143rem */;
+  }
+  .list--nav {
+    line-height: 5rem;  /* to increase height of the horizontal navigation */
   }
 }
 @media screen and (min-width: 50em) {
   body {
     font-size: 1.175rem /* 1.2rem */;
   }
-  .nav--header {
+  .list--nav {
     line-height: 4.8rem;
   }
 }
@@ -81,17 +97,9 @@ strong, b {
   }
 }
 
-/* Enable automatic hyphenation for the body text */
-.typeset {
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  -webkit-hyphenate-limit-before: 2;
-  -webkit-hyphenate-limit-after: 4;
-  -ms-hyphens: auto;
-  -ms-hyphenate-limit-chars: 7 2 4;
-  -moz-hyphens: auto;
+/* Needed to make SVG logo visible */
+.logo img {
+  height: 5rem;
 }
 
 /* Make hyperlinks blue and remove all decoration */
@@ -112,13 +120,4 @@ a:hover, a:active, a:focus {
   width: 1.1em;
   height: 1.1em; */
   color: #004385;
-}
-.logo img {
-  height: 5rem;
-}
-.sansserif {
-  font-family: 'IBM Plex Sans', Verdana, sans-serif; 
-}
-.sansserif b, .sansserif strong {
-  font-weight: 600;
 }
