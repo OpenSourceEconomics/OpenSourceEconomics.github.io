@@ -5,7 +5,9 @@ title: Software
 
 We maintain several software packages in support of our research and educational activities.
 
-## Economic modelling packages:
+-----------------------------
+
+## Economic modelling packages
 
 ### ``respy``
 
@@ -69,7 +71,7 @@ We maintain several software packages in support of our research and educational
 
 ------------------
 
-## Development support:
+## Development support
 
 ### ``temfpy``
 
@@ -80,7 +82,7 @@ We maintain several software packages in support of our research and educational
 
 ### ``econ-project-templates``
 
-``econ-project-templates`` aims to provide project templates for economists that make it easy to produce reproducible research using one or more of the most frequently used programming languages in economics (i.e Python, Stata, R, Matlab, experimental support for Julia).
+``econ-project-templates`` aims to provide project templates for economists that make it easy to produce reproducible research using one or more of the most frequently used programming languages in economics (i.e., Python, Stata, R, MATLAB, experimental support for Julia).
 
 {:.sansserif}
 **Documentation**: [econ-project-templates.readthedocs.io](https://econ-project-templates.readthedocs.io)
