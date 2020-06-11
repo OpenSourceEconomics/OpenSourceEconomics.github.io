@@ -26,7 +26,8 @@ description: 'A platform for transdisciplinary collaboration'
 permalink: pretty
 #logo: "/assets/images/OSE_bonn_clean.svg"
 #logo: "/assets/images/OSE_bonn_mdli.svg"
-logo: "/assets/images/OSE_bonn_sbrg.svg"
+#logo: "/assets/images/OSE_bonn_sbrg.svg"
+logo: "/assets/images/OSE_Bonn_sbrg_web.svg"
 #favicon: "/favicon.ico"
 
 # Header nav
