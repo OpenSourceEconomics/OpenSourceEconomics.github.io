@@ -45,17 +45,20 @@ strong, b {
 }
 
 /* Override font-size and line-height settings of the Theme */
+.nav--header {
+  line-height: 5rem;
+}
 @media screen and (min-width: 40em) {
   body {
     font-size: 1.2rem /* 1.2142857143rem */;
-  }
-  .nav--header {
-    line-height: 5rem;
   }
 }
 @media screen and (min-width: 50em) {
   body {
     font-size: 1.175rem /* 1.2rem */;
+  }
+  .nav--header {
+    line-height: 4.75rem;
   }
 }
 @media screen and (min-width: 64em) {
