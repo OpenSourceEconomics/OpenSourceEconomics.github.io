@@ -48,6 +48,9 @@ strong, b {
 .nav--header {
   line-height: 5rem;
 }
+.list--nav {
+  line-height: 2rem;
+}
 @media screen and (min-width: 40em) {
   body {
     font-size: 1.2rem /* 1.2142857143rem */;
@@ -58,7 +61,7 @@ strong, b {
     font-size: 1.175rem /* 1.2rem */;
   }
   .nav--header {
-    line-height: 4.75rem;
+    line-height: 4.8rem;
   }
 }
 @media screen and (min-width: 64em) {
