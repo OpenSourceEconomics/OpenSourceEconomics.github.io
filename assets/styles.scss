@@ -25,6 +25,7 @@ html, body {
 body {
   font-size: 1.25rem /* Theme: 1.3333333333rem; */;
   hanging-punctuation: first last force-end;
+  line-height: 2.1rem;
 }
 h1, h2, h3, h4, h5, h6, .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
   font-family: 'IBM Plex Sans', Verdana, sans-serif;
@@ -54,13 +55,11 @@ strong, b {
 @media screen and (min-width: 64em) {
   body {
     font-size: 1.1rem /* 1.1764705882rem */;
-    line-height: 19rem;
   }
 }
 @media screen and (min-width: 100em) {
   body {
     font-size: 1rem /* 1.1578947368rem */;
-    line-height: 18rem;
   }
 }
 
