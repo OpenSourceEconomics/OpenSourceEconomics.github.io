@@ -64,18 +64,27 @@ strong, b {
 }
 
 /* Override font-size and line-height settings of the Theme */
+/* Settings for navigation when hamburger menu is shown */
 .button--nav {
-  line-height: 4.5rem; /* to increase height of navigation when hamburger menu is shown */
+  line-height: 4.5rem; 
 }
 .list--nav {
   line-height: 2.5rem;
 }
+.logo {
+  margin-top: 0.85rem;
+}
+/* Settings for larger screen sizes */
 @media screen and (min-width: 40em) {
   body {
     font-size: 1.2rem /* 1.2142857143rem */;
   }
+  /* Settings for navigation when list is shown */
   .list--nav {
-    line-height: 5rem;  /* to increase height of navigation when list is shown */
+    line-height: 5rem;
+  }
+  .logo {
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 50em) {
