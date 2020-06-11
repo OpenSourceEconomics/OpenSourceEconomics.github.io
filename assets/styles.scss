@@ -44,10 +44,13 @@ strong, b {
   letter-spacing: 0.015em;
 }
 
-/* Override font-size settings of the Theme */
+/* Override font-size and line-height settings of the Theme */
 @media screen and (min-width: 40em) {
   body {
     font-size: 1.2rem /* 1.2142857143rem */;
+  }
+  .nav--header {
+    line-height: 5rem;
   }
 }
 @media screen and (min-width: 50em) {
@@ -111,7 +114,4 @@ a:hover, a:active, a:focus {
 }
 .sansserif b, .sansserif strong {
   font-weight: 600;
-}
-.nav {
-  line-height: 5rem;
 }
