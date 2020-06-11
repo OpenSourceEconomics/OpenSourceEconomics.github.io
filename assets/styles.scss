@@ -64,21 +64,18 @@ strong, b {
 }
 
 /* Override font-size and line-height settings of the Theme */
-/* .button--nav {
-  line-height: 4.5rem;
-} */ /* to increase height of navigation when hamburger menu is shown */
-.list--nav {
-  line-height: 6rem;  /* to increase height of navigation when hamburger menu is shown */
+.button--nav {
+  line-height: 4.5rem; /* to increase height of navigation when hamburger menu is shown */
 }
-/* .item--nav {
-  line-height: 5rem;
-} */
+.list--nav {
+  line-height: 2.5rem;
+}
 @media screen and (min-width: 40em) {
   body {
     font-size: 1.2rem /* 1.2142857143rem */;
   }
   .list--nav {
-    line-height: 5rem;  /* to increase height of navigation when entire list is shown */
+    line-height: 5rem;  /* to increase height of navigation when list is shown */
   }
 }
 @media screen and (min-width: 50em) {
