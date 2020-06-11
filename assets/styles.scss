@@ -110,6 +110,9 @@ strong, b {
   .typeset p {
     line-height: 1.75rem;
   }
+  h1, h2, h3, h4, h5, h6, .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
+    font-size: 120%;
+  }
 }
 
 /* Needed to make SVG logo visible */
