@@ -19,8 +19,8 @@ html, body {
   font-family: inherit !important;
 }
 .typeset p {
-  margin-bottom: 1rem;
-  padding-top: 0.25rem;
+  margin-bottom: 0.75rem;
+  padding-top: 0.5rem;
 }
 .header, .footer {
   font-family: 'IBM Plex Sans', Verdana, sans-serif;
@@ -60,7 +60,7 @@ strong, b {
     font-size: 1.1rem /* 1.1764705882rem */;
   }
   .typeset p {
-    line-height: 1.9rem;
+    line-height: 1.85rem;
   }
 }
 @media screen and (min-width: 100em) {
@@ -68,7 +68,7 @@ strong, b {
     font-size: 1rem /* 1.1578947368rem */;
   }
   .typeset p {
-    line-height: 1.8rem;
+    line-height: 1.75rem;
   }
 }
 
