@@ -97,13 +97,14 @@ a {
   background-image: none !important;
 }
 a:hover, a:active, a:focus {
-  color: inherit !important /* #115599 */;
+  color: #004385;
+  /* color: inherit !important; */
   text-decoration: underline;
 }
 .icon, .icon--nav {
-  vertical-align: middle;
+  /* vertical-align: middle;
   width: 1.1em;
-  height: 1.1em;
+  height: 1.1em; */
   color: #004385;
 }
 .logo img {
