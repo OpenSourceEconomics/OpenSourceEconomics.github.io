@@ -102,6 +102,15 @@ strong, b {
   .typeset p {
     line-height: 1.85rem;
   }
+  h1, .typeset h1, {
+    font-size: 2rem;
+  }
+  h2, .typeset h2, {
+    font-size: 1.9rem;
+  }
+  h3, .typeset h3, {
+    font-size: 1.8rem;
+  }
 }
 @media screen and (min-width: 100em) {
   body {
@@ -109,9 +118,6 @@ strong, b {
   }
   .typeset p {
     line-height: 1.75rem;
-  }
-  h1, h2, h3, h4, h5, h6, .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6 {
-    font-size: 120%;
   }
 }
 
