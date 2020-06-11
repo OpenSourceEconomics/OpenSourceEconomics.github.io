@@ -64,9 +64,9 @@ strong, b {
 }
 
 /* Override font-size and line-height settings of the Theme */
-.button--nav {
-  line-height: 4.5rem; /* to increase height of navigation when hamburger menu is shown */
-}
+/* .button--nav {
+  line-height: 4.5rem;
+} */ /* to increase height of navigation when hamburger menu is shown */
 .list--nav {
   line-height: 5rem;  /* to increase height of navigation when entire list is shown */
 }
