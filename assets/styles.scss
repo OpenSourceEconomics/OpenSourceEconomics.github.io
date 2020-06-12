@@ -167,7 +167,7 @@ h2, .typeset h2 {
   font-weight: 600;
 }
 .getintouch::before {
-  content: "<br/>";
+  content: "\A";  /* line break */
 }
 
 /* Needed to make SVG logo visible */
