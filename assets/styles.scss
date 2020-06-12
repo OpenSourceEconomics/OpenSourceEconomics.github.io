@@ -165,7 +165,8 @@ h2, .typeset h2 {
 }
 /* Work-around */
 .getintouch::before {
-  content: "\A &nbsp; \A";  /* line break */
+  content: "\A \A";  /* line break */
+  white-space: pre;
 }
 .getintouch b, .getintouch strong {
   font-weight: 600;
