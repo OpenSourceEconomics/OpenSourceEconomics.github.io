@@ -161,10 +161,13 @@ h2, .typeset h2 {
   font-family: 'IBM Plex Sans', Verdana, sans-serif;
   border-top: 1pt solid #ADADAD;
   margin-top: 2rem;
-  padding-top: 200pt;
+  padding-top: 200px;
 }
 .getintouch b, .getintouch strong {
   font-weight: 600;
+}
+.getintouch::before {
+  content: "<br/>";
 }
 
 /* Needed to make SVG logo visible */
