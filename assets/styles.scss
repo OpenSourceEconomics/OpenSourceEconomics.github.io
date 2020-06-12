@@ -149,8 +149,7 @@ strong, b {
 }
 
 /* Add rule above <h2> */
-.getintouch, h2, .typeset h2 {
-  color: #004385;
+h2, .typeset h2 {
   border-top: 1pt solid #ADADAD;
   margin-top: 2.5rem;
   padding-top: 1.25rem;
@@ -159,7 +158,7 @@ strong, b {
   font-family: 'IBM Plex Sans', Verdana, sans-serif;
   border-top: 1pt solid #ADADAD;
   margin-top: 2rem;
-  padding-top: 2rem;
+  padding-top: 12rem;
 }
 .getintouch b, .getintouch strong {
   font-weight: 600;
