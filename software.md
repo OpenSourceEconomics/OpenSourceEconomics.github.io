@@ -5,7 +5,6 @@ title: Software
 
 We maintain several software packages in support of our research and educational activities.
 
------------------------------
 
 ## Economic modelling packages
 
@@ -37,9 +36,8 @@ We maintain several software packages in support of our research and educational
 {:.sansserif}
 **Documentation**: [grmpy.readthedocs.io](https://grmpy.readthedocs.io)
 
------------------------------
 
-## Tools:
+## Tools
 
 ### ``estimagic``
 
@@ -69,7 +67,6 @@ We maintain several software packages in support of our research and educational
 {:.sansserif}
 **Documentation**: [econsa.readthedocs.io](https://econsa.readthedocs.io)
 
-------------------
 
 ## Development support
 
@@ -87,7 +84,6 @@ We maintain several software packages in support of our research and educational
 {:.sansserif}
 **Documentation**: [econ-project-templates.readthedocs.io](https://econ-project-templates.readthedocs.io)
 
-------------------
 
-{:.sansserif}
+{:.getintouch}
 Do not hesitate to contact us if you would like to see your package listed here as well. We also welcome pull request.
