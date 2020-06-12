@@ -148,9 +148,9 @@ strong, b {
   }
 }
 
-/* Add rule below to <h2> */
+/* Add rule above <h2> */
 h2, .typeset h2 {
-  border-bottom: 1pt solid #A8A8A8;
+  border-top: 1pt solid #AAAAAA;
 }
 
 /* Needed to make SVG logo visible */
