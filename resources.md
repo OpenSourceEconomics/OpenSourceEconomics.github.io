@@ -3,7 +3,7 @@ layout: page
 title: Resources
 ---
 
-In this section we present some additional resources that we found to be useful.
+In this section we present some additional resources that we found helpful.
 
 ## Initiatives
 
@@ -24,18 +24,6 @@ The open-source [Anaconda Individual Edition](https://www.anaconda.com/distribut
 ### Jupyter Lab
 
 [Jupyter Lab](https://jupyterlab.readthedocs.io) is a web-based interactive development environment for Jupyter notebooks, code, and data. JupyterLab is flexible: configure and arrange the user interface to support a wide range of workflows in data science, scientific computing, and machine learning. JupyterLab is extensible and modular: write plugins that add new components and integrate with existing ones.
-
-#### Heading 4
-
-Test
-
-##### Heading 5
-
-Test
-
-###### Heading 6
-
-Test
 
 **Resources**
 
