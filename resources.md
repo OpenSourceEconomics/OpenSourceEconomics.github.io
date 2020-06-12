@@ -3,11 +3,11 @@ layout: page
 title: Resources
 ---
 
-We now present some additional resources that turned out to be useful.
+In this section we present some additional resources that we found to be useful.
 
 ## Initiatives
 
-### Econ-Ark
+### Econ-ARK
 
 The [Econ-ARK](https://econ-ark.org) project provides open-source toolkits for researchers trying to understand how economic and social outcomes result from the actions of heterogeneous individuals. The primary goals of the project are to (1) make entry into the world of such modeling easy, (2) accelerate the development of this kind of modeling for policy-making and academic research, and (3) increase the openness, replicability, and interoperability of modeling tools. Econ-Ark is headed by Christopher D. Carroll, Professor of Economics at the Johns Hopkins University.
 
@@ -24,6 +24,18 @@ The open-source [Anaconda Individual Edition](https://www.anaconda.com/distribut
 ### Jupyter Lab
 
 [Jupyter Lab](https://jupyterlab.readthedocs.io) is a web-based interactive development environment for Jupyter notebooks, code, and data. JupyterLab is flexible: configure and arrange the user interface to support a wide range of workflows in data science, scientific computing, and machine learning. JupyterLab is extensible and modular: write plugins that add new components and integrate with existing ones.
+
+#### Heading 4
+
+Test
+
+##### Heading 5
+
+Test
+
+###### Heading 6
+
+Test
 
 **Resources**
 
