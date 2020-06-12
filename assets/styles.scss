@@ -163,11 +163,6 @@ h2, .typeset h2 {
   margin-top: 2.5rem;
   padding-top: 2rem;  /* ... has no effect :-( */
 }
-/* Work-around */
-.getintouch::before {
-  content: "\A";  /* line break */
-  white-space: pre;
-}
 .getintouch b, .getintouch strong {
   font-weight: 600;
 }
