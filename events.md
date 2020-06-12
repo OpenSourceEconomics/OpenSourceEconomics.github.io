@@ -17,6 +17,6 @@ We host an annual retreat in support of our research activities. We organize the
 
 We organize a computation primer, which is essentially an introduction to (Python) programming. The course covers basic concepts such as variables, loops, functions, plotting, basics of scientific programming and data analysis, and some perspectives. The last iteration can be found [here](https://github.com/OpenSourceEconomics/ose-course-primer).
 
-### DSE summer school
+### DSE Summer School
 
-We are hosting the [Econometric Society Summer Schools in Dynamic Structural Econometrics (DSE)](https://dseconf.org) in Bonn in 2021. It offers an annual short course in dynamic structural econometrics and computational methods more generally, paired with an associated two day conference in the same general area. DSE conference and summer school have a special theme that varies from year to year.
+We are hosting the [Econometric Society Summer School in Dynamic Structural Econometrics (DSE)](https://dseconf.org) in Bonn in 2021. It offers an annual short course in dynamic structural econometrics and computational methods more generally, paired with an associated two day conference in the same general area. DSE conference and summer school have a special theme that varies from year to year.
