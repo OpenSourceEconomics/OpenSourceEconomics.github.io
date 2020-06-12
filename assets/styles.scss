@@ -103,13 +103,22 @@ strong, b {
     line-height: 1.85rem;
   }
   h1, .typeset h1, {
-    font-size: 2rem;
+    font-size: 1.70rem;
   }
   h2, .typeset h2, {
-    font-size: 1.8rem;
+    font-size: 1.70rem;
   }
   h3, .typeset h3, {
-    font-size: 1.6rem;
+    font-size: 1.55rem;
+  }
+  h4, .typeset h4, {
+    font-size: 1.40rem;
+  }
+  h5, .typeset h5, {
+    font-size: 1.25rem;
+  }
+  h6, .typeset h6, {
+    font-size: 1.15rem;
   }
 }
 @media screen and (min-width: 100em) {
@@ -117,25 +126,25 @@ strong, b {
     font-size: 1rem /* 1.1578947368rem */;
   }
   .typeset p {
-    line-height: 1.75rem;
+    line-height: 1.85rem;
   }
   h1, .typeset h1, {
-    font-size: 1.8rem;
+    font-size: 1.70rem;
   }
   h2, .typeset h2, {
-    font-size: 1.6rem;
+    font-size: 1.55rem;
   }
   h3, .typeset h3, {
-    font-size: 1.45rem;
+    font-size: 1.40rem;
   }
   h4, .typeset h4, {
-    font-size: 1.32rem;
+    font-size: 1.25rem;
   }
   h5, .typeset h5, {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
   h5, .typeset h6, {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 }
 
