@@ -15,10 +15,6 @@ We provide numerous [software libraries](https://opensourceeconomics.github.io/s
 
 To learn more, visit us on [GitHub](https://github.com/OpenSourceEconomics) or join us at [Zulip](https://ose.zulipchat.com/#).
 
-----------------------------------------
-
-{:.sansserif}
+{:.getintouch}
 **Contact:** [info@open-econ.org](mailto:info@open-econ.org) or [reach out on Zulip](https://ose.zulipchat.com/#).
-
-{:.sansserif}
 **Steering committee:** [Philipp Eisenhauer](https://peisenha.github.io), [Gregor Boehl](https://gregorboehl.com), [Janos Gabler](https://github.com/janosg)
