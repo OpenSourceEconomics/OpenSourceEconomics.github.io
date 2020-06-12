@@ -149,9 +149,15 @@ strong, b {
 }
 
 /* Add rule above <h2> */
-h2, .typeset h2 {
+.getintouch, h2, .typeset h2 {
   border-top: 1pt solid #ADADAD;
   padding-top: 1rem;
+}
+.getintouch {
+  font-family: 'IBM Plex Sans', Verdana, sans-serif; 
+}
+.getintouch b, .getintouch strong {
+  font-weight: 600;
 }
 
 /* Needed to make SVG logo visible */
