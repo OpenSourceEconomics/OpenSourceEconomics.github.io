@@ -126,7 +126,7 @@ strong, b {
     font-size: 1rem /* 1.1578947368rem */;
   }
   .typeset p {
-    line-height: 1.85rem;
+    line-height: 1.75rem;
   }
   h1, .typeset h1, {
     font-size: 1.77rem;
@@ -150,7 +150,8 @@ strong, b {
 
 /* Add rule above <h2> */
 h2, .typeset h2 {
-  border-top: 1pt solid #AAAAAA;
+  border-top: 1pt solid #ADADAD;
+  padding-top: 1rem;
 }
 
 /* Needed to make SVG logo visible */
