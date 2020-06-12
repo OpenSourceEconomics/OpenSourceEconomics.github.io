@@ -77,7 +77,7 @@ strong, b {
 /* Settings for larger screen sizes */
 @media screen and (min-width: 40em) {
   body {
-    font-size: 1.2rem /* 1.2142857143rem */;
+    font-size: 1.2rem;
   }
   /* Settings for navigation when list is shown */
   .list--nav {
@@ -89,7 +89,7 @@ strong, b {
 }
 @media screen and (min-width: 50em) {
   body {
-    font-size: 1.175rem /* 1.2rem */;
+    font-size: 1.175rem;
   }
   .list--nav {
     line-height: 4.8rem;
@@ -97,7 +97,7 @@ strong, b {
 }
 @media screen and (min-width: 64em) {
   body {
-    font-size: 1.1rem /* 1.1764705882rem */;
+    font-size: 1.1rem;
   }
   .typeset p {
     line-height: 1.85rem;
@@ -126,7 +126,16 @@ strong, b {
     font-size: 1.6rem;
   }
   h3, .typeset h3, {
-    font-size: 1.4rem;
+    font-size: 1.45rem;
+  }
+  h4, .typeset h4, {
+    font-size: 1.32rem;
+  }
+  h5, .typeset h5, {
+    font-size: 1.2rem;
+  }
+  h5, .typeset h6, {
+    font-size: 1.1rem;
   }
 }
 
