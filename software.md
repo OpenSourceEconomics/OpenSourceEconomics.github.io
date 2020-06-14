@@ -10,7 +10,7 @@ We maintain several software packages in support of our research and educational
 
 ### ``respy``
 
-``respy`` is an open source framework written in Python for the simulation and estimation of some finite-horizon discrete choice dynamic programming models. The group of models which can be currently represented in respy are called Eckstein–Keane–Wolpin models.
+``respy`` is an open-source framework written in Python for the simulation and estimation of some finite-horizon discrete choice dynamic programming models. The group of models which can be currently represented in `respy` are called Eckstein–Keane–Wolpin models.
 
 {:.sansserif}
 **Documentation**: [respy.readthedocs.io](https://respy.readthedocs.io){:target="_blank"}
