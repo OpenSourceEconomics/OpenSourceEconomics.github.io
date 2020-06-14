@@ -6,7 +6,7 @@ title: Software
 We maintain several software packages in support of our research and educational activities.
 
 
-## Economic modelling packages
+## Economic Modelling Packages
 
 ### ``respy``
 
@@ -68,7 +68,7 @@ We maintain several software packages in support of our research and educational
 **Documentation**: [econsa.readthedocs.io](https://econsa.readthedocs.io){:target="_blank"}
 
 
-## Development support
+## Development Support
 
 ### ``temfpy``
 
