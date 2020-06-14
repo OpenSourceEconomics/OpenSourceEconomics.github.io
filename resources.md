@@ -67,8 +67,8 @@ Check out the [online documentation](https://www.statsmodels.org){:target="_blan
 
 ### Textbooks
 
-Ramalho, L. (2015). [Fluent Python. Clear, concise, and effective programming](https://www.amazon.de/Fluent-Python-Luciano-Ramalho/dp/1491946008){:target="_blank"}. O’Reilly Media, Inc., Sebastopol, CA.
+Ramalho, L. (2015). [Fluent Python. Clear, Concise, and Effective Programming](https://www.oreilly.com/library/view/fluent-python/9781491946237/){:target="_blank"}. O’Reilly Media, Inc., Sebastopol, CA.
 
-Rossant, C. (2018). [IPython interactive computing and visualization cookbook](https://www.packtpub.com/eu/big-data-and-business-intelligence/ipython-interactive-computing-and-visualization-cookbook-second-e){:target="_blank"}. Packt Publishing, Birmingham, England.
+Rossant, C. (2018). [IPython Interactive Computing and Visualization Cookbook](https://www.packtpub.com/eu/big-data-and-business-intelligence/ipython-interactive-computing-and-visualization-cookbook-second-e){:target="_blank"}. Packt Publishing, Birmingham, England.
 
-VanderPlas, J. (2016). [Python data science handbook](https://www.oreilly.com/library/view/python-data-science/9781491912126){:target="_blank"} O’Reilly Media, Inc., Sebastopol, CA.
+VanderPlas, J. (2016). [Python Data Science Handbook](https://www.oreilly.com/library/view/python-data-science/9781491912126){:target="_blank"} O’Reilly Media, Inc., Sebastopol, CA.
