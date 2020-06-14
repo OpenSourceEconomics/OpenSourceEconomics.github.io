@@ -193,7 +193,8 @@ a:hover, a:active, a:focus {
 }
 
 /* Class for external links */
-.EL, .EL a {
+/* .EL, .EL a {
   target-name: new;
   target-new: tab;
-}
+} */
+/* Not yet supported by major browsers: https://www.w3schools.com/cssref/css3_pr_target-name.asp */
