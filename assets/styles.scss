@@ -193,7 +193,7 @@ a:hover, a:active, a:focus {
 }
 
 /* Class for external links */
-.EL {
+.EL, .EL a {
   target-name: new;
   target-new: tab;
 }
