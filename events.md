@@ -19,4 +19,4 @@ We organize a computation primer, which is essentially an introduction to (Pytho
 
 ### DSE Summer School
 
-We are hosting the [Econometric Society Summer School in Dynamic Structural Econometrics (DSE)](https://dseconf.org) in Bonn in 2021. It offers an annual short course in dynamic structural econometrics and computational methods more generally, paired with an associated two day conference in the same general area. DSE conference and summer school have a special theme that varies from year to year.
+We are hosting the [Econometric Society Summer School in Dynamic Structural Econometrics (DSE)](https://dseconf.org){:target="_blank"} in Bonn in 2021. It offers an annual short course in dynamic structural econometrics and computational methods more generally, paired with an associated two day conference in the same general area. DSE conference and summer school have a special theme that varies from year to year.
