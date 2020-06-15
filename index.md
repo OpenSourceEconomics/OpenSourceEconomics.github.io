@@ -13,7 +13,7 @@ We are a group of economists using computational models in the pursuit of our re
 
 We provide numerous [software libraries](software) that we use in our research. We also host several [events](events) to facilitate the exchange of ideas with other economists; for example, we organize a monthly OSE&nbsp;Meetup and an annual OSE&nbsp;Retreat. In support of our educational activities, we maintain a curated list of [resoures](resources).
 
-The source code of our software libraries and more is available on [GitHub](https://github.com/OpenSourceEconomics){:target="_blank"} [<img src="/assets/images/GitHub-Mark.svg" alt="GitHub mark" width="19rem" style="vertical-align: -4%;"/>](https://github.com/OpenSourceEconomics){:target="_blank"}.
+The source code of our software libraries and more is available on [GitHub](https://github.com/OpenSourceEconomics){:target="_blank"} [<img src="/assets/images/GitHub-Mark.svg" alt="GitHub mark" width="19rem" style="vertical-align: -5%;"/>](https://github.com/OpenSourceEconomics){:target="_blank"}.
 
 {: .getintouch}
 In cooperation with
