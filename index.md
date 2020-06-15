@@ -16,5 +16,10 @@ We provide numerous [software libraries](software) that we use in our research. 
 To learn more, visit us on [GitHub](https://github.com/OpenSourceEconomics) or join us at [Zulip](https://ose.zulipchat.com/#).
 
 {:.getintouch}
+**Supported by**
+![](/assets/images/UNI_Bonn_Logo_Standard_RZ_RGB.svg)
+![](/assets/images/Logo_DIW_Berlin.svg)
+
+{:.getintouch}
 **Contact:** [info@open-econ.org](mailto:info@open-econ.org) or [reach out on Zulip](https://ose.zulipchat.com/#).<br/>
 **Steering committee:** [Philipp Eisenhauer](https://peisenha.github.io), [Gregor Boehl](https://gregorboehl.com), [Janos Gabler](https://github.com/janosg), [Annica Gehlen](https://github.com/amageh)
