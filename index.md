@@ -17,6 +17,7 @@ To learn more, visit us on [GitHub](https://github.com/OpenSourceEconomics) or j
 
 {:.getintouch}
 **Supported by**
+
 [<img src="/assets/images/UNI_Bonn_Logo_Standard_RZ_RGB.svg" alt="U Bonn logo" width="30%"/>](https://www.uni-bonn.de){:target="_blank"}
 [<img src="/assets/images/Logo_DIW_Berlin.svg" alt="DIW Berlin logo" width="30%"/>](https://www.uni-bonn.de){:target="_blank"}
 
