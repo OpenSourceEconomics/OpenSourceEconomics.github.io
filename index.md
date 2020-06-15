@@ -11,7 +11,7 @@ feature_text: |
 
 We are a group of economists using computational models in the pursuit of our research. By adopting sound software engineering practices, we hope to leverage tools from computational science and increase the transparency and extensibility of our im&shy;ple&shy;men&shy;ta&shy;tions. In doing so, we expand the set of possible economic questions that we can address and improve the quality of our answers.
 
-We provide numerous [software libraries](software) that we use in our research. We also host several [events](events) to facilitate the exchange of ideas with other economists. For example, we organize a monthly [OSE meetup](https://github.com/OpenSourceEconomics/ose-meetup) and an annual [OSE retreat](https://github.com/OpenSourceEconomics/ose-retreat). In support of our educational activities, we maintain a curated list of [resoures](resources).
+We provide numerous [software libraries](software) that we use in our research. We also host several [events](events) to facilitate the exchange of ideas with other economists. For example, we organize a monthly OSE&nbsp;Meetup and an annual OSE&nbsp;Retreat. In support of our educational activities, we maintain a curated list of [resoures](resources).
 
 To learn more, visit us on [GitHub](https://github.com/OpenSourceEconomics).
 
