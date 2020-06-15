@@ -17,7 +17,7 @@ We maintain several software packages in support of our research and educational
 
 ### ``pydsge``
 
-``pydsge`` is a Python package that allows to simulate, filter, and estimate DSGE models with occassionaly binding constraints. It allows to conduct full-blown Bayesian estimations (including Bayesian filtering) of macroeconomic models featuring an endogenous zero lower bound on nominal interest rates.
+``pydsge`` is a Python package that allows to simulate, filter, and estimate DSGE models with occassionaly binding constraints. As such, it allows to conduct full-blown Bayesian estimations (including Bayesian filtering) of macroeconomic models featuring an endogenous zero lower bound on nominal interest rates.
 
 {:.sansserif}
 **Documentation**: [pydsge.readthedocs.io](https://pydsge.readthedocs.io){:target="_blank"}
