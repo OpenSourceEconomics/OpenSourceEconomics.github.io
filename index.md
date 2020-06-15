@@ -13,7 +13,7 @@ We are a group of economists using computational models in the pursuit of our re
 
 We provide numerous [software libraries](software) that we use in our research. We also host several [events](events) to facilitate the exchange of ideas with other economists. For example, we organize a monthly [OSE meetup](https://github.com/OpenSourceEconomics/ose-meetup) and an annual [OSE retreat](https://github.com/OpenSourceEconomics/ose-retreat). In support of our educational activities, we maintain a curated list of [resoures](resources).
 
-To learn more, visit us on [GitHub](https://github.com/OpenSourceEconomics) or join us at [Zulip](https://ose.zulipchat.com/#).
+To learn more, visit us on [GitHub](https://github.com/OpenSourceEconomics).
 
 {: .getintouch}
 In cooperation with
