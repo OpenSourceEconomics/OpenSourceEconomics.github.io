@@ -16,7 +16,7 @@ We provide numerous [software libraries](software) that we use in our research. 
 To learn more, visit us on [GitHub](https://github.com/OpenSourceEconomics) or join us at [Zulip](https://ose.zulipchat.com/#).
 
 {:.getintouch}
-**Supported by**
+Supported by
 
 [<img src="/assets/images/UNI_Bonn_Logo_Standard_RZ_RGB.svg" alt="U Bonn logo" width="30%"/>](https://www.uni-bonn.de/startpage?set_language=en){:target="_blank"} &nbsp;
 [<img src="/assets/images/Logo_DIW_Berlin.svg" alt="DIW Berlin logo" width="30%"/>](https://www.diw.de/en){:target="_blank"}
