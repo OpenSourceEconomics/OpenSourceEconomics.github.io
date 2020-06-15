@@ -24,5 +24,5 @@ In cooperation with
 [<img src="/assets/images/Logo_DIW_Berlin.svg" alt="DIW Berlin logo" width="38%"/>](https://www.diw.de/en){:target="_blank"}
 
 {: .getintouch}
-**Steering committee:** [Philipp Eisenhauer](https://peisenha.github.io), [Gregor Boehl](https://gregorboehl.com), [Janos Gabler](https://github.com/janosg), [Annica Gehlen](https://github.com/amageh)
-**Contact:** [info@open-econ.org](mailto:info@open-econ.org) or [reach out on Zulip](https://ose.zulipchat.com/#).<br/>
+**Steering committee:** [Philipp Eisenhauer](https://peisenha.github.io), [Gregor Boehl](https://gregorboehl.com), [Janos Gabler](https://github.com/janosg), [Annica Gehlen](https://github.com/amageh)<br/>
+**Contact:** [info@open-econ.org](mailto:info@open-econ.org) or [reach out on Zulip](https://ose.zulipchat.com/#)
