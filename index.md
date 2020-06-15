@@ -18,8 +18,8 @@ To learn more, visit us on [GitHub](https://github.com/OpenSourceEconomics) or j
 {:.getintouch}
 Supported by
 
-[<img src="/assets/images/UNI_Bonn_Logo_Standard_RZ_RGB.svg" alt="U Bonn logo" width="30%"/>](https://www.uni-bonn.de/startpage?set_language=en){:target="_blank"} &nbsp;
-[<img src="/assets/images/Logo_TRA1.png" alt="TRA 1 logo" width="30%"/>](https://www.uni-bonn.de/research/research-profile/mathematics-modelling-and-simulation-of-complex-systems-1){:target="_blank"} &nbsp;
+[<img src="/assets/images/UNI_Bonn_Logo_Standard_RZ_RGB.svg" alt="U Bonn logo" width="33%"/>](https://www.uni-bonn.de/startpage?set_language=en){:target="_blank"} &nbsp;
+[<img src="/assets/images/Logo_TRA1.png" alt="TRA 1 logo" width="14%"/>](https://www.uni-bonn.de/research/research-profile/mathematics-modelling-and-simulation-of-complex-systems-1){:target="_blank"} &nbsp;
 [<img src="/assets/images/Logo_DIW_Berlin.svg" alt="DIW Berlin logo" width="30%"/>](https://www.diw.de/en){:target="_blank"}
 
 {:.getintouch}
