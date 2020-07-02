@@ -27,3 +27,5 @@ In cooperation with
 {: .getintouch}
 **Steering committee:** [Philipp Eisenhauer](https://peisenha.github.io), [Gregor Boehl](https://gregorboehl.com), [Janos Gabler](https://github.com/janosg), [Annica Gehlen](https://github.com/amageh)<br/>
 **Contact:** [info@open-econ.org](mailto:info@open-econ.org) or [reach out on Zulip](https://ose.zulipchat.com/#)
+
+We gratefully acknowledge funding by the Federal Ministry of Education and Research (BMBF) and the Ministry of Culture and Science of the State of North Rhine-Westphalia (MKW) as part of the Excellence Strategy of the federal and state governments.
