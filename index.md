@@ -21,7 +21,7 @@ In cooperation with
 
 <!-- {: style='text-align: center;'} -->
 [<img src="/assets/images/UNI_Bonn_Logo_Standard_RZ_RGB.svg" alt="U Bonn logo" width="26%"/>](https://www.uni-bonn.de/startpage?set_language=en){:target="_blank"} &nbsp; &nbsp;
-[<img src="/assets/images/Logo_TRA1.png" alt="TRA 1 logo" width="10.5%"/>](https://www.uni-bonn.de/research/research-profile/mathematics-modelling-and-simulation-of-complex-systems-1){:target="_blank"} &nbsp; &nbsp;
+[<img src="/assets/images/Logo_TRA1.png" alt="TRA 1 logo" width="10.5%"/>](https://www.uni-bonn.de/research/research-profile/mathematics-modelling-and-simulation-of-complex-systems-1){:target="_blank"} &nbsp;
 [<img src="https://dlcfc4rxk1sfk.cloudfront.net/email_template/nuvolos_text_and_logo_acblue.svg" alt="Nuvolos logo" width="21.5%"/>](https://nuvolos.cloud){:target="_blank"} &nbsp; &nbsp;
 [<img src="/assets/images/Logo_DIW_Berlin.svg" alt="DIW Berlin logo" width="24%"/>](https://www.diw.de/en){:target="_blank"}
 
