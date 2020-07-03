@@ -10,7 +10,7 @@ feature_text: |
 **A platform for transdisciplinary collaboration**
 
 Computational economic models specify an individual’s objective and the institutional and informational constraints of their economic environment. They are used to quantify
-the importance of competing economic mechanisms in determining economic outcomes and forecast the effects of alternative policies before their implementation. We provide a platform for economists and computational scientists to facilitate the transdisciplinary collaboration in the development, analysis, and application of computational economic models. Together, we expand the set of possible economic questions that we can address and improve the quality of our answers.
+the importance of competing economic mechanisms in determining economic outcomes and forecast the effects of alternative policies before their implementation. We provide a platform for economists, mathematicians, and computational scientists to facilitate the transdisciplinary collaboration in the development, analysis, and application of computational economic models. Together, we expand the set of possible economic questions that we can address and improve the quality of our answers.
 
 We provide numerous [software libraries](software) that we use in our research. We also host several [events](events) to facilitate the exchange of ideas with other economists; for example, we organize a monthly OSE&nbsp;Meetup and an annual OSE&nbsp;Retreat. In support of our educational activities, we maintain a curated list of [resources](resources).
 
