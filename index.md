@@ -23,7 +23,7 @@ In cooperation with
 [<img src="/assets/images/UNI_Bonn_Logo_Standard_RZ_RGB.svg" alt="U Bonn logo" width="29%"/>](https://www.uni-bonn.de/startpage?set_language=en){:target="_blank"}&nbsp; &nbsp; &nbsp;
 [<img src="/assets/images/Logo_TRA1.png" alt="TRA 1 logo" width="12%"/>](https://www.uni-bonn.de/research/research-profile/mathematics-modelling-and-simulation-of-complex-systems-1){:target="_blank"}&nbsp; &nbsp; &nbsp;
 [<img src="https://dlcfc4rxk1sfk.cloudfront.net/sidebar_logo_acblue.svg" alt="Nuvolos logo" width="10.5%"/>](https://nuvolos.cloud){:target="_blank"} &nbsp; &nbsp; &nbsp;
-[<img src="/assets/images/Logo_DIW_Berlin.svg" alt="DIW Berlin logo" width="27%"/>](https://www.diw.de/en){:target="_blank"}
+[<img src="/assets/images/Logo_DIW_Berlin.svg" alt="DIW Berlin logo" width="26%"/>](https://www.diw.de/en){:target="_blank"}
 
 {: .getintouch}
 **Steering committee:** [Philipp Eisenhauer](https://peisenha.github.io), [Gregor Boehl](https://gregorboehl.com), [Janos Gabler](https://github.com/janosg), [Annica Gehlen](https://github.com/amageh)<br/>
