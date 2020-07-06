@@ -67,6 +67,8 @@ Check out the [online documentation](https://www.statsmodels.org){:target="_blan
 
 ### Textbooks
 
+McKinney, W. (2017). [Python for Data Analysis: Data Wragnling with Pandas, NumPy, and IPython](https://www.oreilly.com/library/view/python-for-data/9781491957653/){:target="_blank"}. O’Reilly Media, Inc., Sebastopol, CA.
+
 Ramalho, L. (2015). [Fluent Python. Clear, Concise, and Effective Programming](https://www.oreilly.com/library/view/fluent-python/9781491946237/){:target="_blank"}. O’Reilly Media, Inc., Sebastopol, CA.
 
 Rossant, C. (2018). [IPython Interactive Computing and Visualization Cookbook](https://www.packtpub.com/eu/big-data-and-business-intelligence/ipython-interactive-computing-and-visualization-cookbook-second-e){:target="_blank"}. Packt Publishing, Birmingham, England.
