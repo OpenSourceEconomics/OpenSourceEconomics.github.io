@@ -25,10 +25,10 @@ In cooperation with
 [<img src="https://dlcfc4rxk1sfk.cloudfront.net/sidebar_logo_acblue.svg" alt="Nuvolos logo" width="10.5%"/>](https://nuvolos.cloud){:target="_blank"} &nbsp; &nbsp; &nbsp;
 [<img src="/assets/images/Logo_DIW_Berlin.svg" alt="DIW Berlin logo" width="26%"/>](https://www.diw.de/en){:target="_blank"}
 
-Follow OSE
+Social Media
 
 <!-- {: style='text-align: center;'} -->
-[<img src="/assets/images/Twitter_bird_logo_2012.svg" alt="Twitter logo" width="10.5%"/>](https://twitter.com/open_econ){:target="_blank"}&nbsp; &nbsp; &nbsp;
+[<img src="/assets/images/Twitter_bird_logo_2012.svg" alt="Twitter logo" width="8%"/>](https://twitter.com/open_econ){:target="_blank"}&nbsp; &nbsp; &nbsp;
 
 {: .getintouch}
 
