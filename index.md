@@ -28,7 +28,7 @@ In cooperation with
 Follow OSE
 
 <!-- {: style='text-align: center;'} -->
-[<img src="/assets/images/Twitter_bird_logo_2012.svg" alt="Twitter logo" width="12%"/>](https://twitter.com/open_econ){:target="_blank"}&nbsp; &nbsp; &nbsp;
+[<img src="/assets/images/Twitter_bird_logo_2012.svg" alt="Twitter logo" width="10.5%"/>](https://twitter.com/open_econ){:target="_blank"}&nbsp; &nbsp; &nbsp;
 
 {: .getintouch}
 
