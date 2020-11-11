@@ -25,14 +25,11 @@ In cooperation with
 [<img src="https://dlcfc4rxk1sfk.cloudfront.net/sidebar_logo_acblue.svg" alt="Nuvolos logo" width="10.5%"/>](https://nuvolos.cloud){:target="_blank"} &nbsp; &nbsp; &nbsp;
 [<img src="/assets/images/Logo_DIW_Berlin.svg" alt="DIW Berlin logo" width="26%"/>](https://www.diw.de/en){:target="_blank"}
 
-Social Media
-
-<!-- {: style='text-align: center;'} -->
-[<img src="/assets/images/Twitter_bird_logo_2012.svg" alt="Twitter logo" width="8%"/>](https://twitter.com/open_econ){:target="_blank"}&nbsp; &nbsp; &nbsp;
-
 {: .getintouch}
 
 **Steering committee:** [Philipp Eisenhauer](https://peisenha.github.io), [Gregor Boehl](https://gregorboehl.com), [Janos Gabler](https://github.com/janosg), [Annica Gehlen](https://github.com/amageh)<br/>
-**Contact:** [info@open-econ.org](mailto:info@open-econ.org) or [reach out on Zulip](https://ose.zulipchat.com/#)
+**Contact:** [info@open-econ.org](mailto:info@open-econ.org) or [reach out on Zulip](https://ose.zulipchat.com/#)<br/>
+**Social Media:** Follow us on [Twitter](https://twitter.com/open_econ){:target="_blank"} [<img src="/assets/images/Twitter_bird_logo_2012.svg" alt="Twitter logo" width="19rem" style="vertical-align: -5%;"/>](https://twitter.com/open_econ){:target="_blank"}
 <br /><br />
+
 We gratefully acknowledge funding by the Federal Ministry of Education and Research (BMBF) and the Ministry of Culture and Science of the State of North Rhine-Westphalia (MKW) as part of the Excellence Strategy of the federal and state governments.
