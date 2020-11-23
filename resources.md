@@ -81,4 +81,4 @@ VanderPlas, J. (2016). [Python Data Science Handbook](https://www.oreilly.com/li
 
 * [Programming for Everybody (Getting started with Python](https://www.coursera.org/learn/python?specialization=python){:target="_blank"}. The course covers the basics of Python programming language such as variables and expressions; conditional code; functions; loops; and iterations.
 
-* [Intro to Python tutorial](https://www.learnpython.org/){:target="_blank"}. This site is supported by [DataCamp](https://www.datacamp.com/){:target="_blank"} and offers interactive Python tutorials covering from the basics of the language to advance topics such as generators; list comprehensions; multiple funcion arguments; among others.
+* [Intro to Python tutorial](https://www.learnpython.org/){:target="_blank"}. This site is supported by [DataCamp](https://www.datacamp.com/){:target="_blank"} and offers a range of interactive Python tutorials going from the basics of the language to more advance topics such as generators; list comprehensions; multiple funcion arguments; among others.
