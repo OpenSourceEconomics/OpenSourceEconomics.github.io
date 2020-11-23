@@ -75,7 +75,7 @@ Rossant, C. (2018). [IPython Interactive Computing and Visualization Cookbook](h
 
 VanderPlas, J. (2016). [Python Data Science Handbook](https://www.oreilly.com/library/view/python-data-science/9781491912126){:target="_blank"} O’Reilly Media, Inc., Sebastopol, CA.
 
-Linge, S. & Langtangen, H. (2020). [Programming for Computations-Python](https://link.springer.com/book/10.1007/978-3-030-16877-3#about){:target="_blank"} Springer., Cham, Switzerland.
+Linge, S. & Langtangen, H. (2020). [Programming for Computations-Python](https://link.springer.com/book/10.1007/978-3-030-16877-3#about){:target="_blank"} Springer, Cham, Switzerland.
 
 ### Online Python Courses 
 
