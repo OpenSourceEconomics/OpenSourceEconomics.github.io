@@ -77,4 +77,4 @@ VanderPlas, J. (2016). [Python Data Science Handbook](https://www.oreilly.com/li
 
 ### Online Python Courses 
 
-* [Introduction to Computer Science and Programming using Python]. This course aims to introduce brief topics on computer science and the Python programming language for people with no prior computational experience. (https://www.edx.org/course/introduction-to-computer-science-and-programming-7?source=aw&awc=6798_1604963249_06012d1fde21c03cba62cce9a5ceabde&utm_source=aw&utm_medium=affiliate_partner&utm_content=text-link&utm_term=78888_Skimlinks){:target="_blank"}
+* [Introduction to Computer Science and Programming using Python](https://www.edx.org/course/introduction-to-computer-science-and-programming-7?source=aw&awc=6798_1604963249_06012d1fde21c03cba62cce9a5ceabde&utm_source=aw&utm_medium=affiliate_partner&utm_content=text-link&utm_term=78888_Skimlinks){:target="_blank"}. This course aims to introduce brief topics on computer science and the Python programming language for people with no prior computational experience. 
