@@ -74,3 +74,15 @@ Ramalho, L. (2015). [Fluent Python. Clear, Concise, and Effective Programming](h
 Rossant, C. (2018). [IPython Interactive Computing and Visualization Cookbook](https://www.packtpub.com/eu/big-data-and-business-intelligence/ipython-interactive-computing-and-visualization-cookbook-second-e){:target="_blank"}. Packt Publishing, Birmingham, England.
 
 VanderPlas, J. (2016). [Python Data Science Handbook](https://www.oreilly.com/library/view/python-data-science/9781491912126){:target="_blank"} O’Reilly Media, Inc., Sebastopol, CA.
+
+Linge, S. & Langtangen, H. (2020). [Programming for Computations-Python](https://link.springer.com/book/10.1007/978-3-030-16877-3#about){:target="_blank"} Springer, Cham, Switzerland.
+
+### Online Python Courses 
+
+* [Introduction to Computer Science and Programming using Python](https://www.edx.org/course/introduction-to-computer-science-and-programming-7?source=aw&awc=6798_1604963249_06012d1fde21c03cba62cce9a5ceabde&utm_source=aw&utm_medium=affiliate_partner&utm_content=text-link&utm_term=78888_Skimlinks){:target="_blank"}. This course aims to introduce brief topics on computer science and the Python programming language for people with no prior computational experience. 
+
+* [Programming for Everybody (Getting started with Python)](https://www.coursera.org/learn/python?specialization=python){:target="_blank"}. The course covers the basics of Python programming language such as: variables and expressions; conditional statements; functions; loops; and iterations.
+
+* [Intro to Python tutorial](https://www.learnpython.org/){:target="_blank"}. This site is supported by [DataCamp](https://www.datacamp.com/){:target="_blank"} and offers a range of interactive Python tutorials that go from the basics concepts of the language to more advance computational topics.
+
+* [SoloLearn App](https://www.sololearn.com/){:target="_blank"}. A useful resorce for understanding the general structure of Python programming language while practicing by writing Python code within the app.
