@@ -38,7 +38,9 @@ navigation_header:
   url: /events/
 - title: Resources
   url: /resources/
-
+- title: Projects
+  url: /Projects/
+  
 # Footer nav
 navigation_footer:
 - title: Contact us
