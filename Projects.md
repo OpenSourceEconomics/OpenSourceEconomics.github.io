@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Proyects
+title: Projects
 ---
 
 In this section we present the proyects OSE has been working on.
 
-## Proyects
+## Projects
 
 ### Scientific Computing Course
 
