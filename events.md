@@ -17,11 +17,6 @@ We host an annual retreat in support of our research activities. We organize the
 
 We organize a computation primer, which is essentially an introduction to (Python) programming. The course covers basic concepts such as variables, loops, functions, plotting, basics of scientific programming and data analysis, and some perspectives. The last iteration can be found in our [GitHub repository](https://github.com/OpenSourceEconomics/ose-course-primer){:target="_blank"}.
 
-### OSE Scientific Computing
-
-The sound analysis of computational economic models requires expertise in economics, statistics, numerical methods, and software engineering. We first provide an overview of basic numerical methods for optimization, numerical integration, approximation methods, and uncertainty quantification.  We then deepen our understanding of each of these topics in the context of a dynamic model of human capital accumulation using [respy](https://respy.readthedocs.io){:target="_blank"}. We conclude by showcasing basic software engineering practices such as the design of a collaborative and reproducible development workflow, automated testing, and high-performance computing. Please see our [course website](https://ose-scientific-computing.readthedocs.io){:target="_blank"} for details.
-
-
 ### DSE Summer School
 
 We are hosting the [Econometric Society Summer School in Dynamic Structural Econometrics (DSE)](https://dseconf.org){:target="_blank"} in Bonn in 2021. It offers an annual short course in dynamic structural econometrics and computational methods more generally, paired with an associated two-day conference in the same general area. DSE conference and summer school have a special theme that varies from year to year.
