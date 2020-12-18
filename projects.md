@@ -5,13 +5,17 @@ title: Projects
 
 We present some of the transdisciplinary projects we are involved in.
 
-## Research
+---
+
+## Research 
 
 ### E<sup>2</sup>: Economics meets Epidemiology
 
 **Funding** [Volkswagenstiftung](https://www.volkswagenstiftung.de/){:target="_blank"}
 
-## Education
+---
+
+## Education 
 
 ### Scientific Computing Course
 
