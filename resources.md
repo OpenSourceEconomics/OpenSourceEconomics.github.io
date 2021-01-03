@@ -77,7 +77,7 @@ VanderPlas, J. (2016). [Python Data Science Handbook](https://www.oreilly.com/li
 
 Linge, S. & Langtangen, H. (2020). [Programming for Computations-Python](https://link.springer.com/book/10.1007/978-3-030-16877-3#about){:target="_blank"} Springer, Cham, Switzerland.
 
-Irving, D., Hertweck, K., Johnston, L., Ostblom, J., Wickham, C., & Wilson, G. (2020). [Research Software Engineering with Python] (https://merely-useful.github.io/py-rse/){:target="_blank"}.
+Irving, D., Hertweck, K., Johnston, L., Ostblom, J., Wickham, C., & Wilson, G. (2020). [Research Software Engineering with Python](https://merely-useful.github.io/py-rse/){:target="_blank"}.
  
 ### Online Python Courses 
 
@@ -89,5 +89,5 @@ Irving, D., Hertweck, K., Johnston, L., Ostblom, J., Wickham, C., & Wilson, G. (
 
 * [SoloLearn App](https://www.sololearn.com/){:target="_blank"}. A useful resorce for understanding the general structure of Python programming language while practicing by writing Python code within the app.
 
-* [Introduction to Python](https://www.youtube.com/playlist?list=PLVR_rJLcetzkqoeuhpIXmG9uQCtSoGBz1){:target="_blank"}. The course offers students an introduction to Python and PyData stack such as numpy, panda, matplotlib, scipy and statsmodels for its application to statistics and econometrics. 
+* [Introduction to Python](https://www.youtube.com/playlist?list=PLVR_rJLcetzkqoeuhpIXmG9uQCtSoGBz1){:target="_blank"}. The course offers an introduction to Python and PyData stack such as numpy, panda, matplotlib, scipy and statsmodels. 
 
