@@ -15,6 +15,6 @@ The basic steps are:
 1. Clone this repository to local machine.
 1. Run `jekyll --version` to make sure you have jekyll installed correctly.
 1. Run `bundle install` to make sure you have all the dependencies installed.
-    - Alternatively, run `bundle update` if file `Gemfile.lock` already exists.
+    - Alternatively, if file `Gemfile.lock` already exists, run `bundle update`.
 1. Run `bundle exec jekyll serve --livereload` to start local server.
     - Note: you should access the `Server address` instead of `LiveReload address`. 
