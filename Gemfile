@@ -1,13 +1,17 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.8"
-gem "jekyll-sitemap", "~> 0.13"
-gem "jekyll-mentions", "~> 1.2"
-gem "jekyll-paginate", "~> 1.1"
-gem "jekyll-seo-tag", "~> 2.3"
-gem "jekyll-redirect-from", "~> 0.12"
-gem "jekyll-default-layout", "~> 0.1"
-gem "jekyll-feed", "~> 0.9"
-gem "jemoji", "~> 0.9"
-gem "jekyll-remote-theme", "~> 0.3"
-# gem "jekyll-favicon", "~> 0.2.1", group: :jekyll_plugins
+# gem "jekyll", "~> 3.8"
+
+group :jekyll_plugins do
+  gem "github-pages"
+  gem "jekyll-paginate"
+  gem "jekyll-feed"
+  gem "jekyll-sitemap"
+  gem "jekyll-mentions"
+  gem "jekyll-seo-tag"
+  gem "jekyll-redirect-from"
+  gem "jekyll-default-layout"
+  gem "jekyll-remote-theme"
+end
+
+gem "webrick"
