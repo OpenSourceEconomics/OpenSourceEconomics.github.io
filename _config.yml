@@ -1,6 +1,3 @@
-# Set theme
-remote_theme: daviddarnes/alembic
-
 # File excludes
 exclude:
 - README.md
@@ -9,13 +6,17 @@ exclude:
 
 # Set plugins
 plugins:
+- github-pages
+- jekyll-remote-theme
 - jekyll-sitemap
 - jekyll-mentions
 - jekyll-seo-tag
 - jekyll-redirect-from
 - jekyll-default-layout
 - jemoji
-- jekyll-remote-theme
+
+# Set theme
+remote_theme: daviddarnes/alembic@main
 
 # Site settings
 url: 'open-econ.org'
