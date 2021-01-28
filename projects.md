@@ -17,7 +17,7 @@ This project establishes an analysis pipeline for exemplary computational models
 
 **Partners:** [Philipp Eisenhauer](https://peisenha.github.io/){:target="_blank"}, [Jan Hasenauer](https://www.mathematics-and-life-sciences.uni-bonn.de/en){:target="_blank"}, [Lena Janys](https://sites.google.com/site/janyslena){:target="_blank"}, [Daniel Oeltz](https://www.scai.fraunhofer.de/en/business-research-areas/computational-finance.html){:target="_blank"}, [Dilan Pathirana](https://www.mathematics-and-life-sciences.uni-bonn.de/en/group-members/dilan-pathirana){:target="_blank"}
 
-**Funding:** [Excellence Strategy](http://tra1.uni-bonn.de){:target="_blank"}
+**Funding:** [Excellence Strategy - TRA Modelling](http://tra1.uni-bonn.de){:target="_blank"}
 
 ### Transdisciplinary Research Portfolio
 
@@ -25,7 +25,7 @@ Transdisciplinary research requires a basic understanding of the challenges and 
 
 **Partners:** [Philipp Eisenhauer](https://peisenha.github.io/){:target="_blank"}, [Jan Hasenauer](https://www.mathematics-and-life-sciences.uni-bonn.de/en){:target="_blank"}, [Lena Janys](https://sites.google.com/site/janyslena){:target="_blank"}, [Daniel Oeltz](https://www.scai.fraunhofer.de/en/business-research-areas/computational-finance.html){:target="_blank"}, [Dilan Pathirana](https://www.mathematics-and-life-sciences.uni-bonn.de/en/group-members/dilan-pathirana){:target="_blank"}
 
-**Funding:** [Excellence Strategy](http://tra1.uni-bonn.de){:target="_blank"}
+**Funding:** [Excellence Strategy - TRA Modelling](http://tra1.uni-bonn.de){:target="_blank"}
 
 ### E<sup>2</sup>: Economics meets Epidemiology
 
@@ -43,4 +43,4 @@ The sound analysis of computational economic models requires expertise in econom
 
 **Partners:** [Philipp Eisenhauer](https://peisenha.github.io/){:target="_blank"}, [Gregor Böhl](https://gregorboehl.com/){:target="_blank"}, [Annica Gehlen](https://www.iame.uni-bonn.de/people/annica-gehlen){:target="_blank"}, [Janos Gabler](https://www.bgse.uni-bonn.de/en/people/student-directory/2016/janos-gabler){:target="_blank"}
 
-**Funding:** [Excellence Strategy](http://tra1.uni-bonn.de){:target="_blank"}
+**Funding:** [Excellence Strategy - TRA Modelling](http://tra1.uni-bonn.de){:target="_blank"}
