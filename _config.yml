@@ -28,6 +28,7 @@ permalink: pretty
 #logo: "/assets/images/OSE_Bonn_sbrg_web.svg"
 logo: "/assets/images/OSE_logo_RGB.svg"
 #favicon: "/favicon.ico"
+google_analytics: 'UA-188554161-1'
 
 # Header nav
 navigation_header:
