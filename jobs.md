@@ -12,7 +12,7 @@ Open Source Economics is looking for a student research assistant to support the
 
 
 **Your profile:**
-- Student currently enrolled in economics, mathematics, computer science, or a related field.
+- Student currently enrolled in economics, mathematics, life science, computer science, or a related field.
 - Interest in statistics and computational modeling across various domains of research such as economics, epidemiology, and finance.
 - Excellent written and oral communication skills in English.
 - Programming experience in Python and/or R advantageous.
