@@ -42,6 +42,8 @@ navigation_header:
   url: /resources/
 - title: Projects
   url: /projects/
+- title: Jobs
+  url: /jobs/
   
 # Footer nav
 navigation_footer:
