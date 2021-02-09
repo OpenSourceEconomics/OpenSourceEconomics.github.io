@@ -6,6 +6,7 @@ title: Job Offers
 ### Research Assistant (9/10 hours) starting May 2021
 
 Application deadline: *Sunday, February 21st, 2021*
+
 Location: Bonn
 
 Open Source Economics is looking for a student research assistant to support our transdisciplinary research projects. Please see the [projects](https://open-econ.org/projects/){:target="_blank"} section for more information. The research assistant will be actively involved in all stages of the research process and will work in coordination with project partners from the University of Bonn and the Fraunhofer Institute for Algorithms and Scientific Computing (SCAI).
