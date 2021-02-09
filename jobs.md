@@ -9,7 +9,7 @@ Application deadline: *Sunday, February 21st, 2021*
 
 Location: Bonn
 
-Open Source Economics is looking for a student research assistant to support our transdisciplinary research projects. Please see the [projects](https://open-econ.org/projects/){:target="_blank"} section for more information. The research assistant will be actively involved in all stages of the research process and will work in coordination with project partners from the University of Bonn and the Fraunhofer Institute for Algorithms and Scientific Computing (SCAI).
+Open Source Economics is looking for a student research assistant to support transdisciplinary research projects. Please see the [projects](https://open-econ.org/projects/){:target="_blank"} section for more information. The research assistant will be actively involved in all stages of the research process and will work in coordination with project partners from the University of Bonn and the Fraunhofer Institute for Algorithms and Scientific Computing (SCAI).
 
 
 **Your profile:**
@@ -24,9 +24,9 @@ Open Source Economics is looking for a student research assistant to support our
 - Flexible working hours.
 - Integration into a transdisciplinary team of experienced researchers.
 
-To apply, please send an email to [annica.gehlen@uni-bonn.de](mailto:annica.gehlen@uni-bonn.de) with the following documents:
+To apply, please send an email to [annica.gehlen@uni-bonn.de](mailto:annica.gehlen@uni-bonn.de) with the following information:
 - CV
-- GitHub account/a code sample/brief description of your experience with (statistical) programming
+- Brief description of your experience with (statistical) programming (you are welcome to link to your GitHub account or send a code sample if possible)
 - Transcript of records in your current degree
 
 
