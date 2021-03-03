@@ -91,3 +91,7 @@ Irving, D., Hertweck, K., Johnston, L., Ostblom, J., Wickham, C., & Wilson, G. (
 
 * [Introduction to Python](https://www.youtube.com/playlist?list=PLVR_rJLcetzkqoeuhpIXmG9uQCtSoGBz1){:target="_blank"}. The course offers an introduction to Python and PyData stack such as numpy, panda, matplotlib, scipy and statsmodels. 
 
+* [Introduction to Programming and Numerical Analysis](https://numeconcopenhagen.netlify.app/){:target="_blank"}. The course introduces students to Python and enables to numerically solve simple economic models and perform basic data analysis.
+
+* [Foundations of Computational Economics](https://fedor.iskh.me/compecon){:target="_blank"}. This course offers a good introduction to Python and also covers a wide range of more advanced topics useful for students and researchers interested in computational economics. 
+
