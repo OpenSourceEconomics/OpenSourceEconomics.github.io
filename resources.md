@@ -67,17 +67,17 @@ Check out the [online documentation](https://www.statsmodels.org){:target="_blan
 
 ### Textbooks
 
-McKinney, W. (2017). [Python for Data Analysis: Data Wragnling with Pandas, NumPy, and IPython](https://www.oreilly.com/library/view/python-for-data/9781491957653/){:target="_blank"}. O’Reilly Media, Inc., Sebastopol, CA.
+* McKinney, W. (2017). [Python for Data Analysis: Data Wragnling with Pandas, NumPy, and IPython](https://www.oreilly.com/library/view/python-for-data/9781491957653/){:target="_blank"}. O’Reilly Media, Inc., Sebastopol, CA.
 
-Ramalho, L. (2015). [Fluent Python. Clear, Concise, and Effective Programming](https://www.oreilly.com/library/view/fluent-python/9781491946237/){:target="_blank"}. O’Reilly Media, Inc., Sebastopol, CA.
+* Ramalho, L. (2015). [Fluent Python. Clear, Concise, and Effective Programming](https://www.oreilly.com/library/view/fluent-python/9781491946237/){:target="_blank"}. O’Reilly Media, Inc., Sebastopol, CA.
 
-Rossant, C. (2018). [IPython Interactive Computing and Visualization Cookbook](https://www.packtpub.com/eu/big-data-and-business-intelligence/ipython-interactive-computing-and-visualization-cookbook-second-e){:target="_blank"}. Packt Publishing, Birmingham, England.
+* Rossant, C. (2018). [IPython Interactive Computing and Visualization Cookbook](https://www.packtpub.com/eu/big-data-and-business-intelligence/ipython-interactive-computing-and-visualization-cookbook-second-e){:target="_blank"}. Packt Publishing, Birmingham, England.
 
-VanderPlas, J. (2016). [Python Data Science Handbook](https://www.oreilly.com/library/view/python-data-science/9781491912126){:target="_blank"} O’Reilly Media, Inc., Sebastopol, CA.
+* VanderPlas, J. (2016). [Python Data Science Handbook](https://www.oreilly.com/library/view/python-data-science/9781491912126){:target="_blank"} O’Reilly Media, Inc., Sebastopol, CA.
 
-Linge, S. & Langtangen, H. (2020). [Programming for Computations-Python](https://link.springer.com/book/10.1007/978-3-030-16877-3#about){:target="_blank"} Springer, Cham, Switzerland.
+* Linge, S. & Langtangen, H. (2020). [Programming for Computations-Python](https://link.springer.com/book/10.1007/978-3-030-16877-3#about){:target="_blank"} Springer, Cham, Switzerland.
 
-Irving, D., Hertweck, K., Johnston, L., Ostblom, J., Wickham, C., & Wilson, G. (2020). [Research Software Engineering with Python](https://merely-useful.github.io/py-rse/){:target="_blank"}.
+* Irving, D., Hertweck, K., Johnston, L., Ostblom, J., Wickham, C., & Wilson, G. (2020). [Research Software Engineering with Python](https://merely-useful.github.io/py-rse/){:target="_blank"}.
  
 ### Online Python Courses 
 
