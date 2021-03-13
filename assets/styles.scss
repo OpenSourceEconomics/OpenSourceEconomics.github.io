@@ -187,24 +187,10 @@ td {
   height: 5rem;
 }
 
-/* Change color of bullet points to blue
-@media screen and (min-width: 40em) {
-  .typeset ul {
-    list-style: none;
-    margin-left: -1em;
-    padding-left: 1em;
-  }
-  .typeset ul li::before {
-    content: "\2022";
-    color: red;
-    font-weight: bold;
-    width: 1em;
-    display: inline-block;
-    margin-left: -1em;
-  }
-} */
+/* Make bullet points blue and smaller */
 ul li::marker {
   color: #004385;
+  font-size: smaller;
 }
 
 /* Make hyperlinks blue and remove all decoration */
