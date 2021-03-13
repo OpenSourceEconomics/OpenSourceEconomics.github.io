@@ -187,10 +187,10 @@ td {
   height: 5rem;
 }
 
-/* Make bullet points blue and smaller */
+/* Blue bullet points */
 ul li::marker {
   color: #004385;
-  font-size: smaller;
+  content: "\2022 ";
 }
 
 /* Make hyperlinks blue and remove all decoration */
