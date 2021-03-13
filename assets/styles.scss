@@ -188,21 +188,20 @@ td {
 }
 
 /* Change color of bullet points to blue */
-ul {
-  list-style: none;
-}
-/* ul li::before {
-  content: "\2022";
-  color: #004385;
-  display: inline-block; 
-  width: 1em;
-  margin-left: -1em;
-} */
-ul li::before {
-  content: "\2022";
-  font-weight: bold;
-  color: #004385;
-  padding-right: 0.75em;
+@media screen and (min-width: 40em) {
+  .typeset ul {
+    list-style: none;
+    margin-left: -1em;
+    padding-left: 1em;
+  }
+  .typeset ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    width: 1em;
+    display: inline-block;
+    margin-left: -1em;
+  }
 }
 
 /* Make hyperlinks blue and remove all decoration */
