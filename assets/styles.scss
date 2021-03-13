@@ -187,6 +187,19 @@ td {
   height: 5rem;
 }
 
+/* Change color of bullet points to blue */
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #004385;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
 /* Make hyperlinks blue and remove all decoration */
 a {
   color: #004385;
