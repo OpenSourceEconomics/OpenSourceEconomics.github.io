@@ -29,7 +29,7 @@ In cooperation with
 
 **Steering committee:** [Philipp Eisenhauer](https://peisenha.github.io), [Gregor Boehl](https://gregorboehl.com), [Janos Gabler](https://github.com/janosg), [Annica Gehlen](https://github.com/amageh)<br />
 **Contact:** [info@open-econ.org](mailto:info@open-econ.org) or [reach out on Zulip](https://ose.zulipchat.com/#)<br />
-**Social Media:** Follow us on [Twitter](https://twitter.com/open_econ){:target="_blank"} [<img src="/assets/images/Twitter_bird_logo_2012.svg" alt="Twitter logo" width="19rem" style="vertical-align: -5%;"/>](https://twitter.com/open_econ){:target="_blank"}<br />
-&nbsp;<br />
-{:.sansserif}
+**Social Media:** Follow us on [Twitter](https://twitter.com/open_econ){:target="_blank"} [<img src="/assets/images/Twitter_bird_logo_2012.svg" alt="Twitter logo" width="19rem" style="vertical-align: -5%;"/>](https://twitter.com/open_econ){:target="_blank"}
+
+{: .sansserif}
 We gratefully acknowledge funding by the Federal Ministry of Education and Research (BMBF) and the Ministry of Culture and Science of the State of North Rhine-Westphalia (MKW) as part of the Excellence Strategy of the federal and state governments.
