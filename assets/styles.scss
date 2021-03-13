@@ -187,7 +187,7 @@ td {
   height: 5rem;
 }
 
-/* Change color of bullet points to blue */
+/* Change color of bullet points to blue
 @media screen and (min-width: 40em) {
   .typeset ul {
     list-style: none;
@@ -202,6 +202,9 @@ td {
     display: inline-block;
     margin-left: -1em;
   }
+} */
+ul li::marker {
+  color: #004385;
 }
 
 /* Make hyperlinks blue and remove all decoration */
