@@ -4,9 +4,7 @@ title: Job Offers
 ---
 
 
-Find current job offers at or in association with Open Source Economics.
-
-Current offers:
+Current job offers at or in association with Open Source Economics:
 
 - PhD student (m/f) in Computational Epidemiology
 
@@ -26,6 +24,5 @@ This project is located on the interface of epidemiology and (micro-)economics, 
 
 To find more information, check out the [projects](https://open-econ.org/projects/){:target="_blank"} section on this website.
 
-
+{: .sansserif}
 **Find the official listing [here](https://www.nature.com/naturecareers/job/phd-student-mf-in-computational-epidemiology-rheinische-friedrichwilhelmsuniversitat-bonn-736432){:target="_blank"}.**
-
