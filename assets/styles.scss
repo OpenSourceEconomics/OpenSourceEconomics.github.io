@@ -190,7 +190,8 @@ td {
 /* Blue bullet points */
 ul li::marker {
   color: #004385;
-  content: "\2022 ";
+  content: "\2022 &nbsp;";
+  font-weight: bold;
 }
 
 /* Make hyperlinks blue and remove all decoration */
