@@ -191,13 +191,18 @@ td {
 ul {
   list-style: none;
 }
-
-ul li::before {
+/* ul li::before {
   content: "\2022";
   color: #004385;
   display: inline-block; 
   width: 1em;
   margin-left: -1em;
+} */
+ul li::before {
+  content: "\2022";
+  font-weight: bold;
+  color: #004385;
+  padding-right: 0.75em;
 }
 
 /* Make hyperlinks blue and remove all decoration */
