@@ -32,4 +32,4 @@ In cooperation with
 **Social Media:** Follow us on [Twitter](https://twitter.com/open_econ){:target="_blank"} [<img src="/assets/images/Twitter_bird_logo_2012.svg" alt="Twitter logo" width="19rem" style="vertical-align: -5%;"/>](https://twitter.com/open_econ){:target="_blank"}
 
 {: .sansserif}
-We gratefully acknowledge funding by the Federal Ministry of Education and Research (BMBF) and the Ministry of Culture and Science of the State of North Rhine-Westphalia (MKW) as part of the Excellence Strategy of the federal and state governments.
+We gratefully acknowledge funding by the Federal Ministry of Education and Research (BMBF) and the Ministry of Culture and Science of the State of North Rhine-Westphalia (MKW) as part of the Excellence Strategy of the German federal and state governments.
