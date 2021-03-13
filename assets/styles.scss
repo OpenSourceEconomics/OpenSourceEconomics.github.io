@@ -190,7 +190,7 @@ td {
 /* Blue bullet points */
 ul li::marker {
   color: #004385;
-  content: "\2022 &nbsp;";
+  content: "\2022 \00A0";
   font-weight: bold;
 }
 
