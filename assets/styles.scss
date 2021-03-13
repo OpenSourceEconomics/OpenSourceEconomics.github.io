@@ -194,6 +194,11 @@ ul li::marker {
   font-weight: bold;
 }
 
+/* Add some space after list items */
+ol li, ul li {
+  padding-bottom: 0.25rem;
+}
+
 /* Make hyperlinks blue and remove all decoration */
 a {
   color: #004385;
