@@ -7,6 +7,7 @@ title: Job Offers
 Job offers at or in association with Open Source Economics:
 
 - two student research assistants (9 - 19.5 hours)
+
 ---
 
 #### Research Assistant(s) starting July/August 2021 (9 - 19.5 hours)
