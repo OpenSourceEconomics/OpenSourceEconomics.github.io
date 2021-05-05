@@ -10,14 +10,14 @@ Job offers at or in association with Open Source Economics:
 
 ---
 
-# Research Assistant(s) starting July/August 2021 (9 - 19.5 hours)
+## Research Assistant(s) starting July/August 2021 (9 - 19.5 hours)
 
 Open Source Economics is looking for two student research assistants to support the transdisciplinary research project "Uncertainty quantification and robust decisions". Please see our [projects](https://open-econ.org/projects/){:target="_blank"} section for more information about the contents of the project. The research assistants will be actively involved in all stages of the research process and will work in coordination with project partners from the Computational Biology Lab at the University of Bonn and the Fraunhofer Institute for Algorithms and Scientific Computing (SCAI).
 
 Your profile:
 -------------
 
-- Students currently enrolled in economics, mathematics, computer science, physics, or a related field.
+- Student currently enrolled in economics, mathematics, computer science, physics, or a related field.
 - Interest in statistics and computational modeling across various domains of research such as economics, epidemiology, and finance.
 - Excellent written and oral communication skills in English.
 - Programming experience in Python and/or R advantageous.
