@@ -97,3 +97,8 @@ Check out the [online documentation](https://www.statsmodels.org){:target="_blan
 
 * [Foundations of Computational Economics](https://fedor.iskh.me/compecon){:target="_blank"}. This course offers a good introduction to Python and also covers a wide range of more advanced topics useful for students and researchers interested in computational economics. 
 
+### Reproducible Research
+
+* [Tilburg Science Hub](https://tilburgsciencehub.com/){:target="_blank"}. An open-source project run by researchers from Tilburg University that provides tools for set up, manage, and collaborate more efficiently on empirical research projects.
+
+* [German Reproducibility Network (GRN)](https://reproducibilitynetwork.de/){:target="_blank"}. The GRN IS a cross-disciplinary consortium that aims for the transparency of scientific research. It promotes activities that ensure best practices in research and provides an extensive library of reproducibility resources for researchers.
