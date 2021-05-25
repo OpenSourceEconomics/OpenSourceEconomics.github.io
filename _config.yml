@@ -40,8 +40,10 @@ navigation_header:
   url: /events/
 - title: Resources
   url: /resources/
-- title: Projects
-  url: /projects/
+- title: Research
+  url: /research/
+- title: Education
+  url: /education/
 - title: Jobs
   url: /jobs/
   
