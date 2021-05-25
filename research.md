@@ -1,11 +1,9 @@
 ---
 layout: page
-title: Projects
+title: Research
 ---
 
 We present some of the transdisciplinary projects we are involved in.
-
-## Research
 
 ### Uncertainty quantification and robust decisions
 
