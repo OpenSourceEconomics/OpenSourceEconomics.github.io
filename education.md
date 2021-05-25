@@ -29,7 +29,7 @@ The following private and public institutions have collaborated with OSE by pres
 * [Daimler AG](https://www.daimler.com/de/)
 * [Fraunhofer-Institut für Angewandte Informationstechnik FIT](https://www.fit.fraunhofer.de/)
 * [Fraunhofer-Institut für Algorithmen und Wissenschaftliches Rechnen SCAI](https://www.scai.fraunhofer.de/)
-* [Limes-Insitute (University of Bonn)](https://www.limes-institut-bonn.de/startseite/)
+* [Limes-Institute (University of Bonn)](https://www.limes-institut-bonn.de/startseite/)
 * [Ernest & Young](https://www.ey.com/de_de)
 * [McKinsey & Company](https://www.mckinsey.de/)
 * [Bundesrechnungshof (Federal Audit Office)](https://www.bundesrechnungshof.de/de)
