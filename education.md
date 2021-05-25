@@ -22,3 +22,14 @@ The course introduces students to basic microeconometric methods, where the obje
 
 For both the Scientific Computing and the Data Science course, students are required to work on their own projects independently. We have build a  documentation that includes basic instructions as well as example projects from earlier iterations from the Data Science Course. Please direct to our [project documentation](https://ose-course-projects.readthedocs.io/en/latest/){:target="_blank"} for more information.
 
+### Industry partners
+
+The following private and public institutions have collaborated with OSE by presenting guest lectures throughout the courses:
+
+* [Daimler AG](https://www.daimler.com/de/)
+* [Fraunhofer-Institut für Angewandte Informationstechnik FIT](https://www.fit.fraunhofer.de/)
+* [Fraunhofer-Institut für Algorithmen und Wissenschaftliches Rechnen SCAI](https://www.scai.fraunhofer.de/)
+* [Limes-Insitute (University of Bonn](https://www.limes-institut-bonn.de/startseite/)
+* [Ernest & Young](https://www.ey.com/de_de)
+* [McKinsey & Company](https://www.mckinsey.de/)
+* [Bundesrechnungshof (Federal Audit Office](https://www.bundesrechnungshof.de/de)
