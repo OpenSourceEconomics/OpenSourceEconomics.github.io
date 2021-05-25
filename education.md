@@ -27,9 +27,9 @@ For both the Scientific Computing and the Data Science course, students are requ
 The following private and public institutions have collaborated with OSE by presenting guest lectures throughout the courses:
 
 * [Daimler AG](https://www.daimler.com/de/)
-* [Fraunhofer-Institut für Angewandte Informationstechnik FIT](https://www.fit.fraunhofer.de/)
-* [Fraunhofer-Institut für Algorithmen und Wissenschaftliches Rechnen SCAI](https://www.scai.fraunhofer.de/)
+* [Fraunhofer Institute for Applied Information Technology FIT](https://www.fit.fraunhofer.de/)
+* [Fraunhofer Institute for Algorithms and Scientific Computing SCAI](https://www.scai.fraunhofer.de/)
 * [Limes-Institute (University of Bonn)](https://www.limes-institut-bonn.de/startseite/)
-* [Ernest & Young](https://www.ey.com/de_de)
+* [Ernst & Young](https://www.ey.com/de_de)
 * [McKinsey & Company](https://www.mckinsey.de/)
 * [Bundesrechnungshof (Federal Audit Office)](https://www.bundesrechnungshof.de/de)
