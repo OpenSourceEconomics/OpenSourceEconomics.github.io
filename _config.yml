@@ -42,10 +42,10 @@ navigation_header:
   url: /resources/
 - title: Research
   url: /research/
-- title: Jobs
-  url: /jobs/
 - title: Education
   url: /education/
+- title: Jobs
+  url: /jobs/
   
 # Footer nav
 navigation_footer:
