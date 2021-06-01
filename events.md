@@ -13,9 +13,6 @@ We arrange monthly events that provide participants with an opportunity to prese
 
 We host an annual retreat in support of our research activities. We organize the event around the research codes that are under active development in our group to facilitate a productive exchange of ideas. While participants were initially limited to economists, we hope to expand the event and include the broader mathematics and computational science community. Please see our [GitHub repository](https://github.com/OpenSourceEconomics/ose-retreat){:target="_blank"} for details.
 
-### OSE Primer
-
-We organize a computation primer, which is essentially an introduction to (Python) programming. The course covers basic concepts such as variables, loops, functions, plotting, basics of scientific programming and data analysis, and some perspectives. The last iteration can be found in our [GitHub repository](https://github.com/OpenSourceEconomics/ose-course-primer){:target="_blank"}.
 
 ### DSE Summer School
 
