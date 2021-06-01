@@ -22,6 +22,10 @@ The course introduces students to basic microeconometric methods, where the obje
 
 For both the Scientific Computing and the Data Science course, students are required to work on their own projects independently. We have build a  documentation that includes basic instructions as well as example projects from earlier iterations from the Data Science Course. Please direct to our [project documentation](https://ose-course-projects.readthedocs.io/en/latest/){:target="_blank"} for more information.
 
+### OSE Primer
+
+We organize a computation primer, which is essentially an introduction to (Python) programming. The course covers basic concepts such as variables, loops, functions, plotting, basics of scientific programming and data analysis, and some perspectives. The last iteration can be found in our [GitHub repository](https://github.com/OpenSourceEconomics/ose-course-primer){:target="_blank"}.
+
 ### Industry partners
 
 The following private and public institutions have collaborated with OSE by presenting guest lectures throughout the courses:
