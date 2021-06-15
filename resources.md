@@ -79,7 +79,9 @@ Check out the [online documentation](https://www.statsmodels.org){:target="_blan
 
 * Irving, D., Hertweck, K., Johnston, L., Ostblom, J., Wickham, C., & Wilson, G. (2020). [Research Software Engineering with Python](https://merely-useful.github.io/py-rse/){:target="_blank"}.
 
-* Guttag, J., Sussman, J. (2013). [Introduction to Computation and Programming using Python, Revised And Expanded Edition](https://mitpress.mit.edu/books/introduction-computation-and-programming-using-python-revised-and-expanded-edition){:target="_blank"} MIT Press.
+* Guttag, J., Sussman, J. (2013). [Introduction to Computation and Programming using Python, Revised And Expanded Edition](https://mitpress.mit.edu/books/introduction-computation-and-programming-using-python-revised-and-expanded-edition){:target="_blank"}, MIT Press.
+
+* Sheppard, K. (2020). [Python Notes](https://www.kevinsheppard.com/teaching/python/notes/#notes){:target="_blank"}, University of Oxford.
  
 ### Online Python Courses 
 
