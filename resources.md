@@ -77,7 +77,7 @@ Check out the [online documentation](https://www.statsmodels.org){:target="_blan
 
 * Linge, S. & Langtangen, H. (2020). [Programming for Computations-Python](https://link.springer.com/book/10.1007/978-3-030-16877-3#about){:target="_blank"} Springer, Cham, Switzerland.
 
-* Irving, D., Hertweck, K., Johnston, L., Ostblom, J., Wickham, C., & Wilson, G. (2020). [Research Software Engineering with Python](https://merely-useful.github.io/py-rse/){:target="_blank"}.
+* Irving, D., Hertweck, K., Johnston, L., Ostblom, J., Wickham, C., & Wilson, G. (2021). [Research Software Engineering with Python](https://merely-useful.github.io/py-rse/){:target="_blank"} Chapman and Hall/CRC Press.
 
 * Guttag, J., Sussman, J. (2013). [Introduction to Computation and Programming using Python, Revised And Expanded Edition](https://mitpress.mit.edu/books/introduction-computation-and-programming-using-python-revised-and-expanded-edition){:target="_blank"}, MIT Press.
 
