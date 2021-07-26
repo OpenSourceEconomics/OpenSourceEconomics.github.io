@@ -19,10 +19,11 @@ All our research software is available on [GitHub](https://github.com/OpenSource
 {: .getintouch}
 In cooperation with
 
-<!--{: style='text-align: center;'}-->
-[<img align="left"  src="/assets/images/UNI_Bonn_Logo_Standard_RZ_RGB.svg" alt="U Bonn logo" width="20%"/>](https://www.uni-bonn.de/startpage?set_language=en){:target="_blank"}&nbsp; &nbsp; &nbsp;
-[<img align="center" src="https://dlcfc4rxk1sfk.cloudfront.net/sidebar_logo_acblue.svg" alt="Nuvolos logo" width="20%"/>](https://nuvolos.cloud){:target="_blank"} &nbsp; &nbsp; &nbsp;
-[<img align="right" src="/assets/images/RN_German.png" alt="GRN logo" width="20%"/>](https://reproducibilitynetwork.de/){:target="_blank"}
+{: style='text-align: center;'}
+[<img src="/assets/images/UNI_Bonn_Logo_Standard_RZ_RGB.svg" alt="U Bonn logo" width="15%"/>](https://www.uni-bonn.de/startpage?set_language=en){:target="_blank"}&nbsp;        &nbsp; &nbsp;
+[<img src="https://dlcfc4rxk1sfk.cloudfront.net/sidebar_logo_acblue.svg" alt="Nuvolos logo" width="15%"/>](https://nuvolos.cloud){:target="_blank"} &nbsp; &nbsp; &nbsp;
+[<img src="/assets/images/RN_German.png" alt="GRN logo" width="15%"/>](https://reproducibilitynetwork.de/){:target="_blank"}
+
 
 {: .getintouch}
 
