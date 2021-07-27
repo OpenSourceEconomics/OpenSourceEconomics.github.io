@@ -38,3 +38,5 @@ The following private and public institutions have collaborated with OSE by pres
 * [McKinsey & Company](https://www.mckinsey.de/)
 * [Bundesrechnungshof (Federal Audit Office)](https://www.bundesrechnungshof.de/de)
 * [Deutsche Bank](https://www.deutsche-bank.de/pk.html)
+
+A small summary for some of the collaborations can be found [here](https://ose-data-science.readthedocs.io/en/latest/partners/index.html).
