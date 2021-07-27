@@ -37,3 +37,4 @@ The following private and public institutions have collaborated with OSE by pres
 * [Ernst & Young](https://www.ey.com/de_de)
 * [McKinsey & Company](https://www.mckinsey.de/)
 * [Bundesrechnungshof (Federal Audit Office)](https://www.bundesrechnungshof.de/de)
+* [Deutsche Bank](https://www.deutsche-bank.de/pk.html)
