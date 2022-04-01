@@ -20,7 +20,6 @@ remote_theme: daviddarnes/alembic@main
 
 # Site settings
 url: 'open-econ.org'
-#url: 'OpenSourceEconomics.github.io'
 baseurl: ''
 title: 'Open Source Economics'
 description: 'A platform for transdisciplinary collaboration'
@@ -28,26 +27,19 @@ permalink: pretty
 #logo: "/assets/images/OSE_Bonn_sbrg_web.svg"
 logo: "/assets/images/OSE_logo_RGB.svg"
 #favicon: "/favicon.ico"
-google_analytics: 'UA-188554161-1'
 
 # Header nav
 navigation_header:
 - title: About
   url: /
-- title: Research
-  url: /research/
-- title: Education
-  url: /education/
 - title: Software
   url: /software/
+- title: Teaching & Research
+  url: /teaching-and-research/
 - title: Events
   url: /events/
-- title: Resources
-  url: /resources/
-- title: Jobs
-  url: /jobs/
   
 # Footer nav
 navigation_footer:
 - title: Contact us
-  url: "mailto:info@open-econ.org"
+  url: "https://ose.zulipchat.com/"
