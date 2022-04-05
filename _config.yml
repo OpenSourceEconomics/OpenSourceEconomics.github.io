@@ -34,8 +34,10 @@ navigation_header:
   url: /
 - title: Software
   url: /software/
-- title: Teaching & Research
-  url: /teaching-and-research/
+- title: Research & Teaching
+  url: /research-and-teaching/
+- title: People
+  url: /people/
 - title: Events
   url: /events/
   

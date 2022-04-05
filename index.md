@@ -4,37 +4,48 @@ layout: page
 
 ---
 
-**A platform for transdisciplinary collaboration**
+**A platform for reproducible research with modern tools**
 
-Computational economic models specify an individual’s objective and the institutional
-and informational constraints of their economic environment. They are used to quantify
-the importance of competing economic mechanisms in determining economic outcomes and
-forecast the effects of alternative policies before their implementation. We provide a
-platform for economists, mathematicians, and computational scientists to facilitate the
-transdisciplinary collaboration in the development, analysis, and application of
-computational economic models. Together, we expand the set of possible economic
-questions that we can address and improve the quality of our answers.
+The advent of ever powerful computers, raises new challenges for computational
+economists and other computational scientists:
 
-We provide numerous [software libraries](software) that we use in our research. We also
-host several [events](events) to facilitate the exchange of ideas with other economists;
-for example, we organize a monthly OSE Meetup and an annual OSE Retreat. In support of
-our educational activities, we maintain a curated list of [resources](resources).
+1. Models become more and more complex, rendering traditional workflows ineffective.
+   Researchers have to learn about software engineering to enable collaboration in
+   larger groups, re-use code across projects and keep complexities manageable. We
+   provide courses and online materials to teach basic software engineering to
+   scientists. You can find the material [here](./research-and-teaching).
 
-All our research software is available on
-[GitHub](https://github.com/OpenSourceEconomics){:target="_blank"}.
+2. Large scale models still require the use of efficient algorithms, implementations and
+   hardware. Economists do not have to become experts in each of these areas but use
+   modern tools for just in time compilation, GPU computing, automatic differentiation,
+   numerical optimization, etc. We provide high quality tool packages for numerical
+   optimization, differentiation and statistical inference as well as packages that
+   implement economic models in a flexible and user friendly way using jax, numpy and
+   the modern scientific Python stack. You can find the material [here](./software).
+
+3. To make large projects reproducible, every step from data management to compilation
+   of the final paper needs to be fully automated. We provide teaching materials and
+   templates for reproducible research. You can find the material [here](./software).
+
+Many of our tools and teaching materials are also useful for scientists from other
+disciplines. We are supported by the [TRA Modelling](https://www.uni-bonn.de/en/research-and-teaching/research-profile/transdisciplinary-research-areas/tra-1-modelling)
+and partner with computer scientists and applied mathematicians to further improve our
+tools. We  are open to contributions, collaborations and feature requests across
+disciplines.
 
 
 {: .getintouch}
 
-**Contact:** Reach out on [Zulip](https://ose.zulipchat.com/#){:target="_blank"}<br>
-**Social Media:** Follow us on [Twitter](https://twitter.com/open_econ){:target="_blank"}
+**Contact:** 
+- Reach out on [Zulip](https://ose.zulipchat.com/#){:target="_blank"}<br>
+- Follow us on [Twitter](https://twitter.com/open_econ){:target="_blank"}
 
 {: .getintouch}
 In cooperation with
 
 {: style='text-align: center;'}
-[<img src="/assets/images/uni5.jpg" alt="U Bonn logo" width="10%"/>](https://www.uni-bonn.de/en){:target="_blank"}&nbsp; &emsp; &emsp; &emsp;
-[<img src="/assets/images/RN_German.png" alt="GRN logo" width="17%"/>](https://reproducibilitynetwork.de/){:target="_blank"}
+[<img src="/assets/images/uni5.jpg" alt="U Bonn logo" width="15%"/>](https://www.uni-bonn.de/en){:target="_blank"}&nbsp; &emsp; &emsp; &emsp;
+[<img src="/assets/images/RN_German.png" alt="GRN logo" width="30%"/>](https://reproducibilitynetwork.de/){:target="_blank"}
 
 {: .sansserif}
 We gratefully acknowledge funding by the Federal Ministry of Education and Research
