@@ -67,6 +67,7 @@ respy is an open-source framework written in Python for the simulation and
 estimation of some finite-horizon discrete choice dynamic programming models. The group
 of models which can be currently represented in `respy` are called Eckstein–Keane–Wolpin
 models. [(Documentation)](https://respy.readthedocs.io){:target="_blank"}
+> Eisenhauer P., Gabler J. & Janys L. (2021) [**Structural models for policy-making: Coping with parametric uncertainty**](https://arxiv.org/abs/2103.01115), *arXiv preprint 	arXiv:2103.01115*, submitted.
 
 ### pydsge
 pydsge is a Python package that allows to simulate, filter, and estimate DSGE models
@@ -86,6 +87,7 @@ ruspy is an open-source package for the simulation and estimation of a prototypi
 infinite-horizon dynamic discrete choice model based on [Rust
 (1987)](https://doi.org/10.2307/1911259){:target="_blank"}.
 [(Documentation)](https://ruspy.readthedocs.io){:target="_blank"}
+> Blesch M. & Eisenhauer P. (2021) [**Robust decision-making under risk and ambiguity**](https://arxiv.org/abs/2104.12573), *arXiv preprint arXiv:2104.12573*, submitted 
 
 
 ### grmpy

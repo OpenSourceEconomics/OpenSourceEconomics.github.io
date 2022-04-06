@@ -39,10 +39,18 @@ across disciplines.
 
 {: .getintouch}
 
-**Contact:** 
+### Contact
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 
-Reach out on [Zulip](https://ose.zulipchat.com/#){:target="_blank"} and follow us on
-[Twitter](https://twitter.com/open_econ){:target="_blank"}
+{: style="text-align:center;"}
+<a href="https://ose.zulipchat.com"><i class="fa fa-comments" style="font-size:50px; font-style: normal;"></i></a>&nbsp; &emsp; &emsp; &emsp;
+<a href="https://twitter.com/open_econ"><i class="fab fa-twitter" style="font-size:50px; font-style: normal;"></i></a>&nbsp; &emsp; &emsp; &emsp;
+<a href="https://github.com/opensourceeconmics"><i class="fab fa-github" style="font-size:50px; font-style: normal;"></i></a>
+
+Reach out on [Zulip](https://ose.zulipchat.com/#){:target="_blank"}, follow us on
+[Twitter](https://twitter.com/open_econ){:target="_blank"} and check out our
+[GitHub](https://github.com/opensourceeconmics){:target="_blank"}.
+
 
 {: .getintouch}
 
