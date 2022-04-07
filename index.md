@@ -29,7 +29,9 @@ for optimization, differentiation, and statistical inference that allow research
 utilize modern computing techniques with an easy-to-use interface.
 
 To see some examples where we combine a reproducible workflow with our methodological
-tools, see our [Research Software](./software#research-software).
+tools, see our [Research Software](./software#research-software). Examples range from
+life cycle models, epidemiological models, non-linear latent factor models to micro
+simulations.
 
 Many of our tools and teaching materials are also useful for scientists from other
 disciplines. We partner with computer scientists and applied mathematicians to further
@@ -56,7 +58,7 @@ Reach out on [Zulip](https://ose.zulipchat.com/#){:target="_blank"}, follow us o
 
 {: style='text-align: center;'}
 [<img src="/assets/images/uni5.jpg" alt="U Bonn logo" width="15%"/>](https://www.uni-bonn.de/en){:target="_blank"}&nbsp; &emsp; &emsp; &emsp;
-[<img src="/assets/images/tra_logo.png" alt="Tra logo" width="20%"/>](https://www.uni-bonn.de/en){:target="_blank"}&nbsp; &emsp; &emsp; &emsp;
+[<img src="/assets/images/tra_logo.png" alt="Tra logo" width="20%"/>](https://www.uni-bonn.de/en/research-and-teaching/research-profile/transdisciplinary-research-areas/tra-1-modelling){:target="_blank"}&nbsp; &emsp; &emsp; &emsp;
 [<img src="/assets/images/RN_German.png" alt="GRN logo" width="30%"/>](https://reproducibilitynetwork.de/){:target="_blank"}
 
 {: .sansserif}

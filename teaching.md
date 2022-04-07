@@ -3,7 +3,7 @@ layout: page
 title: Teaching
 ---
 
-The following courses are taught at the University of Bonn at the Masters/Doctoral
+The following courses are taught at the University of Bonn at the Master/Doctoral
 level. If you're not from Bonn you can still view the class material online.
 
 ---
