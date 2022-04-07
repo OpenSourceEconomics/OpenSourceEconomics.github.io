@@ -75,6 +75,7 @@ with occasionally binding constraints. As such, it allows to conduct full-blown 
 estimations (including Bayesian filtering) of macroeconomic models featuring an
 endogenous zero lower bound on nominal interest rates.
 [(Documentation)](https://pydsge.readthedocs.io){:target="_blank"}
+> Boehl G. (2022) [**Efficient Solution and Computation of Models with Occasionally Binding Constraints**](https://gregorboehl.com/live/obc_boehl.pdf), working paper.
 
 
 ### skillmodels

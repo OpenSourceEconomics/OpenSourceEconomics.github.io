@@ -67,6 +67,14 @@ title: People
     <tr>
         <td> 
             <figure>
+                <img src="../assets/images/people/gregor.jpg" width="175" height="175" />
+                <figcaption>
+                    <a href="https://gregorboehl.com/">Gregor Boehl</a>
+                </figcaption>
+            </figure>
+        </td>
+        <td> 
+            <figure>
                 <img src="../assets/images/people/philipp.jpg" width="175" height="175" />
                 <figcaption>
                     <a href="https://peisenha.github.io/">Philipp Eisenhauer</a>
