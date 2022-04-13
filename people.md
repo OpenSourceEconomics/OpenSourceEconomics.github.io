@@ -91,5 +91,16 @@ title: People
         </td>
     </tr>
 
+    <tr style="height: 25px !important;"> <td colspan="3"></td></tr>
+    <tr>
+        <td> 
+            <figure>
+                <img src="../assets/images/people/max.jpg" width="175" height="175" />
+                <figcaption>
+                    <a href="https://github.com/MaxBlesch">Max Blesch</a>
+                </figcaption>
+            </figure>
+        </td>
+    </tr>
 
 </table>
