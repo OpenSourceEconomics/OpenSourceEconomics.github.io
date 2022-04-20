@@ -17,7 +17,8 @@ implement economic models.
 pytask is a workflow management system which facilitates reproducible data analyses. Its
 features include: automatic discovery of tasks, a debug mode, repetition of a task with
 different inputs, and many more.  Further, it is easily extensible with plugins. Plugins
-are available for parallelization, LaTeX, R, Julia, Stata and more.
+are available for parallelization, LaTeX, Stata, R, Julia and more.
+[(Documentation)](https://pytask-dev.readthedocs.io/en/stable/){:target="_blank"}
 
 ### econ-project-templates
 With pytask as it's backbone, econ-project-templates aims to provide project templates
