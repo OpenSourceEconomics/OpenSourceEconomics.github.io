@@ -9,41 +9,40 @@ title: Events
 
 | **Event** | **Date** | **Presenter** |
 |:----------|:---------|:--------------|
-|OSE meets Comma Soft AG | 23. May 2023 | Dr. Andrej Fischer |
-|OSE meets Deutsche Bank | 27. June 2023 | Dr. Martin Slowik |
+|[OSE meets Comma Soft AG](#ose-meets-comma-soft-ag) | 23. May 2023 | Dr. Andrej Fischer |
+|[OSE meets Deutsche Bank](#ose-meets-deutsche-bank) | 27. June 2023 | Martin Slowik |
 
 <br>
 
-
 ##### OSE meets Comma Soft AG
 
-*Add description here...*
+*[Description will be added]*
 
-- Company: [Comma Soft AG](https://comma-soft.com/en/)
-- Presenter: Dr. Andrej Fischer, Dr. Lukas Kießling, Dr. Daniel Lenz
-
-**Where and When:**
-- Date: 6pm, 23. May 2023
-- Room: Faculty Lounge
-- Building: Juridicum
-- Address: Adenauerallee 24-42, 53113 Bonn
-- Zoom Link: MISSING
-
----
+- *Company*: [Comma Soft AG](https://comma-soft.com/en/)
+- *Presenter*: Dr. Andrej Fischer, Dr. Lukas Kießling, Dr. Daniel Lenz
+###### Where and When:
+- *Date:* 6pm, 23. May 2023
+- *Room*: [Faculty Lounge (Room 0.036)](../assets/images/juridicum_room_plan.jpg)
+- *Building*: Juridicum
+- *Address*: Adenauerallee 24-42, 53113 Bonn
+- *Zoom Link*: TBA
 
 ##### OSE meets Deutsche Bank
 
-*Add description here...*
+*[Description will be added]*
 
-- Company: [Deutsche Bank Riskmanagement](https://www.deutsche-bank.de/ub/unsere-loesungen/risikomanagement.html)
-- Presenter: Martin Slowik
+- *Company*: [Deutsche Bank](https://www.deutsche-bank.de/)
+- *Presenter*: Martin Slowik
+###### Where and When:
+- *Date*: 6pm, 27. June 2023
+- *Room*: [Faculty Lounge (Room 0.036)](../assets/images/juridicum_room_plan.jpg)
+- *Building*: Juridicum
+- *Address*: Adenauerallee 24-42, 53113 Bonn
+- *Zoom Link*: TBA
 
-**Where and When:**
-- Date: 6pm, 27. June 2023
-- Room: Faculty Lounge
-- Building: Juridicum
-- Address: Adenauerallee 24-42, 53113 Bonn
-- Zoom Link: MISSING
+
+#### Questions & Contact
+If you have any questions, feel free to contact [Tim Mensinger](https://tmensinger.com/).
 
 ### <ins>OSE Meetup</ins>
 
