@@ -14,6 +14,13 @@ title: Events
 
 <br>
 
+<body>
+    <p style="color:#FF0000;">If you want to attend an event, you need to fill out 
+    <a href="https://forms.gle/w1aMejXKiwHjiYeC7">this form </a>!!!</p>
+</body>
+
+<br>
+
 ##### OSE meets Comma Soft AG
 
 *[Description will be added]*
