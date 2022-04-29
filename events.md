@@ -5,48 +5,44 @@ title: Events
 
 ## <ins>OSE Meetup & Industry</ins>
 
-#### Timetable
-
-| **Event** | **Date** | **Presenter** |
-|:----------|:---------|:--------------|
-|[OSE meets Comma Soft AG](#ose-meets-comma-soft-ag) | 23. May 2023 | Dr. Andrej Fischer |
-|[OSE meets Deutsche Bank](#ose-meets-deutsche-bank) | 27. June 2023 | Martin Slowik |
+| **Event** | **Date** |
+|:----------|:---------|
+|[OSE meets Comma Soft AG](#ose-meets-comma-soft-ag) | 23. May 2023, 6pm | 
+|[OSE meets Deutsche Bank](#ose-meets-deutsche-bank) | 27. June 2023, 6pm | 
+|[OSE meets AXA](#ose-meets-axa) | 20. July 2023, 6pm | 
 
 <br>
-
 <body>
     <p style="color:#FF0000;">If you want to attend an event, you need to fill out 
     <a href="https://forms.gle/w1aMejXKiwHjiYeC7">this form </a>!!!</p>
 </body>
-
 <br>
 
-##### OSE meets Comma Soft AG
+##### Where
+- *Room*: [Faculty Lounge (Room 0.036)](../assets/images/juridicum_room_plan.jpg)
+- *Building*: Juridicum
+- *Address*: Adenauerallee 24-42, 53113 Bonn
 
-*[Description will be added]*
+##### OSE meets [Comma Soft AG](https://comma-soft.com/en/)
 
-- *Company*: [Comma Soft AG](https://comma-soft.com/en/)
+- *Talk Title*: Pay & Pray — How to measure the performance of offline marketing
 - *Presenter*: Dr. Andrej Fischer, Dr. Lukas Kießling, Dr. Daniel Lenz
-###### Where and When:
 - *Date:* 6pm, 23. May 2023
-- *Room*: [Faculty Lounge (Room 0.036)](../assets/images/juridicum_room_plan.jpg)
-- *Building*: Juridicum
-- *Address*: Adenauerallee 24-42, 53113 Bonn
 - *Zoom Link*: TBA
 
-##### OSE meets Deutsche Bank
+##### OSE meets [Deutsche Bank](https://www.deutsche-bank.de/)
 
-*[Description will be added]*
-
-- *Company*: [Deutsche Bank](https://www.deutsche-bank.de/)
+- *Talk Title:* Risk in Banking — Automated Decision-Making
 - *Presenter*: Martin Slowik
-###### Where and When:
 - *Date*: 6pm, 27. June 2023
-- *Room*: [Faculty Lounge (Room 0.036)](../assets/images/juridicum_room_plan.jpg)
-- *Building*: Juridicum
-- *Address*: Adenauerallee 24-42, 53113 Bonn
 - *Zoom Link*: TBA
 
+##### OSE meets [AXA](https://www.axa.de/)
+
+- *Talk Title*: The Joy of Pricing — Creating value from data
+- *Presenter*: Dr. Felix Schran, Dr. Heiko Wagner
+- *Date*: 6pm, 20. July 2023
+- *Zoom Link*: TBA
 
 #### Questions & Contact
 If you have any questions, feel free to contact [Tim Mensinger](https://tmensinger.com/).
