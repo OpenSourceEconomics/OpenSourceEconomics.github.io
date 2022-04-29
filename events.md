@@ -25,7 +25,7 @@ title: Events
 
 ##### OSE meets [Comma Soft AG](https://comma-soft.com/en/)
 
-- *Talk Title*: Pay & Pray — How to measure the performance of offline marketing
+- *Talk Title*: Pay & Pray — How to Measure the Performance of Offline Marketing
 - *Presenter*: Dr. Andrej Fischer, Dr. Lukas Kießling, Dr. Daniel Lenz
 - *Date:* 6pm, 23. May 2023
 - *Zoom Link*: TBA
@@ -39,7 +39,7 @@ title: Events
 
 ##### OSE meets [AXA](https://www.axa.de/)
 
-- *Talk Title*: The Joy of Pricing — Creating value from data
+- *Talk Title*: The Joy of Pricing — Creating Value from Data
 - *Presenter*: Dr. Felix Schran, Dr. Heiko Wagner
 - *Date*: 6pm, 20. July 2023
 - *Zoom Link*: TBA
