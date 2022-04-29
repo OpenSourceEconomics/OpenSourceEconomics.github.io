@@ -3,7 +3,7 @@ layout: page
 title: Events
 ---
 
-## <ins>OSE Meetup & Industry</ins>
+## <ins>OSE meets Industry</ins>
 
 | **Event** | **Date** |
 |:----------|:---------|
