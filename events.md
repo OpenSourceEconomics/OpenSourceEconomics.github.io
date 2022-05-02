@@ -5,47 +5,58 @@ title: Events
 
 ## <ins>OSE meets Industry</ins>
 
+OSE meets Industry is a series of three talks in which companies involved in modeling
+provide insight into their strategies for addressing real-world problems. The talks will
+discuss solved and unsolved problems. We hope to bring industry and academia one step
+closer together through active interaction between presenters and audience.
+
+The **target audience** is advanced master students and PhD students, postdocs and
+professors from all disciplines dealing with (mathematical) modeling and (scientific)
+programming.
+
+If you have any **questions** please reach out and **contact** 
+[Tim Mensinger](https://www.bgse.uni-bonn.de/en/people/student-directory/2020/tim-mensinger)
+
 | **Event** | **Date** |
 |:----------|:---------|
-|[OSE meets Comma Soft AG](#ose-meets-comma-soft-ag) | 23. May 2023, 6pm | 
-|[OSE meets Deutsche Bank](#ose-meets-deutsche-bank) | 27. June 2023, 6pm | 
-|[OSE meets AXA](#ose-meets-axa) | 20. July 2023, 6pm | 
+|[OSE meets Comma Soft AG](#ose-meets-comma-soft-ag) | 23. May 2022, 6pm | 
+|[OSE meets Deutsche Bank](#ose-meets-deutsche-bank) | 27. June 2022, 6pm | 
+|[OSE meets AXA](#ose-meets-axa) | 20. July 2022, 6pm | 
 
-<br>
-<body>
-    <p style="color:#FF0000;">If you want to attend an event, you need to fill out 
-    <a href="https://forms.gle/w1aMejXKiwHjiYeC7">this form </a>!!!</p>
-</body>
-<br>
+<div style="border: 2px solid #DC143C; padding-left: 1em; margin-top: 1.5em; margin-bottom: 1em;">
+<p style="text-align: center; color: #DC143C;">
+    <b>Important</b>
+</p>
+<p style="color: #DC143C;">
+    If you want to attend an event, you need to register
+    <a href="https://forms.gle/w1aMejXKiwHjiYeC7">here </a>!!!
+</p>
+</div>
 
-##### Where
+##### *Where?*
 - *Room*: [Faculty Lounge (Room 0.036)](../assets/images/juridicum_room_plan.jpg)
 - *Building*: Juridicum
 - *Address*: Adenauerallee 24-42, 53113 Bonn
 
 ##### OSE meets [Comma Soft AG](https://comma-soft.com/en/)
 
-- *Talk Title*: Pay & Pray — How to Measure the Performance of Offline Marketing
+- *Talk*: Pay & Pray — How to Measure the Performance of Offline Marketing
 - *Presenter*: Dr. Andrej Fischer, Dr. Lukas Kießling, Dr. Daniel Lenz
-- *Date:* 6pm, 23. May 2023
-- *Zoom Link*: TBA
+- *Date:* 6pm, 23. May 2022
 
 ##### OSE meets [Deutsche Bank](https://www.deutsche-bank.de/)
 
-- *Talk Title:* Risk in Banking — Automated Decision-Making
+- *Talk:* Risk in Banking — Automated Decision-Making
 - *Presenter*: Martin Slowik
-- *Date*: 6pm, 27. June 2023
-- *Zoom Link*: TBA
+- *Date*: 6pm, 27. June 2022
 
 ##### OSE meets [AXA](https://www.axa.de/)
 
-- *Talk Title*: The Joy of Pricing — Creating Value from Data
+- *Talk*: The Joy of Pricing — Creating Value from Data
 - *Presenter*: Dr. Felix Schran, Dr. Heiko Wagner
-- *Date*: 6pm, 20. July 2023
-- *Zoom Link*: TBA
+- *Date*: 6pm, 20. July 2022
 
-#### Questions & Contact
-If you have any questions, feel free to contact [Tim Mensinger](https://tmensinger.com/).
+---
 
 ### <ins>OSE Meetup</ins>
 
