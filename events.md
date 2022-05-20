@@ -33,6 +33,17 @@ If you have any **questions** please reach out and **contact**
 </p>
 </div>
 
+<div style="border: 2px solid #2D8CFF; padding-left: 1em; margin-top: 1.5em; margin-bottom: 1em;">
+<p style="text-align: center; color: #2D8CFF;">
+    <b>Zoom Link</b>
+</p>
+<p style="color: #2D8CFF;">
+    <a href="https://uni-bonn.zoom.us/j/67985556415?pwd=VXNCcVZhekREZjQ2TFBHVFY5K25TUT09">
+    https://uni-bonn.zoom.us/j/67985556415?pwd=VXNCcVZhekREZjQ2TFBHVFY5K25TUT09
+    </a>
+</p>
+</div>
+
 ##### *Where?*
 - *Room*: [Faculty Lounge (Room 0.036)](../assets/images/juridicum_room_plan.jpg)
 - *Building*: Juridicum
