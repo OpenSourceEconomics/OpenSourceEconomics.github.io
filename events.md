@@ -20,7 +20,7 @@ If you have any **questions** please reach out and **contact**
 | **Event** | **Date** |
 |:----------|:---------|
 |[OSE meets Comma Soft AG](#ose-meets-comma-soft-ag) | 23. May 2022, 6pm | 
-|[OSE meets Deutsche Bank AG](#ose-meets-deutsche-bank) | 27. June 2022, 6pm | 
+|[**OSE meets Deutsche Bank AG**](#ose-meets-deutsche-bank) | **27. June 2022, 6pm** | 
 |[OSE meets AXA Konzern AG](#ose-meets-axa) | 20. July 2022, 6pm | 
 
 <div style="border: 2px solid #DC143C; padding-left: 1em; margin-top: 1.5em; margin-bottom: 1em;">
@@ -35,25 +35,53 @@ If you have any **questions** please reach out and **contact**
 
 <div style="border: 2px solid #2D8CFF; padding-left: 1em; margin-top: 1.5em; margin-bottom: 1em;">
 <p style="text-align: center; color: #2D8CFF;">
-    <b>Zoom Link</b>
+    <b>Upcoming Event: 27. June</b>
 </p>
+
 <p style="color: #2D8CFF;">
-    <a href="https://uni-bonn.zoom.us/j/67985556415?pwd=VXNCcVZhekREZjQ2TFBHVFY5K25TUT09">
-    https://uni-bonn.zoom.us/j/67985556415?pwd=VXNCcVZhekREZjQ2TFBHVFY5K25TUT09
-    </a>
+
+<h5>OSE meets <a href="https://www.deutsche-bank.de/">Deutsche Bank AG</a></h5>
+
+<ul style="padding-left: 1em;">
+<li>
+<i>Talk</i>: Risk in Banking — Automated Decision-Making
+</li>
+<li>
+<i>Presenter</i>: Martin Slowik
+</li>
+<li>
+<i>Date</i>: 6pm, 27. June 2022
+</li>
+</ul>
+
+<h5><i>Where?</i></h5>
+
+<ul style="padding-left: 1em;">
+<li>
+<i>Room</i>: <a href="../assets/images/juridicum_room_plan.jpg">Faculty Lounge (Room 0.036)</a>
+</li>
+<li>
+<i>Building</i>: Juridicum 
+</li>
+<li>
+<i>Address</i>: Adenauerallee 24-42, 53113 Bonn
+</li>
+</ul>
+
+<h5><i>Zoom Link</i></h5>
+<ul style="padding-left: 1em;">
+<li>
+<a href="
+ https://uni-bonn.zoom.us/j/62757902854?pwd=ZkNGR0NaR0k1bWZvUEtFRW9WWWlmUT09">
+ https://uni-bonn.zoom.us/j/62757902854?pwd=ZkNGR0NaR0k1bWZvUEtFRW9WWWlmUT09 
+</a>
+</li>
+</ul>
+
+
+
 </p>
 </div>
-
-##### *Where?*
-- *Room*: [Faculty Lounge (Room 0.036)](../assets/images/juridicum_room_plan.jpg)
-- *Building*: Juridicum
-- *Address*: Adenauerallee 24-42, 53113 Bonn
-
-##### OSE meets [Comma Soft AG](https://comma-soft.com/en/)
-
-- *Talk*: Pay & Pray — How to Measure the Performance of Offline Marketing
-- *Presenter*: Dr. Andrej Fischer, Dr. Lukas Kießling, Dr. Daniel Lenz
-- *Date:* 6pm, 23. May 2022
 
 ##### OSE meets [Deutsche Bank AG](https://www.deutsche-bank.de/)
 
@@ -66,6 +94,12 @@ If you have any **questions** please reach out and **contact**
 - *Talk*: The Joy of Pricing — Creating Value from Data
 - *Presenter*: Dr. Felix Schran, Dr. Heiko Wagner
 - *Date*: 6pm, 20. July 2022
+
+##### OSE meets [Comma Soft AG](https://comma-soft.com/en/)
+
+- *Talk*: Pay & Pray — How to Measure the Performance of Offline Marketing
+- *Presenter*: Dr. Andrej Fischer, Dr. Lukas Kießling, Dr. Daniel Lenz
+- *Date:* 6pm, 23. May 2022
 
 ---
 
