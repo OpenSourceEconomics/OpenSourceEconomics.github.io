@@ -20,8 +20,8 @@ If you have any **questions** please reach out and **contact**
 | **Event** | **Date** |
 |:----------|:---------|
 |[OSE meets Comma Soft AG](#ose-meets-comma-soft-ag) | 23. May 2022, 6pm | 
-|[**OSE meets Deutsche Bank AG**](#ose-meets-deutsche-bank) | **27. June 2022, 6pm** | 
-|[OSE meets AXA Konzern AG](#ose-meets-axa) | 20. July 2022, 6pm | 
+|[OSE meets Deutsche Bank AG](#ose-meets-deutsche-bank) | 27. June 2022, 6pm | 
+|[**OSE meets AXA Konzern AG**](#ose-meets-axa) | **20. July 2022, 6pm** | 
 
 <div style="border: 2px solid #DC143C; padding-left: 1em; margin-top: 1.5em; margin-bottom: 1em;">
 <p style="text-align: center; color: #DC143C;">
@@ -35,22 +35,22 @@ If you have any **questions** please reach out and **contact**
 
 <div style="border: 2px solid #2D8CFF; padding-left: 1em; margin-top: 1.5em; margin-bottom: 1em;">
 <p style="text-align: center; color: #2D8CFF;">
-    <b>Upcoming Event: 27. June</b>
+    <b>Upcoming Event: 20. July</b>
 </p>
 
 <p style="color: #2D8CFF;">
 
-<h5>OSE meets <a href="https://www.deutsche-bank.de/">Deutsche Bank AG</a></h5>
+<h5>OSE meets <a href="https://www.axa.de/">AXA Konzern AG</a></h5>
 
 <ul style="padding-left: 1em;">
 <li>
-<i>Talk</i>: Risk in Banking — Automated Decision-Making
+<i>Talk</i>: The Joy of Pricing — Creating Value from Data
 </li>
 <li>
-<i>Presenter</i>: Martin Slowik
+<i>Presenter</i>: Dr. Felix Schran, Dr. Heiko Wagner
 </li>
 <li>
-<i>Date</i>: 6pm, 27. June 2022
+<i>Date</i>: 6pm, 20. July 2022
 </li>
 </ul>
 
@@ -58,7 +58,7 @@ If you have any **questions** please reach out and **contact**
 
 <ul style="padding-left: 1em;">
 <li>
-<i>Room</i>: <a href="../assets/images/juridicum_room_plan.jpg">Faculty Lounge (Room 0.036)</a>
+<i>Room</i>: <a href="../assets/images/juridicum_room_plan.jpg">Reinhard Selten Raum (Room 0.017)</a>
 </li>
 <li>
 <i>Building</i>: Juridicum 
@@ -67,17 +67,6 @@ If you have any **questions** please reach out and **contact**
 <i>Address</i>: Adenauerallee 24-42, 53113 Bonn
 </li>
 </ul>
-
-<h5><i>Zoom Link</i></h5>
-<ul style="padding-left: 1em;">
-<li>
-<a href="
- https://uni-bonn.zoom.us/j/62757902854?pwd=ZkNGR0NaR0k1bWZvUEtFRW9WWWlmUT09">
- https://uni-bonn.zoom.us/j/62757902854?pwd=ZkNGR0NaR0k1bWZvUEtFRW9WWWlmUT09 
-</a>
-</li>
-</ul>
-
 
 
 </p>
