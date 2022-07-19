@@ -54,6 +54,14 @@ If you have any **questions** please reach out and **contact**
 </li>
 </ul>
 
+<h5><i>Zoom Link</i></h5>
+
+<ul style="padding-left: 1em;">
+<li>
+<a href="https://uni-bonn.zoom.us/j/61112007947?pwd=WjlXNktkdzJNNHZtNXVEeUsrTU0rQT09">https://uni-bonn.zoom.us/j/61112007947?pwd=WjlXNktkdzJNNHZtNXVEeUsrTU0rQT09</a>
+</li>
+</ul>
+
 <h5><i>Where?</i></h5>
 
 <ul style="padding-left: 1em;">
