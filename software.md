@@ -68,7 +68,7 @@ sid is an agent-based simulation model for infectious diseases like COVID-19. It
 from simple examples to complex models which makes it an ideal tool for prototyping,
 educational purposes, and research.
 [(Documentation)](https://sid-dev.readthedocs.io/en/latest/){:target="_blank"}
-> Gabler J., Raabe T., Röhrl K. & von Gaudecker H. (2022) [**The Effectiveness of Strategies to Contain SARS-CoV-2: Testing, Vaccinations, and NPIs**](https://arxiv.org/abs/2106.11129),  *arXiv preprint arXiv:2106.11129*, submitted.
+> Gabler J., Raabe T., Röhrl K. & von Gaudecker H. (2022) [**The effectiveness of testing, vaccinations and contact restrictions for containing the CoViD-19 pandemic**](https://www.nature.com/articles/s41598-022-12015-9),  *Scientific Reports*.
 
 ### respy
 respy is an open-source framework written in Python for the simulation and
