@@ -25,8 +25,11 @@ We thus develop software of various kinds. On this site we group it into
    inefficient.[pytask](http://github.com/pytask-dev/pytask) provides an alternative, a
    workflow management system inspired by
    [pytest](https://github.com/pytest-dev/pytest). Newcomers can migrate their project
-   to our workflow tools using the [econ-project-templates]() or for more experienced
-   users the bare [cookiecutter-pytask-project]() template.
+   to our workflow tools using the
+   [econ-project-templates](http://github.com/opensourceeconomics/econ-project-templates)
+   or for more experienced users the bare
+   [cookiecutter-pytask-project](https://github.com/pytask-dev/cookiecutter-pytask-project)
+   template.
 3. [**Economic Models and Applications**](/models/). We provide numerous packages that
    solve certain types of models. Examples are life-cycle models (lcm), dynamic latent
    factor models (skillmodels) and actual applications, for example, contact models in
