@@ -8,15 +8,32 @@ layout: page
 
 Our group focuses on three main problems: How do we organize a research workflow in a
 reproducible and efficient way? How can we utilize methods developed in one project
-across multiple projects? And, how can we implement research software in an extensible
+across multiple projects? And how can we implement research software in an extensible
 fashion?
 
 We thus develop software of various kinds. On this site we group it into
-1. [General Purpose Tools](/tools/)
-2. [Workflow tools](/workflow/). 
-3. [Economic Models and Applications](/models/).
 
-Locally and virtually, we organize events and teach courses.
+1. [**General Purpose Tools**](/tools/). Our most developed package is
+   [estimagic](http://github.com/opensourceeconomics/estimagic), a library for
+   non-linear optimization with or without constraints. Other helpful tools forming the
+   basis of many of our projects are
+   [pybaum](http://github.com/opensourceeconomics/pybaum) and
+   [dags](http://github.com/opensourceeconomics/dags).
+2. [**Workflow tools**](/workflow/). The basis of our projects is reproducibility. Often
+   researchers hijack build systems for this. However, these are not designed for the
+   typical research workflow and are thus
+   inefficient.[pytask](http://github.com/pytask-dev/pytask) provides an alternative, a
+   workflow management system inspired by
+   [pytest](https://github.com/pytest-dev/pytest). Newcomers can migrate their project
+   to our workflow tools using the [econ-project-templates]() or for more experienced
+   users the bare [cookiecutter-pytask-project]() template.
+3. [**Economic Models and Applications**](/models/). We provide numerous packages that
+   solve certain types of models. Examples are life-cycle models (lcm), dynamic latent
+   factor models (skillmodels) and actual applications, for example, contact models in
+   the context of covid (sid).
+
+Locally and virtually, we organize [events](/events/) and teach courses on effective
+programming practices.
 
 
 {: .getintouch}
