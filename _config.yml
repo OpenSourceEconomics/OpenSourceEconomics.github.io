@@ -32,10 +32,12 @@ logo: "/assets/images/OSE_logo_RGB.svg"
 navigation_header:
 - title: About
   url: /
-- title: Software
-  url: /software/
-- title: Teaching
-  url: /teaching/
+- title: Tools
+  url: /tools/
+- title: Workflow
+  url: /workflow/
+- title: Models
+  url: /models/
 - title: People
   url: /people/
 - title: Events
