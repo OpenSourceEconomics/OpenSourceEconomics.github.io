@@ -77,7 +77,7 @@ title: People
             <figure>
                 <img src="../assets/images/people/philipp.jpg" width="175" height="175" />
                 <figcaption>
-                    <a href="https://peisenha.github.io/">Philipp Eisenhauer</a>
+                    <a href="https://github.com/peisenha">Philipp Eisenhauer</a>
                 </figcaption>
             </figure>
         </td>
@@ -98,6 +98,18 @@ title: People
                 <img src="../assets/images/people/max.jpg" width="175" height="175" />
                 <figcaption>
                     <a href="https://github.com/MaxBlesch">Max Blesch</a>
+                </figcaption>
+            </figure>
+        </td>
+    </tr>
+
+    <tr style="height: 25px !important;"> <td colspan="3"></td></tr>
+    <tr>
+        <td> 
+            <figure>
+                <img src="../assets/images/people/moritz.jpeg" width="175" height="175" />
+                <figcaption>
+                    <a href="https://github.com/mo2561057">Moritz Mendel</a>
                 </figcaption>
             </figure>
         </td>
