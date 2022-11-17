@@ -3,14 +3,6 @@ layout: page
 title: Software
 ---
 
-Some of our projects aim to facilitate the research workflow itself and make it more
-reproducible. These will be found in the section [Workflow Tools](#workflow-tools).
-Others try to facilitate research by providing methodological tools and graphical
-assistance. These will be found in the section
-[Methodological Tools](#methodological-tools). Many of these tools are used in our
-research. In the section [Research Software](#research-software) we list packages that
-implement economic models.
-
 ## <ins>*General purpose tools*<ins>
 
 ### estimagic
@@ -34,6 +26,11 @@ dags provides tools to create executable dags from interdependent functions.
 [(Documentation)](https://dags.readthedocs.io){:target="_blank"}
 
 ## <ins>*Economic models and applications*</ins>
+
+### lcm
+lcm (life-cycle models) aims to generalize and facilitate the specification, solving,
+and estimation of dynamic choice models.
+[(GitHub)](https://github.com/opensourceeconomics/lcm)
 
 ### sid
 sid is an agent-based simulation model for infectious diseases like COVID-19. It scales
@@ -75,7 +72,6 @@ infinite-horizon dynamic discrete choice model based on [Rust
 [(Documentation)](https://ruspy.readthedocs.io){:target="_blank"}
 > Blesch M. & Eisenhauer P. (2021) [**Robust decision-making under risk and ambiguity**](https://arxiv.org/abs/2104.12573), *arXiv preprint arXiv:2104.12573*, submitted 
 
-
 ### grmpy
 grmpy is an open-source Python package for the simulation and estimation of the
 generalized Roy model. It serves as a teaching tool to promote the conceptual framework
@@ -99,8 +95,3 @@ the most frequently used programming languages in economics (i.e., Python, Stata
 Julia).
 [(Documentation)](https://econ-project-templates.readthedocs.io){:target="_blank"}
 
-## <ins>*Archived Packages*</ins>
-
-- [econsa](https://econsa.readthedocs.io){:target="_blank"}
-- [robupy](https://robupy.readthedocs.io){:target="_blank"}
-- [temfpy](https://temfpy.readthedocs.io){:target="_blank"}

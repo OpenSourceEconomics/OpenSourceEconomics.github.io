@@ -101,10 +101,6 @@ title: People
                 </figcaption>
             </figure>
         </td>
-    </tr>
-
-    <tr style="height: 25px !important;"> <td colspan="3"></td></tr>
-    <tr>
         <td> 
             <figure>
                 <img src="../assets/images/people/moritz.jpeg" width="175" height="175" />
@@ -113,6 +109,7 @@ title: People
                 </figcaption>
             </figure>
         </td>
+
     </tr>
 
 </table>
