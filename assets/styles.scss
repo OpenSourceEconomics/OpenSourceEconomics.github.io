@@ -231,3 +231,8 @@ a:hover, a:active, a:focus {
 /* .header .container {
   position: fixed;
 } */
+
+/* Change color of left border of blockquote to OSE Blue */
+.typeset blockquote p {
+    border-left: 0.15rem solid #05bf85;
+}
