@@ -5,10 +5,10 @@ title: People
 
 ---
 
-<table>
+<table class="typeset">
 
     <tr>
-        <td> 
+        <td style="width: 33.33%;"> 
             <figure>
                 <img src="../assets/images/people/hmg.jpg" width="175" height="175" />
                 <figcaption>
@@ -16,7 +16,7 @@ title: People
                 </figcaption>
             </figure>
         </td>
-        <td> 
+        <td style="width: 33.34%;"> 
             <figure>
                 <img src="../assets/images/people/janos.jpg" width="175" height="175" />
                 <figcaption>
@@ -24,7 +24,7 @@ title: People
                 </figcaption>
             </figure>
         </td>
-        <td> 
+        <td style="width: 33.33%;"> 
             <figure>
                 <img src="../assets/images/people/christian.jpg" width="175" height="175" />
                 <figcaption>
