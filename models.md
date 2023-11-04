@@ -13,7 +13,7 @@ sid is an agent-based simulation model for infectious diseases like COVID-19. It
 from simple examples to complex models which makes it an ideal tool for prototyping,
 educational purposes, and research.
 [(Documentation)](https://sid-dev.readthedocs.io/en/latest/){:target="_blank"}
-> Gabler J., Raabe T., Röhrl K. & von Gaudecker H. (2022) [**The Effectiveness of Strategies to Contain SARS-CoV-2: Testing, Vaccinations, and NPIs**](https://www.nature.com/articles/s41598-022-12015-9),  *Scientific Reports*, 2022.
+> Gabler J., Raabe T., Röhrl K. & von Gaudecker H. (2022) [**The Effectiveness of Strategies to Contain SARS-CoV-2: Testing, Vaccinations, and NPIs**](https://www.nature.com/articles/s41598-022-12015-9), *Scientific Reports*, vol.&nbsp;12, Article&nbsp;8048.
 
 ### respy
 respy is an open-source framework written in Python for the simulation and
@@ -28,7 +28,7 @@ with occasionally binding constraints. As such, it allows to conduct full-blown 
 estimations (including Bayesian filtering) of macroeconomic models featuring an
 endogenous zero lower bound on nominal interest rates.
 [(Documentation)](https://pydsge.readthedocs.io){:target="_blank"}
-> Boehl G. (2022) [**Efficient Solution and Computation of Models with Occasionally Binding Constraints**](https://gregorboehl.com/live/obc_boehl.pdf), working paper.
+> Boehl G. (2022) [**Efficient Solution and Computation of Models with Occasionally Binding Constraints**](https://doi.org/10.1016/j.jedc.2022.104523), *Journal of Economic Dynamics and Control*, vol.&nbsp;143, Article&nbsp;104523. [Working paper version](https://gregorboehl.com/live/obc_boehl.pdf).
 
 ### skillmodels
 skillmodels a Python implementation of estimators for skill formation models. 
