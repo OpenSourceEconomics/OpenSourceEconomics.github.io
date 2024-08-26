@@ -3,7 +3,7 @@ layout: page
 title: Events
 ---
 
-### <ins>OSE Meetup</ins>
+### OSE Meetup
 
 We arrange bi-monthly events that provide participants with an opportunity to present
 and learn about different software solutions and receive feedback on their current
@@ -13,7 +13,7 @@ details.
 
 ---
 
-### <ins>OSE meets Industry</ins>
+### OSE meets Industry
 
 OSE meets Industry is a series of talks in which companies involved in modeling provide
 insight into their strategies for addressing real-world problems. The talks discuss
