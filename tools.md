@@ -4,12 +4,16 @@ title: General Purpose Tools
 ---
 
 ### optimagic
+We started developing optimagic under the name estimagic out of a need to robustify
+estimation of nonlinear economic models, including statistical inference. That
+functionality is now a subpackage of optimagic, which is still called estimagic.
+Optimagic now has its own organization on Github:
+[optimagic-dev](https://github.com/optimagic-dev).
+
 optimagic is a Python package for numerical optimization. It is a unified interface to
 optimizers from SciPy, NlOpt and many other Python packages. optimagic’s `minimize`
-function works just like SciPy’s, but you get more optimizers for free. On top you get
-powerful diagnostic tools, parallel numerical derivatives and more. optimagic was
-formerly called estimagic, because it also provides functionality to perform statistical
-inference on estimated parameters. estimagic is now a subpackage of optimagic.
+function works just like SciPy’s. On top, you get access to more optimizers, powerful
+diagnostic tools, parallel numerical derivatives and more.
 [(Documentation)](https://optimagic.readthedocs.io){:target="_blank"}
 
 ### pybaum
