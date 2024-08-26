@@ -14,7 +14,7 @@ fashion?
 We thus develop software of various kinds. On this site we group it into
 
 1. [**General Purpose Tools**](/tools/). Our most developed package is
-   [estimagic](http://github.com/opensourceeconomics/estimagic), a library for
+   [optimagic](http://github.com/opensourceeconomics/optimagic), a library for
    non-linear optimization with or without constraints. Other helpful tools forming the
    basis of many of our projects are
    [pybaum](http://github.com/opensourceeconomics/pybaum) and

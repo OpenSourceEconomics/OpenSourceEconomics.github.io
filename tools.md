@@ -3,20 +3,19 @@ layout: page
 title: General Purpose Tools
 ---
 
-### estimagic
-estimagic is a Python package to fit large-scale empirical models to data and make
-inferences about the estimated model parameters. It is especially suited to solve
-difficult optimization problems. It provides several advantages over similar packages,
-including a unified interface that supports a large number of local and global
-optimization algorithms and the possibility of monitoring the optimization procedure via
-a beautiful interactive dashboard. It provides tools for nonlinear optimization,
-numerical differentiation, and statistical inference.
-[(Documentation)](https://estimagic.readthedocs.io){:target="_blank"}
+### optimagic
+optimagic is a Python package for numerical optimization. It is a unified interface to
+optimizers from SciPy, NlOpt and many other Python packages. optimagic’s `minimize`
+function works just like SciPy’s, but you get more optimizers for free. On top you get
+powerful diagnostic tools, parallel numerical derivatives and more. optimagic was
+formerly called estimagic, because it also provides functionality to perform statistical
+inference on estimated parameters. estimagic is now a subpackage of optimagic.
+[(Documentation)](https://optimagic.readthedocs.io){:target="_blank"}
 
 ### pybaum
 pybaum provides tools to work with pytrees which is a concept borrowed from JAX.
 Pytree's refer to tree-like structures built out of container-like Python objects. We
-use pybaum in several of our packages. One notable example is estimagic.
+use pybaum in several of our packages. One notable example is optimagic.
 [(Documentation)](https://pybaum.readthedocs.io){:target="_blank"}
 
 ### dags
