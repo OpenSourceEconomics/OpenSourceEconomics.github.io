@@ -16,7 +16,7 @@ organization on Github: [optimagic-dev](https://github.com/optimagic-dev).
 
 ### pybaum
 pybaum provides tools to work with pytrees which is a concept borrowed from JAX.
-Pytree's refer to tree-like structures built out of container-like Python objects.
+Pytrees refer to tree-like structures built out of container-like Python objects.
 [(Documentation)](https://pybaum.readthedocs.io){:target="_blank"}
 
 ### dags
