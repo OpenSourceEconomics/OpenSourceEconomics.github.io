@@ -5,7 +5,7 @@ title: General Purpose Tools
 
 ### optimagic
 optimagic is a Python package for numerical optimization. It is a unified interface to
-optimizers from SciPy, NlOpt and many other Python packages. optimagic’s `minimize`
+optimizers from SciPy, NlOpt, and many other Python packages. optimagic’s `minimize`
 function works just like SciPy’s, but you get more optimizers for free. On top you get
 powerful diagnostic tools, parallel numerical derivatives and more. We started
 developing optimagic under the name estimagic out of a need to robustify estimation of
