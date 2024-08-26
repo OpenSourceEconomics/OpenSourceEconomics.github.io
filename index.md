@@ -14,15 +14,15 @@ fashion?
 We thus develop software of various kinds. On this site we group it into
 
 1. [**General Purpose Tools**](/tools/). Our most developed package is
-   [estimagic](http://github.com/opensourceeconomics/estimagic), a library for
+   [optimagic](http://github.com/optimagic-dev/optimagic), a library for
    non-linear optimization with or without constraints. Other helpful tools forming the
    basis of many of our projects are
    [pybaum](http://github.com/opensourceeconomics/pybaum) and
    [dags](http://github.com/opensourceeconomics/dags).
-2. [**Workflow tools**](/workflow/). The basis of our projects is reproducibility. Often
+2. [**Workflow Tools**](/workflow/). The basis of our projects is reproducibility. Often
    researchers hijack build systems for this. However, these are not designed for the
    typical research workflow and are thus
-   inefficient.[pytask](http://github.com/pytask-dev/pytask) provides an alternative, a
+   inefficient. [pytask](http://github.com/pytask-dev/pytask) provides an alternative, a
    workflow management system inspired by
    [pytest](https://github.com/pytest-dev/pytest). Newcomers can migrate their project
    to our workflow tools using the

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Workflow tools
+title: Workflow Tools
 ---
 
 ### pytask
