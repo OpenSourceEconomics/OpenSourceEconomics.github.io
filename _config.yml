@@ -40,8 +40,6 @@ navigation_header:
   url: /models/
 - title: People
   url: /people/
-- title: Events
-  url: /events/
   
 # Footer nav
 navigation_footer:
