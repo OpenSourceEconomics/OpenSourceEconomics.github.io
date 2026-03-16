@@ -560,6 +560,146 @@ window.BENCHMARK_DATA = {
             "extra": "rounds: 30, min: 0.029752, max: 0.040739"
           }
         ]
+      },
+      {
+        "commit": {
+          "id": "89d7b4635f188d311db25b3d4ba6514e61e7aa92",
+          "message": "",
+          "timestamp": "2026-03-16T20:30:51+01:00",
+          "author": {
+            "name": "",
+            "email": ""
+          }
+        },
+        "date": 1773689451000,
+        "benches": [
+          {
+            "name": "test_grid_types[lin-50]",
+            "unit": "s",
+            "value": 0.14016629637399092,
+            "range": "\u00b1 0.005965",
+            "extra": "rounds: 8, min: 0.131834, max: 0.149014"
+          },
+          {
+            "name": "test_grid_types[lin-200]",
+            "unit": "s",
+            "value": 0.13769643324985736,
+            "range": "\u00b1 0.006359",
+            "extra": "rounds: 8, min: 0.127341, max: 0.147723"
+          },
+          {
+            "name": "test_grid_types[lin-500]",
+            "unit": "s",
+            "value": 0.12681822777772644,
+            "range": "\u00b1 0.011938",
+            "extra": "rounds: 9, min: 0.115636, max: 0.148647"
+          },
+          {
+            "name": "test_grid_types[log-50]",
+            "unit": "s",
+            "value": 0.13363197837497864,
+            "range": "\u00b1 0.008881",
+            "extra": "rounds: 8, min: 0.125916, max: 0.150337"
+          },
+          {
+            "name": "test_grid_types[log-200]",
+            "unit": "s",
+            "value": 0.12617870750045768,
+            "range": "\u00b1 0.002563",
+            "extra": "rounds: 8, min: 0.122709, max: 0.130508"
+          },
+          {
+            "name": "test_grid_types[log-500]",
+            "unit": "s",
+            "value": 0.12148727944440907,
+            "range": "\u00b1 0.007532",
+            "extra": "rounds: 9, min: 0.113470, max: 0.137123"
+          },
+          {
+            "name": "test_grid_types[irreg-50]",
+            "unit": "s",
+            "value": 0.12869434949925562,
+            "range": "\u00b1 0.009925",
+            "extra": "rounds: 8, min: 0.119627, max: 0.145463"
+          },
+          {
+            "name": "test_grid_types[irreg-200]",
+            "unit": "s",
+            "value": 0.1227581373334235,
+            "range": "\u00b1 0.006557",
+            "extra": "rounds: 9, min: 0.114307, max: 0.131680"
+          },
+          {
+            "name": "test_grid_types[irreg-500]",
+            "unit": "s",
+            "value": 0.1370492395548758,
+            "range": "\u00b1 0.009001",
+            "extra": "rounds: 9, min: 0.123187, max: 0.145946"
+          },
+          {
+            "name": "test_mahler_yum",
+            "unit": "s",
+            "value": 3.833245540400094,
+            "range": "\u00b1 0.036809",
+            "extra": "rounds: 5, min: 3.788920, max: 3.884427"
+          },
+          {
+            "name": "test_simulate_precautionary[1000]",
+            "unit": "s",
+            "value": 0.40795744900024145,
+            "range": "\u00b1 0.061102",
+            "extra": "rounds: 5, min: 0.360675, max: 0.513042"
+          },
+          {
+            "name": "test_simulate_precautionary[10000]",
+            "unit": "s",
+            "value": 3.16773256420056,
+            "range": "\u00b1 0.364756",
+            "extra": "rounds: 5, min: 2.753752, max: 3.709699"
+          },
+          {
+            "name": "test_simulate_precautionary[50000]",
+            "unit": "s",
+            "value": 16.08774189379983,
+            "range": "\u00b1 0.591068",
+            "extra": "rounds: 5, min: 15.368777, max: 16.884297"
+          },
+          {
+            "name": "test_solve_tiny",
+            "unit": "s",
+            "value": 0.00942137512727498,
+            "range": "\u00b1 0.000588",
+            "extra": "rounds: 102, min: 0.008512, max: 0.011334"
+          },
+          {
+            "name": "test_precautionary[10]",
+            "unit": "s",
+            "value": 0.12736734828649787,
+            "range": "\u00b1 0.009117",
+            "extra": "rounds: 7, min: 0.117640, max: 0.139314"
+          },
+          {
+            "name": "test_precautionary[50]",
+            "unit": "s",
+            "value": 0.12104122277782557,
+            "range": "\u00b1 0.002757",
+            "extra": "rounds: 9, min: 0.117040, max: 0.126249"
+          },
+          {
+            "name": "test_precautionary[200]",
+            "unit": "s",
+            "value": 0.12303311987488996,
+            "range": "\u00b1 0.003671",
+            "extra": "rounds: 8, min: 0.116204, max: 0.128552"
+          },
+          {
+            "name": "test_mortality",
+            "unit": "s",
+            "value": 0.17727252566631554,
+            "range": "\u00b1 0.002921",
+            "extra": "rounds: 6, min: 0.172816, max: 0.180464"
+          }
+        ]
       }
     ]
   }
