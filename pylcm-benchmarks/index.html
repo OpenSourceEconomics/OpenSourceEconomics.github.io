@@ -1,167 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>PyLCM Benchmarks</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://cdn.jsdelivr.net/npm/plotly.js-basic-dist-min@2"></script>
-  <style>
-    body { font-family: system-ui, sans-serif; margin: 2rem; }
-    h1 { margin-bottom: 0.5rem; }
-    .chart-box { margin: 1rem 0; max-width: 900px; }
-    details { margin: 0.5rem 0; }
-    summary { cursor: pointer; font-weight: 600; }
-    p.meta { color: #666; font-size: 0.9rem; }
-    p.subtitle { color: #888; font-size: 0.85rem; margin: 0.2rem 0 0.5rem; }
-  </style>
-</head>
-<body>
-  <h1>PyLCM Benchmarks</h1>
-  <p class="meta">Performance tracking across commits.</p>
-  <div id="charts"></div>
-  <script src="dev/bench/data.js"></script>
-  <script>
-  (function() {
-    var data = window.BENCHMARK_DATA;
-    if (!data || !data.entries) {
-      document.getElementById('charts').innerHTML =
-        '<p>No benchmark data available yet.</p>';
-      return;
-    }
-    var GH = 'https://github.com/OpenSourceEconomics/pylcm/commit/';
-    var DESCRIPTIONS = {
-      'test_solve': 'Precautionary savings \u2014 solve only',
-      'test_simulate': 'Precautionary savings \u2014 simulation only',
-      'test_solve_and_simulate': 'Precautionary savings \u2014 solve + simulate',
-      'test_grid_lookup': 'Precautionary savings \u2014 lin vs irreg grids',
-      'test_mortality': 'Mortality model \u2014 solve + simulate',
-      'test_mahler_yum_2024': 'Mahler & Yum (2024) replication'
-    };
-    function formatTitle(group) {
-      var s = group.replace(/^test_/, '');
-      return s.replace(/(^|_)([a-z0-9])/g, function(m, sep, ch) {
-        return (sep ? ' ' : '') + ch.toUpperCase();
-      });
-    }
-    var box = document.getElementById('charts');
-    Object.keys(data.entries).forEach(function(suite) {
-      var entries = data.entries[suite];
-      if (!entries.length) return;
-      var nameSet = {};
-      entries.forEach(function(e) {
-        e.benches.forEach(function(b) { nameSet[b.name] = 1; });
-      });
-      var names = Object.keys(nameSet);
-      var groups = {};
-      names.forEach(function(n) {
-        var g = n.replace(/\[.*/, '');
-        if (!groups[g]) groups[g] = [];
-        groups[g].push(n);
-      });
-      Object.keys(groups).forEach(function(group) {
-        var gNames = groups[group];
-        var det = document.createElement('details');
-        det.open = true;
-        var sum = document.createElement('summary');
-        sum.textContent = formatTitle(group);
-        det.appendChild(sum);
-        if (DESCRIPTIONS[group]) {
-          var sub = document.createElement('p');
-          sub.className = 'subtitle';
-          sub.textContent = DESCRIPTIONS[group];
-          det.appendChild(sub);
-        }
-        var plotDiv = document.createElement('div');
-        plotDiv.className = 'chart-box';
-        det.appendChild(plotDiv);
-        box.appendChild(det);
-        var commitIds = entries.map(function(e) {
-          return e.commit.id || '';
-        });
-        var shortShas = commitIds.map(function(id) {
-          return id ? id.slice(0, 8) : '?';
-        });
-        var dateLabels = entries.map(function(e) {
-          var ts = e.commit.timestamp || '';
-          if (!ts) return '?';
-          var d = new Date(ts);
-          var yyyy = d.getFullYear();
-          var mm = String(d.getMonth() + 1).padStart(2, '0');
-          var dd = String(d.getDate()).padStart(2, '0');
-          return yyyy + '-' + mm + '-' + dd;
-        });
-        var xIndices = entries.map(function(_, i) { return i; });
-        var traces = gNames.map(function(name) {
-          var yVals = [];
-          var hoverTexts = [];
-          entries.forEach(function(e, i) {
-            var b = e.benches.find(function(x) { return x.name === name; });
-            yVals.push(b ? b.value * 1000 : null);
-            var sha = shortShas[i];
-            var url = commitIds[i] ? GH + commitIds[i] : '';
-            var shaLink = url
-              ? '<a href="' + url + '" target="_blank">' + sha + '</a>'
-              : sha;
-            if (b) {
-              hoverTexts.push(
-                '<b>' + name + '</b><br>' +
-                (b.value * 1000).toFixed(2) + ' ms ' + b.range + '<br>' +
-                b.extra + '<br>' +
-                shaLink
-              );
-            } else {
-              hoverTexts.push('');
-            }
-          });
-          return {
-            x: xIndices,
-            y: yVals,
-            name: name,
-            mode: 'lines+markers',
-            connectgaps: true,
-            hoverinfo: 'text',
-            hovertext: hoverTexts,
-            marker: { size: 6 }
-          };
-        });
-        var layout = {
-          template: 'plotly_white',
-          height: 350,
-          margin: { l: 60, r: 20, t: 10, b: 80 },
-          xaxis: {
-            title: 'Date',
-            tickangle: -45,
-            tickfont: { size: 11 },
-            tickvals: xIndices,
-            ticktext: dateLabels
-          },
-          yaxis: {
-            title: 'Time (ms)'
-          },
-          legend: {
-            orientation: 'h',
-            yanchor: 'top',
-            y: -0.25,
-            xanchor: 'center',
-            x: 0.5
-          },
-          hovermode: 'closest'
-        };
-        var config = {
-          responsive: true,
-          displayModeBar: true,
-          modeBarButtonsToRemove: ['lasso2d', 'select2d'],
-          displaylogo: false
-        };
-        Plotly.newPlot(plotDiv, traces, layout, config);
-        plotDiv.on('plotly_click', function(clickData) {
-          var idx = clickData.points[0].pointIndex;
-          var sha = commitIds[idx];
-          if (sha) window.open(GH + sha, '_blank');
-        });
-      });
-    });
-  })();
-  </script>
-</body>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>airspeed velocity</title>
+    <script type="text/javascript">
+      function js_load_failure() {
+        window.location = "error.html";
+      }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" onerror="js_load_failure()"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.min.js" integrity="sha512-eO1AKNIv7KSFl5n81oHCKnYLMi8UV4wWD1TcLYKNTssoECDuiGhoRsQkdiZkl8VUjoms2SeJY7zTSw5noGSqbQ==" crossorigin="anonymous" referrerpolicy="no-referrer" onerror="js_load_failure()"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.time.min.js" integrity="sha512-lcRowrkiQvFli9HkuJ2Yr58iEwAtzhFNJ1Galsko4SJDhcZfUub8UxGlMQIsMvARiTqx2pm7g6COxJozihOixA==" crossorigin="anonymous" referrerpolicy="no-referrer" onerror="js_load_failure()"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.selection.min.js" integrity="sha512-3EUG0t3qfbLaGN3FXO86i+57nvxHOXvIb/xMSKRrCuX/HXdn1bkbqwAeLd6U1PDmuEB2cnKhfM+SGLAVQbyjWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" onerror="js_load_failure()"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.categories.min.js" integrity="sha512-x4QGSZkQ57pNuICMFFevIhDer5NVB5eJCRmENlCdJukMs8xWFH8OHfzWQVSkl9VQ4+4upPPTkHSAewR6KNMjGA==" crossorigin="anonymous" referrerpolicy="no-referrer" onerror="js_load_failure()"></script>
+    <script language="javascript" type="text/javascript" src="jquery.flot.axislabels.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flot-orderbars@1.0.0/js/jquery.flot.orderBars.js" integrity="sha256-OXNbT0b5b/TgglckAfR8VaJ2ezZv0dHoIeRKjYMKEr8=" crossorigin="anonymous" onerror="js_load_failure()"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stupidtable/1.0.1/stupidtable.min.js" integrity="sha512-GM3Ds3dUrgkpKVXc+4RxKbQDoeTemdlzXxn5d/QCOJT6EFdEufu1UTVBpIFDLd6YjIhSThNe+zpo1mwqzNq4GQ==" crossorigin="anonymous" referrerpolicy="no-referrer" onerror="js_load_failure()"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.19.0/js/md5.min.js" integrity="sha512-8pbzenDolL1l5OPSsoURCx9TEdMFTaeFipASVrMYKhuYtly+k3tcsQYliOEKTmuB1t7yuzAiVo+yd7SJz+ijFQ==" crossorigin="anonymous" referrerpolicy="no-referrer" onerror="js_load_failure()"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.1.1/dist/js/bootstrap.min.js" integrity="sha256-iY0FoX8s/FEg3c26R6iFw3jAtGbzDwcA5QJ1fiS0A6E=" crossorigin="anonymous" onerror="js_load_failure()"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.1.1/dist/css/bootstrap.min.css" integrity="sha256-6VA0SGkrc43SYPvX98q/LhHwm2APqX5us6Vuulsafps=" crossorigin="anonymous">
+
+    <script language="javascript" type="text/javascript"
+            src="asv.js">
+    </script>
+    <script language="javascript" type="text/javascript"
+            src="asv_ui.js">
+    </script>
+    <script language="javascript" type="text/javascript"
+            src="summarygrid.js">
+    </script>
+    <script language="javascript" type="text/javascript"
+            src="summarylist.js">
+    </script>
+    <script language="javascript" type="text/javascript"
+            src="graphdisplay.js">
+    </script>
+    <script language="javascript" type="text/javascript"
+            src="regressions.js">
+    </script>
+    <link href="asv.css" rel="stylesheet" type="text/css"/>
+    <link href="regressions.css" rel="stylesheet" type="text/css"/>
+    <link href="summarylist.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" href="swallow.ico"/>
+    <link rel="alternate" type="application/atom+xml" title="Regressions" href="regressions.xml"/>
+  </head>
+  <body>
+    <nav id="nav" class="navbar navbar-left navbar-default navbar-fixed-top" role="navigation">
+      <ul class="nav navbar-nav navbar-left">
+        <li>
+          <p class="navbar-text">
+            <a href="https://github.com/airspeed-velocity/asv/" class="navbar-link" target="_blank"><img src="swallow.png" width="22" height="22" alt="swallow"></img>airspeed velocity</a>
+            of an unladen
+            <a id="project-name" href="#" class="navbar-link" target="_blank">project</a>
+          </p>
+        </li>
+	<li id="nav-li-" class="active"><a href="#/">Benchmark grid</a></li>
+	<li id="nav-li-summarylist"><a href="#/summarylist">Benchmark list</a></li>
+	<li id="nav-li-regressions"><a href="#/regressions">Regressions</a></li>
+        <li id="nav-li-graphdisplay">
+          <span class="navbar-brand" id="title">
+            benchmark
+          </span>
+        </li>
+      </ul>
+    </nav>
+    <div id="summarygrid-display" style="position: absolute; left: 0; top: 55px; width: 100%; height: 100%">
+    </div>
+    <div id="summarylist-display" style="width: 100%; height: 100%">
+      <div id="summarylist-navigation" class="asv-navigation" style="position: absolute; left: 0; top: 55px; bottom: 0; width: 200px; overflow-y: scroll">
+      </div>
+      <div id="summarylist-body" style="position: absolute; left: 200px; top: 55px; bottom: 0px; right: 0px; overflow-y: scroll;">
+      </div>
+    </div>
+    <div id="graph-display" style="width: 100%; height: 100%;">
+      <div id="graphdisplay-navigation" class="asv-navigation" style="position: absolute; left: 0; top: 55px; bottom: 0; width: 200px; overflow-y: scroll">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            commits
+          </div>
+          <div class="panel-body">
+            <input id="range" type="text" class="form-control" size="24" readonly/>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            plot settings
+          </div>
+          <div class="panel-body">
+            <div class="btn-group-vertical" style="width: 100%" data-toggle="buttons">
+              <a id="log-scale" class="btn btn-default btn-xs" role="button"
+                 data-toggle="tooltip" data-placement="right"
+                 title="Use a logarithmic scale on the y-axis">
+                log scale
+              </a>
+              <a id="zoom-y-axis" class="btn btn-default btn-xs" role="button"
+                 data-toggle="tooltip" data-placement="right"
+                 title="Zoom y axis to the range of the data, rather than down to zero.">
+                zoom <i>y</i> axis
+              </a>
+              <a id="reference" class="btn btn-default btn-xs" role="button"
+                 data-toggle="tooltip" data-placement="right"
+                 title="Select a reference point">
+                reference
+              </a>
+              <a id="even-spacing" class="btn btn-default btn-xs" role="button"
+                 data-toggle="tooltip" data-placement="right"
+                 title="Space commits evenly, rather than by revision, along the x-axis">
+                even commit spacing
+              </a>
+              <a id="date-scale" class="btn btn-default btn-xs" role="button"
+                 data-toggle="tooltip" data-placement="right"
+                 title="Space commits by commit date along the x-axis">
+                date scale
+              </a>
+              <a id="show-legend" class="btn btn-default btn-xs" role="button"
+                 data-toggle="tooltip" data-placement="right"
+                 title="Show legend in the graph">
+                legend
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="position: absolute; left: 220px; top: 60px; bottom: 10px; right: 20px;">
+        <div id="graph">
+          <div style="position: absolute; top: 48px; left: 0; right: 0; bottom: 100px;">
+            <div id="main-graph" style="min-height: 100px; width: 100%; height: 100%"></div>
+          </div>
+          <div style="position: absolute; height: 100px; left: 0; right: 0; bottom: 0; padding-top: 24px">
+            <div id="overview" style="min-height: 100px; width: 100%; height: 100%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="regressions-display" style="position: absolute; left: 0; top: 55px; width: 100%; height: 100%">
+      <div id="regressions-body">
+      </div>
+    </div>
+
+    <!-- A modal dialog box for displaying error messages -->
+    <div class="modal fade" id="error" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title alert alert-danger" id="myModalLabel">Error</h4>
+          </div>
+          <div class="modal-body" id="error-message">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
 </html>
