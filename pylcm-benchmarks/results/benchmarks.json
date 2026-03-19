@@ -1,4 +1,30 @@
 {
+    "bench_mahler_yum.TimeMahlerYum.time_mahler_yum": {
+        "code": "class TimeMahlerYum:\n    def time_mahler_yum(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        import jax.numpy as jnp\n    \n        from lcm_examples.mahler_yum_2024 import (\n            MAHLER_YUM_MODEL,\n            START_PARAMS,\n            create_inputs,\n        )\n    \n        start_params_without_beta = {\n            k: v for k, v in START_PARAMS.items() if k != \"beta\"\n        }\n    \n        self.model = MAHLER_YUM_MODEL\n        common_params, initial_states, _discount_factor_type = create_inputs(\n            seed=0,\n            n_simulation_subjects=_N_SUBJECTS,\n            **start_params_without_beta,\n        )\n        self.model_params = {\n            \"alive\": {\n                \"discount_factor\": START_PARAMS[\"beta\"][\"mean\"],\n                **common_params,\n            },\n        }\n        self.initial_conditions = {\n            **initial_states,\n            \"regime\": jnp.full(\n                _N_SUBJECTS,\n                self.model.regime_names_to_ids[\"alive\"],\n                dtype=jnp.int32,\n            ),\n        }\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n        self._warmup_time = time.perf_counter() - start",
+        "min_run_count": 2,
+        "name": "bench_mahler_yum.TimeMahlerYum.time_mahler_yum",
+        "number": 0,
+        "param_names": [],
+        "params": [],
+        "repeat": 0,
+        "rounds": 2,
+        "sample_time": 0.01,
+        "timeout": 1200,
+        "type": "time",
+        "unit": "seconds",
+        "version": "4bc10dcb1ccd31d6a2a3ecc9d49000490fd77b914c74a4882c3e88cd5f0a9f6d",
+        "warmup_time": -1
+    },
+    "bench_mahler_yum.TimeMahlerYum.track_warmup": {
+        "code": "class TimeMahlerYum:\n    def track_warmup(self):\n        return self._warmup_time\n\n    def setup(self):\n        import jax.numpy as jnp\n    \n        from lcm_examples.mahler_yum_2024 import (\n            MAHLER_YUM_MODEL,\n            START_PARAMS,\n            create_inputs,\n        )\n    \n        start_params_without_beta = {\n            k: v for k, v in START_PARAMS.items() if k != \"beta\"\n        }\n    \n        self.model = MAHLER_YUM_MODEL\n        common_params, initial_states, _discount_factor_type = create_inputs(\n            seed=0,\n            n_simulation_subjects=_N_SUBJECTS,\n            **start_params_without_beta,\n        )\n        self.model_params = {\n            \"alive\": {\n                \"discount_factor\": START_PARAMS[\"beta\"][\"mean\"],\n                **common_params,\n            },\n        }\n        self.initial_conditions = {\n            **initial_states,\n            \"regime\": jnp.full(\n                _N_SUBJECTS,\n                self.model.regime_names_to_ids[\"alive\"],\n                dtype=jnp.int32,\n            ),\n        }\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n        self._warmup_time = time.perf_counter() - start",
+        "name": "bench_mahler_yum.TimeMahlerYum.track_warmup",
+        "param_names": [],
+        "params": [],
+        "timeout": 1200,
+        "type": "track",
+        "unit": "seconds",
+        "version": "0181098296c6c87437bbddd63c05b32bb69a829f0508b8605b0e874c83a83208"
+    },
     "bench_mortality.TimeMortality.time_mortality": {
         "code": "class TimeMortality:\n    def time_mortality(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        import jax.numpy as jnp\n    \n        from lcm_examples import mortality\n    \n        self.model = mortality.get_model(n_periods=4)\n        self.model_params = mortality.get_params(n_periods=4)\n        self.initial_conditions = {\n            \"age\": jnp.full(_N_SUBJECTS, 40.0),\n            \"wealth\": jnp.full(_N_SUBJECTS, 100.0),\n            \"regime\": jnp.zeros(_N_SUBJECTS, dtype=jnp.int32),\n        }\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n        self._warmup_time = time.perf_counter() - start",
         "min_run_count": 2,
