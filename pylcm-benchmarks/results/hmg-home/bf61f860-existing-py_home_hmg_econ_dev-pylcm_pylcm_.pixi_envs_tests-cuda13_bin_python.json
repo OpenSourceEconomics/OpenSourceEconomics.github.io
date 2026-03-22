@@ -1,5 +1,5 @@
 {
-    "commit_hash": "33c2700f0cd5f1fe4d57cdde75fbf087001f7272",
+    "commit_hash": "bf61f8602613e96be3e9c0f4c1f8f45e9ed9470f",
     "env_name": "existing-py_home_hmg_econ_dev-pylcm_pylcm_.pixi_envs_tests-cuda13_bin_python",
     "date": 1774017538000,
     "params": {
@@ -470,11 +470,14 @@
         ],
         "bench_precautionary_savings.PrecautionarySavingsGridLookup.time_execution": [
             [
-                0.11861237349512521,
-                0.2272626025005593
+                0.1353235129990935,
+                0.12931011199998466,
+                0.1301308034999238,
+                0.24824561500099662
             ],
             [
                 [
+                    "500",
                     "2000"
                 ],
                 [
@@ -483,62 +486,74 @@
                 ]
             ],
             "2c488714f5ac0c9dc9f241c81a6ae4462b0bc2c2452b2532bb80f7dcec171d8d",
-            1774165453507,
-            107.38,
+            1774112030014,
+            221.63,
             [
-                0.095744,
-                0.1596
+                0.09185,
+                0.12452,
+                0.079614,
+                0.23231
             ],
             [
-                0.14468,
-                0.30098
+                0.18164,
+                0.13416,
+                0.20869,
+                0.26668
             ],
             [
-                0.11524,
-                0.21868
+                0.12616,
+                0.12837,
+                0.12658,
+                0.24455
             ],
             [
-                0.12359,
-                0.23887
+                0.14591,
+                0.13028,
+                0.14771,
+                0.25319
             ],
             [
+                1,
+                1,
                 1,
                 1
             ],
             [
+                4,
+                4,
                 4,
                 4
             ]
         ],
         "bench_precautionary_savings.PrecautionarySavingsSimulate.time_execution": [
             [
-                0.08044515050278278,
-                0.08199023300403496
+                0.4726208685005986,
+                3.7760805774996697
             ],
             [
                 [
-                    "10000",
-                    "1000000"
+                    "1000",
+                    "10000"
                 ]
             ],
-            "a36a6a267be2835a91619d458c898a9f74b3a6dae1cfc9b7ae661266c81dfcb8",
-            1774180643780,
-            89.552,
+            "7d7818ad49aeb51c756141efa2016e708fa78713d3445f9872e5b57b3706cedf",
+            1774112209511,
+            112.24,
             [
-                0.065111,
-                0.067854
+                0.31413,
+                -10.036
             ],
             [
-                0.094669,
-                0.094974
+                0.62975,
+                17.588
             ],
             [
-                0.075497,
-                0.077536
+                0.42683,
+                3.638
             ],
             [
-                0.084838,
-                0.085868
+                0.51773,
+                3.9142
             ],
             [
                 1,
@@ -546,7 +561,7 @@
             ],
             [
                 4,
-                4
+                2
             ]
         ],
         "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.time_execution": [
@@ -578,40 +593,48 @@
         ],
         "bench_precautionary_savings.PrecautionarySavingsSolve.time_execution": [
             [
-                0.019330580995301716,
-                0.018588180995720904
+                0.020242847499503114,
+                0.019808326499514806,
+                0.022428880000006757
             ],
             [
                 [
+                    "50",
                     "200",
                     "500"
                 ]
             ],
             "c57b1a9a58198a6b607e56286e2f07a9faa9a62678d5e05e4b972cc16d44b510",
-            1774165946524,
-            66.619,
+            1774112350748,
+            94.128,
             [
-                0.018254,
-                0.017914
+                0.019088,
+                0.019109,
+                0.019692
             ],
             [
-                0.025547,
-                0.020276
+                0.025656,
+                0.028563,
+                0.029827
             ],
             [
-                0.018936,
-                0.018397
+                0.019522,
+                0.01923,
+                0.02066
             ],
             [
-                0.020245,
-                0.019231
+                0.020819,
+                0.022049,
+                0.027118
             ],
             [
+                1,
                 1,
                 1
             ],
             [
                 10,
+                8,
                 8
             ]
         ],
@@ -653,11 +676,14 @@
         ],
         "bench_precautionary_savings.PrecautionarySavingsGridLookup.peakmem_execution": [
             [
-                1173147648,
-                1191862272
+                1169133568,
+                1177587712,
+                1168801792,
+                1191911424
             ],
             [
                 [
+                    "500",
                     "2000"
                 ],
                 [
@@ -666,16 +692,19 @@
                 ]
             ],
             "d4da8ac3dba207c8fe60e4f0b41f3747fd64e92abfa4d2f12ce6ac232fe06311",
-            1774165432480,
-            21.026
+            1774111986787,
+            43.226
         ],
         "bench_precautionary_savings.PrecautionarySavingsGridLookup.track_compilation_time": [
             [
-                8.357344126008684,
-                8.952460654996685
+                8.467659153999193,
+                8.934256459999233,
+                8.602317906999815,
+                9.167250599999534
             ],
             [
                 [
+                    "500",
                     "2000"
                 ],
                 [
@@ -684,38 +713,38 @@
                 ]
             ],
             "b0818406c232c796be6b1d8d6933607dab72f567579a75fbb642daeb5a2b6503",
-            1774165507366,
-            20.848
+            1774112139430,
+            42.364
         ],
         "bench_precautionary_savings.PrecautionarySavingsSimulate.peakmem_execution": [
             [
-                1142218752,
-                1161076736
+                1162973184,
+                1175658496
             ],
             [
                 [
-                    "10000",
-                    "1000000"
+                    "1000",
+                    "10000"
                 ]
             ],
-            "dc6a0db1ccf3b5d17d1d922747df56e3ff47689824b2a3276fac04cb935aa79f",
-            1774180625289,
-            18.49
+            "cc25e9968127aab505b88c87b92539595f7f90bc12cea408c851d9f4e0c4208c",
+            1774112181795,
+            27.716
         ],
         "bench_precautionary_savings.PrecautionarySavingsSimulate.track_compilation_time": [
             [
-                4.429014795998228,
-                4.78339486400364
+                5.383735283001442,
+                8.627754196000751
             ],
             [
                 [
-                    "10000",
-                    "1000000"
+                    "1000",
+                    "10000"
                 ]
             ],
-            "8fd8333a6045a9a0df78a121948b95ef8e59b348351a6a047ff93e6694faad17",
-            1774180690783,
-            17.662
+            "92f34debc8c9bd3e5124b2b272f8bdd7c32203d6273597c957bbf180168d8ff7",
+            1774112266377,
+            22.002
         ],
         "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.peakmem_execution": [
             [
@@ -737,78 +766,37 @@
         ],
         "bench_precautionary_savings.PrecautionarySavingsSolve.peakmem_execution": [
             [
-                1021898752,
-                1027923968
+                1017741312,
+                1023492096,
+                1025929216
             ],
             [
                 [
+                    "50",
                     "200",
                     "500"
                 ]
             ],
             "5fa6a2d7425928272e8e2b0c03ccca6b6d556049658d3f5c0e8fc1f7db7e1233",
-            1774165937238,
-            9.286
+            1774112337298,
+            13.45
         ],
         "bench_precautionary_savings.PrecautionarySavingsSolve.track_compilation_time": [
             [
-                2.707363034001901,
-                3.240769120006007
+                2.261021674001313,
+                2.7517638690005697,
+                3.2963162369997008
             ],
             [
                 [
+                    "50",
                     "200",
                     "500"
                 ]
             ],
             "cb6b0a86366f7b0ccfd9b170057dc8977db33d3ea3c7b9278d68a839f44d5d2c",
-            1774165979883,
-            9.1655
-        ],
-        "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.time_execution": [
-            [
-                0.4222375844983617
-            ],
-            [],
-            "06e953ed34fffac6b62286ae995d3d2330c1622fc629f5736074eb473e085284",
-            1774187961632,
-            53.951,
-            [
-                0.40916
-            ],
-            [
-                0.43548
-            ],
-            [
-                0.41836
-            ],
-            [
-                0.4262
-            ],
-            [
-                1
-            ],
-            [
-                4
-            ]
-        ],
-        "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.peakmem_execution": [
-            [
-                1229291520
-            ],
-            [],
-            "a1c243e3191b5ce54baca01cb28da643be8b6f0337109264f3d7895fcdd45b79",
-            1774187951228,
-            10.404
-        ],
-        "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.track_compilation_time": [
-            [
-                8.257842679988244
-            ],
-            [],
-            "0d0c9ded098530d206daee054ce0666e90fafe7e0d52ce42d91f454ea72cb777",
-            1774187988214,
-            9.9783
+            1774112397227,
+            13.312
         ]
     },
     "durations": {
