@@ -1,0 +1,9 @@
+{
+    "arch": "x86_64",
+    "cpu": "Intel(R) Xeon(R) Silver 4110 CPU @ 2.10GHz",
+    "machine": "gpu-01",
+    "num_cpu": "32",
+    "os": "Linux 6.8.0-106-generic",
+    "ram": "134807400448",
+    "version": 1
+}
