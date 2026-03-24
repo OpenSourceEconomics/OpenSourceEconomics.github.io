@@ -1,9 +1,0 @@
-{
-    "arch": "x86_64",
-    "cpu": "AMD Ryzen 7 3800X 8-Core Processor",
-    "machine": "hmg-home",
-    "num_cpu": "16",
-    "os": "Linux 6.17.0-19-generic",
-    "ram": "33589665792",
-    "version": 1
-}
