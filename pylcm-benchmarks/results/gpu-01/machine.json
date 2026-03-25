@@ -4,6 +4,6 @@
     "machine": "gpu-01",
     "num_cpu": "32",
     "os": "Linux 6.8.0-106-generic",
-    "ram": "134807400448",
+    "ram": "134807384064",
     "version": 1
 }
