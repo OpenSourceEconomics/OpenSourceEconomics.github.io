@@ -1,1 +1,1 @@
-{"regressions": [["bench_mortality.Mortality.time_execution", "graphs/arch-x86_64/branch-main/cpu-Intel(R) Xeon(R) Silver 4110 CPU @ 2.10GHz/machine-gpu-01/num_cpu-32/os-Linux 6.8.0-106-generic/python-_home_hmga_actions-runner__work_pylcm_pylcm_.pixi_envs_tests-cuda12_bin_python/ram-134807384064/bench_mortality.Mortality.time_execution.json", {}, null, 0.2692576920017018, 0.25122963099966, [[null, 412, 0.25122963099966, 0.2692576920017018]]]]}
+{"regressions": []}
