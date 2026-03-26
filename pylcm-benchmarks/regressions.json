@@ -1,1 +1,1 @@
-{"regressions": []}
+{"regressions": [["bench_precautionary_savings.PrecautionarySavingsSimulate.time_execution", "graphs/arch-x86_64/branch-main/cpu-Intel(R) Xeon(R) Silver 4110 CPU @ 2.10GHz/machine-gpu-01/num_cpu-32/os-Linux 6.8.0-106-generic/python-_home_hmga_actions-runner__work_pylcm_pylcm_.pixi_envs_tests-cuda12_bin_python/ram-134807384064/bench_precautionary_savings.PrecautionarySavingsSimulate.time_execution.json", {}, null, 0.1484048865022487, 0.14008432799892034, [[420, 431, 0.14008432799892034, 0.1484048865022487]]]]}
