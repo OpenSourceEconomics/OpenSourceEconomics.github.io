@@ -1,16 +1,16 @@
 {
     "bench_mahler_yum.MahlerYum.peakmem_execution": {
-        "code": "class MahlerYum:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        import jax.numpy as jnp\n    \n        from lcm_examples.mahler_yum_2024 import (\n            MAHLER_YUM_MODEL,\n            START_PARAMS,\n            create_inputs,\n        )\n    \n        start_params_without_beta = {\n            k: v for k, v in START_PARAMS.items() if k != \"beta\"\n        }\n    \n        self.model = MAHLER_YUM_MODEL\n        common_params, initial_states, _discount_factor_type = create_inputs(\n            seed=0,\n            n_simulation_subjects=_N_SUBJECTS,\n            **start_params_without_beta,\n        )\n        self.model_params = {\n            \"alive\": {\n                \"discount_factor\": START_PARAMS[\"beta\"][\"mean\"],\n                **common_params,\n            },\n        }\n        self.initial_conditions = {\n            **initial_states,\n            \"regime\": jnp.full(\n                _N_SUBJECTS,\n                self.model.regime_names_to_ids[\"alive\"],\n                dtype=jnp.int32,\n            ),\n        }\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class MahlerYum:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_mahler_yum.MahlerYum.peakmem_execution",
         "param_names": [],
         "params": [],
         "timeout": 1200,
         "type": "peakmemory",
         "unit": "bytes",
-        "version": "715a59bb8d55e019fdf7d97a6163e35359825ac1985e2662219e967054c6c53d"
+        "version": "c4563c75c0c674584673c74d077b93a9c646d36a1bcf6f4e9be61800e93ed85d"
     },
     "bench_mahler_yum.MahlerYum.time_execution": {
-        "code": "class MahlerYum:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        import jax.numpy as jnp\n    \n        from lcm_examples.mahler_yum_2024 import (\n            MAHLER_YUM_MODEL,\n            START_PARAMS,\n            create_inputs,\n        )\n    \n        start_params_without_beta = {\n            k: v for k, v in START_PARAMS.items() if k != \"beta\"\n        }\n    \n        self.model = MAHLER_YUM_MODEL\n        common_params, initial_states, _discount_factor_type = create_inputs(\n            seed=0,\n            n_simulation_subjects=_N_SUBJECTS,\n            **start_params_without_beta,\n        )\n        self.model_params = {\n            \"alive\": {\n                \"discount_factor\": START_PARAMS[\"beta\"][\"mean\"],\n                **common_params,\n            },\n        }\n        self.initial_conditions = {\n            **initial_states,\n            \"regime\": jnp.full(\n                _N_SUBJECTS,\n                self.model.regime_names_to_ids[\"alive\"],\n                dtype=jnp.int32,\n            ),\n        }\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class MahlerYum:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
         "min_run_count": 2,
         "name": "bench_mahler_yum.MahlerYum.time_execution",
         "number": 0,
@@ -22,41 +22,41 @@
         "timeout": 1200,
         "type": "time",
         "unit": "seconds",
-        "version": "a99e34463a3ec6312f1ba4ff9a1aa15caac9dbcbbe92a72b58b7681302b3cd20",
+        "version": "3a8a79f3690bad3e523de6a456669c046c0c4b847daa89d049d280fa4bb7e6a1",
         "warmup_time": -1
     },
     "bench_mahler_yum.MahlerYum.track_compilation_time": {
-        "code": "class MahlerYum:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        import jax.numpy as jnp\n    \n        from lcm_examples.mahler_yum_2024 import (\n            MAHLER_YUM_MODEL,\n            START_PARAMS,\n            create_inputs,\n        )\n    \n        start_params_without_beta = {\n            k: v for k, v in START_PARAMS.items() if k != \"beta\"\n        }\n    \n        self.model = MAHLER_YUM_MODEL\n        common_params, initial_states, _discount_factor_type = create_inputs(\n            seed=0,\n            n_simulation_subjects=_N_SUBJECTS,\n            **start_params_without_beta,\n        )\n        self.model_params = {\n            \"alive\": {\n                \"discount_factor\": START_PARAMS[\"beta\"][\"mean\"],\n                **common_params,\n            },\n        }\n        self.initial_conditions = {\n            **initial_states,\n            \"regime\": jnp.full(\n                _N_SUBJECTS,\n                self.model.regime_names_to_ids[\"alive\"],\n                dtype=jnp.int32,\n            ),\n        }\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class MahlerYum:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_mahler_yum.MahlerYum.track_compilation_time",
         "param_names": [],
         "params": [],
         "timeout": 1200,
         "type": "track",
         "unit": "seconds",
-        "version": "1aaf2aa5bc998e36654a207b1ce3a5eac05b09507ac6b1003b086ba01a539e9a"
+        "version": "43c988103dd279dc0bcf95df4f4d4757358eaafc41845f8282945ee4261dc540"
     },
-    "bench_mahler_yum.MahlerYum.track_gpu_peak_mem": {
-        "code": "class MahlerYum:\n    def track_gpu_peak_mem(self):\n        return _get_gpu_peak_bytes()\n\n    def setup(self):\n        import jax.numpy as jnp\n    \n        from lcm_examples.mahler_yum_2024 import (\n            MAHLER_YUM_MODEL,\n            START_PARAMS,\n            create_inputs,\n        )\n    \n        start_params_without_beta = {\n            k: v for k, v in START_PARAMS.items() if k != \"beta\"\n        }\n    \n        self.model = MAHLER_YUM_MODEL\n        common_params, initial_states, _discount_factor_type = create_inputs(\n            seed=0,\n            n_simulation_subjects=_N_SUBJECTS,\n            **start_params_without_beta,\n        )\n        self.model_params = {\n            \"alive\": {\n                \"discount_factor\": START_PARAMS[\"beta\"][\"mean\"],\n                **common_params,\n            },\n        }\n        self.initial_conditions = {\n            **initial_states,\n            \"regime\": jnp.full(\n                _N_SUBJECTS,\n                self.model.regime_names_to_ids[\"alive\"],\n                dtype=jnp.int32,\n            ),\n        }\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
-        "name": "bench_mahler_yum.MahlerYum.track_gpu_peak_mem",
+    "bench_mahler_yum.MahlerYumGpuPeakMem.track_gpu_peak_mem": {
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "name": "bench_mahler_yum.MahlerYumGpuPeakMem.track_gpu_peak_mem",
         "param_names": [],
         "params": [],
         "timeout": 1200,
         "type": "track",
         "unit": "bytes",
-        "version": "a53b1f176ebcb39bce6aa92bcab3625001d5ca16945f36b67a76d584fcc9bb2d"
+        "version": "a03a30394aab996af4d481042aa192a377f8716a8db7d351a1f768e0e4ae3958"
     },
     "bench_mortality.Mortality.peakmem_execution": {
-        "code": "class Mortality:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        import jax.numpy as jnp\n    \n        from lcm_examples import mortality\n    \n        self.model = mortality.get_model(n_periods=4)\n        self.model_params = mortality.get_params(n_periods=4)\n        self.initial_conditions = {\n            \"age\": jnp.full(_N_SUBJECTS, 40.0),\n            \"wealth\": jnp.full(_N_SUBJECTS, 100.0),\n            \"regime\": jnp.zeros(_N_SUBJECTS, dtype=jnp.int32),\n        }\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class Mortality:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_mortality.Mortality.peakmem_execution",
         "param_names": [],
         "params": [],
         "timeout": 600,
         "type": "peakmemory",
         "unit": "bytes",
-        "version": "c92fd4e8da7f747c9a4558c5139b7516a30d5a30f19823058af4e370ea18dc13"
+        "version": "036975c3c500839011de3fa76150c7c24f2fe19c77b25238d68de4f808302243"
     },
     "bench_mortality.Mortality.time_execution": {
-        "code": "class Mortality:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        import jax.numpy as jnp\n    \n        from lcm_examples import mortality\n    \n        self.model = mortality.get_model(n_periods=4)\n        self.model_params = mortality.get_params(n_periods=4)\n        self.initial_conditions = {\n            \"age\": jnp.full(_N_SUBJECTS, 40.0),\n            \"wealth\": jnp.full(_N_SUBJECTS, 100.0),\n            \"regime\": jnp.zeros(_N_SUBJECTS, dtype=jnp.int32),\n        }\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class Mortality:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
         "min_run_count": 2,
         "name": "bench_mortality.Mortality.time_execution",
         "number": 0,
@@ -68,41 +68,41 @@
         "timeout": 600,
         "type": "time",
         "unit": "seconds",
-        "version": "8cf5e91a4256a6283039809edd9338b0c08ed0f273dc65e3e1396f197f1973a4",
+        "version": "9ff9c508da33f0612d8f247f31b3711a270c74c82b02ce2ea6617cb81f2b35d9",
         "warmup_time": -1
     },
     "bench_mortality.Mortality.track_compilation_time": {
-        "code": "class Mortality:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        import jax.numpy as jnp\n    \n        from lcm_examples import mortality\n    \n        self.model = mortality.get_model(n_periods=4)\n        self.model_params = mortality.get_params(n_periods=4)\n        self.initial_conditions = {\n            \"age\": jnp.full(_N_SUBJECTS, 40.0),\n            \"wealth\": jnp.full(_N_SUBJECTS, 100.0),\n            \"regime\": jnp.zeros(_N_SUBJECTS, dtype=jnp.int32),\n        }\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class Mortality:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_mortality.Mortality.track_compilation_time",
         "param_names": [],
         "params": [],
         "timeout": 600,
         "type": "track",
         "unit": "seconds",
-        "version": "6cbd68f987229353cda2a36f8c3884cb01a0691cbe1c9e760ba286be020f91b1"
+        "version": "0324a4f581d4124aeb2226d175aa708595d4a3a54e6c6cbdab0edfe382c45a08"
     },
-    "bench_mortality.Mortality.track_gpu_peak_mem": {
-        "code": "class Mortality:\n    def track_gpu_peak_mem(self):\n        return _get_gpu_peak_bytes()\n\n    def setup(self):\n        import jax.numpy as jnp\n    \n        from lcm_examples import mortality\n    \n        self.model = mortality.get_model(n_periods=4)\n        self.model_params = mortality.get_params(n_periods=4)\n        self.initial_conditions = {\n            \"age\": jnp.full(_N_SUBJECTS, 40.0),\n            \"wealth\": jnp.full(_N_SUBJECTS, 100.0),\n            \"regime\": jnp.zeros(_N_SUBJECTS, dtype=jnp.int32),\n        }\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
-        "name": "bench_mortality.Mortality.track_gpu_peak_mem",
+    "bench_mortality.MortalityGpuPeakMem.track_gpu_peak_mem": {
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "name": "bench_mortality.MortalityGpuPeakMem.track_gpu_peak_mem",
         "param_names": [],
         "params": [],
-        "timeout": 600,
+        "timeout": 1200,
         "type": "track",
         "unit": "bytes",
-        "version": "5fb9ee1e20e71d354149759b91eb3d26c6c18bbdf9fd7d0c9cc21139fd30998d"
+        "version": "a03a30394aab996af4d481042aa192a377f8716a8db7d351a1f768e0e4ae3958"
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulate.peakmem_execution": {
-        "code": "class PrecautionarySavingsSimulate:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        self.model, self.model_params = _make_model()\n        self.period_to_regime_to_V_arr = self.model.solve(\n            params=self.model_params, log_level=\"off\"\n        )\n        self.initial_conditions = _make_initial_conditions(1_000_000)\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSimulate:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulate.peakmem_execution",
         "param_names": [],
         "params": [],
         "timeout": 600,
         "type": "peakmemory",
         "unit": "bytes",
-        "version": "1c4db5fa8fb41f84ef3ab770883663446a73b9f42131f7e6a8064af4d548cff1"
+        "version": "2508cae1a160073a95df17646d0c821b9e427dad6c104840f37dcfb982611af7"
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulate.time_execution": {
-        "code": "class PrecautionarySavingsSimulate:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        self.model, self.model_params = _make_model()\n        self.period_to_regime_to_V_arr = self.model.solve(\n            params=self.model_params, log_level=\"off\"\n        )\n        self.initial_conditions = _make_initial_conditions(1_000_000)\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSimulate:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
         "min_run_count": 2,
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulate.time_execution",
         "number": 0,
@@ -114,41 +114,41 @@
         "timeout": 600,
         "type": "time",
         "unit": "seconds",
-        "version": "7e8e8f70387f490d958d61d26e032c576588fe4b51ae5db2d18452260feec721",
+        "version": "8d053b1e3383a744fd671086976e66d6cf983d5298a6051398a85bfd496528ba",
         "warmup_time": -1
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulate.track_compilation_time": {
-        "code": "class PrecautionarySavingsSimulate:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self.model, self.model_params = _make_model()\n        self.period_to_regime_to_V_arr = self.model.solve(\n            params=self.model_params, log_level=\"off\"\n        )\n        self.initial_conditions = _make_initial_conditions(1_000_000)\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSimulate:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulate.track_compilation_time",
         "param_names": [],
         "params": [],
         "timeout": 600,
         "type": "track",
         "unit": "seconds",
-        "version": "dbd77a80b70a4303091a930370df7afc858b8301379a6f755c67f8674f69b8f5"
+        "version": "a4bc50d0913e21288e255e8bee959e5cd2044de8b6ddd154603b68f47cf46b3f"
     },
-    "bench_precautionary_savings.PrecautionarySavingsSimulate.track_gpu_peak_mem": {
-        "code": "class PrecautionarySavingsSimulate:\n    def track_gpu_peak_mem(self):\n        return _get_gpu_peak_bytes()\n\n    def setup(self):\n        self.model, self.model_params = _make_model()\n        self.period_to_regime_to_V_arr = self.model.solve(\n            params=self.model_params, log_level=\"off\"\n        )\n        self.initial_conditions = _make_initial_conditions(1_000_000)\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
-        "name": "bench_precautionary_savings.PrecautionarySavingsSimulate.track_gpu_peak_mem",
+    "bench_precautionary_savings.PrecautionarySavingsSimulateGpuPeakMem.track_gpu_peak_mem": {
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "name": "bench_precautionary_savings.PrecautionarySavingsSimulateGpuPeakMem.track_gpu_peak_mem",
         "param_names": [],
         "params": [],
-        "timeout": 600,
+        "timeout": 1200,
         "type": "track",
         "unit": "bytes",
-        "version": "8515e91f1f3aea8e6a995c55b7749a2f016bedcbd35a1ec1fcfba48ec4b961a8"
+        "version": "a03a30394aab996af4d481042aa192a377f8716a8db7d351a1f768e0e4ae3958"
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.peakmem_execution": {
-        "code": "class PrecautionarySavingsSimulateWithSolve:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        self.model, self.model_params = _make_model(\n            wealth_n_points=200,\n            consumption_n_points=200,\n        )\n        self.initial_conditions = _make_initial_conditions(500_000)\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSimulateWithSolve:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.peakmem_execution",
         "param_names": [],
         "params": [],
         "timeout": 600,
         "type": "peakmemory",
         "unit": "bytes",
-        "version": "fa38843655597e70119ca54c0f3b3f8762d3b2aa465d77948b618e307e7068b1"
+        "version": "c88c2c470fa61c9f62408e9d8c4b7267748731ce1e7d9bf4fb78daafc5971596"
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.time_execution": {
-        "code": "class PrecautionarySavingsSimulateWithSolve:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        self.model, self.model_params = _make_model(\n            wealth_n_points=200,\n            consumption_n_points=200,\n        )\n        self.initial_conditions = _make_initial_conditions(500_000)\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSimulateWithSolve:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
         "min_run_count": 2,
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.time_execution",
         "number": 0,
@@ -160,41 +160,41 @@
         "timeout": 600,
         "type": "time",
         "unit": "seconds",
-        "version": "9e5b907cff0055258adc24fd59bfa710025a5c3692866e88d09fba7a126d6fa9",
+        "version": "9498886fe67b69aee9c0da06e65844c1d10f9a5ff0bad083abd455f4f3977f2d",
         "warmup_time": -1
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.track_compilation_time": {
-        "code": "class PrecautionarySavingsSimulateWithSolve:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self.model, self.model_params = _make_model(\n            wealth_n_points=200,\n            consumption_n_points=200,\n        )\n        self.initial_conditions = _make_initial_conditions(500_000)\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSimulateWithSolve:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.track_compilation_time",
         "param_names": [],
         "params": [],
         "timeout": 600,
         "type": "track",
         "unit": "seconds",
-        "version": "6b5178d6329577869177f25a6c200d3ae5109ba168496e0e4bfbee4fc5866816"
+        "version": "1259b6f82acd88dd2a62fa7dd768c9a8975f846c96045c054a6250e25b6daa21"
     },
-    "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.track_gpu_peak_mem": {
-        "code": "class PrecautionarySavingsSimulateWithSolve:\n    def track_gpu_peak_mem(self):\n        return _get_gpu_peak_bytes()\n\n    def setup(self):\n        self.model, self.model_params = _make_model(\n            wealth_n_points=200,\n            consumption_n_points=200,\n        )\n        self.initial_conditions = _make_initial_conditions(500_000)\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
-        "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.track_gpu_peak_mem",
+    "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveGpuPeakMem.track_gpu_peak_mem": {
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveGpuPeakMem.track_gpu_peak_mem",
         "param_names": [],
         "params": [],
-        "timeout": 600,
+        "timeout": 1200,
         "type": "track",
         "unit": "bytes",
-        "version": "e894c8806bb7bd1b9d75330c7e9460e199751e737942056aa1a12a7546a6d3e7"
+        "version": "a03a30394aab996af4d481042aa192a377f8716a8db7d351a1f768e0e4ae3958"
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.peakmem_execution": {
-        "code": "class PrecautionarySavingsSimulateWithSolveIrreg:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        self.model, self.model_params = _make_model(\n            wealth_grid_type=\"irreg\",\n            wealth_n_points=200,\n            consumption_n_points=200,\n        )\n        self.initial_conditions = _make_initial_conditions(500_000)\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSimulateWithSolveIrreg:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.peakmem_execution",
         "param_names": [],
         "params": [],
         "timeout": 600,
         "type": "peakmemory",
         "unit": "bytes",
-        "version": "a1c243e3191b5ce54baca01cb28da643be8b6f0337109264f3d7895fcdd45b79"
+        "version": "f2a4640f5db3eef91c49f1373f131abed2144838943f5440399dd29a8f71b134"
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.time_execution": {
-        "code": "class PrecautionarySavingsSimulateWithSolveIrreg:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        self.model, self.model_params = _make_model(\n            wealth_grid_type=\"irreg\",\n            wealth_n_points=200,\n            consumption_n_points=200,\n        )\n        self.initial_conditions = _make_initial_conditions(500_000)\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSimulateWithSolveIrreg:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
         "min_run_count": 2,
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.time_execution",
         "number": 0,
@@ -206,41 +206,41 @@
         "timeout": 600,
         "type": "time",
         "unit": "seconds",
-        "version": "06e953ed34fffac6b62286ae995d3d2330c1622fc629f5736074eb473e085284",
+        "version": "517f881d62fa8adceabd39fd9f1a090b1c5feb4f195a0f865826a7901ff744ca",
         "warmup_time": -1
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.track_compilation_time": {
-        "code": "class PrecautionarySavingsSimulateWithSolveIrreg:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self.model, self.model_params = _make_model(\n            wealth_grid_type=\"irreg\",\n            wealth_n_points=200,\n            consumption_n_points=200,\n        )\n        self.initial_conditions = _make_initial_conditions(500_000)\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSimulateWithSolveIrreg:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.track_compilation_time",
         "param_names": [],
         "params": [],
         "timeout": 600,
         "type": "track",
         "unit": "seconds",
-        "version": "0d0c9ded098530d206daee054ce0666e90fafe7e0d52ce42d91f454ea72cb777"
+        "version": "8be1213c9ee2e79bf6330bccae3b67ab964aa291579b5384c6061f3b40b8baee"
     },
-    "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.track_gpu_peak_mem": {
-        "code": "class PrecautionarySavingsSimulateWithSolveIrreg:\n    def track_gpu_peak_mem(self):\n        return _get_gpu_peak_bytes()\n\n    def setup(self):\n        self.model, self.model_params = _make_model(\n            wealth_grid_type=\"irreg\",\n            wealth_n_points=200,\n            consumption_n_points=200,\n        )\n        self.initial_conditions = _make_initial_conditions(500_000)\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
-        "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.track_gpu_peak_mem",
+    "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrregGpuPeakMem.track_gpu_peak_mem": {
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrregGpuPeakMem.track_gpu_peak_mem",
         "param_names": [],
         "params": [],
-        "timeout": 600,
+        "timeout": 1200,
         "type": "track",
         "unit": "bytes",
-        "version": "64734eabfb0060a7817fc7653d61ed37e654c89056b7b9ba14df1707a5e893be"
+        "version": "a03a30394aab996af4d481042aa192a377f8716a8db7d351a1f768e0e4ae3958"
     },
     "bench_precautionary_savings.PrecautionarySavingsSolve.peakmem_execution": {
-        "code": "class PrecautionarySavingsSolve:\n    def peakmem_execution(self):\n        self.model.solve(params=self.model_params, log_level=\"off\")\n\n    def setup(self):\n        self.model, self.model_params = _make_model(\n            wealth_n_points=500,\n            consumption_n_points=500,\n        )\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSolve:\n    def peakmem_execution(self):\n        self.model.solve(params=self.model_params, log_level=\"off\")\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_precautionary_savings.PrecautionarySavingsSolve.peakmem_execution",
         "param_names": [],
         "params": [],
         "timeout": 600,
         "type": "peakmemory",
         "unit": "bytes",
-        "version": "95fe0a08d9f830602648f578f1f2e30cf035b771286e02715d32c1df0a63e073"
+        "version": "a1ee47a95d5550bf7e54ee495f8cbcdaa9904a84351c2353c31a22ac70f38186"
     },
     "bench_precautionary_savings.PrecautionarySavingsSolve.time_execution": {
-        "code": "class PrecautionarySavingsSolve:\n    def time_execution(self):\n        self.model.solve(params=self.model_params, log_level=\"off\")\n\n    def setup(self):\n        self.model, self.model_params = _make_model(\n            wealth_n_points=500,\n            consumption_n_points=500,\n        )\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSolve:\n    def time_execution(self):\n        self.model.solve(params=self.model_params, log_level=\"off\")\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
         "min_run_count": 2,
         "name": "bench_precautionary_savings.PrecautionarySavingsSolve.time_execution",
         "number": 0,
@@ -252,28 +252,28 @@
         "timeout": 600,
         "type": "time",
         "unit": "seconds",
-        "version": "3991773e4628e955abcb840093e985ed1d2f63053bb7fa4a1d394e814b76ac5b",
+        "version": "b96d1f358b8ac04895ec76158d05b95de9deb685077cb8fedacce06e1fc902e5",
         "warmup_time": -1
     },
     "bench_precautionary_savings.PrecautionarySavingsSolve.track_compilation_time": {
-        "code": "class PrecautionarySavingsSolve:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self.model, self.model_params = _make_model(\n            wealth_n_points=500,\n            consumption_n_points=500,\n        )\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSolve:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_precautionary_savings.PrecautionarySavingsSolve.track_compilation_time",
         "param_names": [],
         "params": [],
         "timeout": 600,
         "type": "track",
         "unit": "seconds",
-        "version": "75a3d9f4d60ca81ecf93cdfced4a72e1469e04102f0694b17dc8cf8da0e35f28"
+        "version": "503bef5a7a4b3cd353c27e9c6de961cbd7ba20372d664667d0737e879f4bbc76"
     },
-    "bench_precautionary_savings.PrecautionarySavingsSolve.track_gpu_peak_mem": {
-        "code": "class PrecautionarySavingsSolve:\n    def track_gpu_peak_mem(self):\n        return _get_gpu_peak_bytes()\n\n    def setup(self):\n        self.model, self.model_params = _make_model(\n            wealth_n_points=500,\n            consumption_n_points=500,\n        )\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
-        "name": "bench_precautionary_savings.PrecautionarySavingsSolve.track_gpu_peak_mem",
+    "bench_precautionary_savings.PrecautionarySavingsSolveGpuPeakMem.track_gpu_peak_mem": {
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "name": "bench_precautionary_savings.PrecautionarySavingsSolveGpuPeakMem.track_gpu_peak_mem",
         "param_names": [],
         "params": [],
-        "timeout": 600,
+        "timeout": 1200,
         "type": "track",
         "unit": "bytes",
-        "version": "9e8499e9a9954b43f587b527f1a68c06141ad4eff287f4308f887a170d2c9682"
+        "version": "a03a30394aab996af4d481042aa192a377f8716a8db7d351a1f768e0e4ae3958"
     },
     "version": 2
 }
