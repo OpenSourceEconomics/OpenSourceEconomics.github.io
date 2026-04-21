@@ -1,16 +1,16 @@
 {
     "bench_mahler_yum.MahlerYum.peakmem_execution": {
-        "code": "class MahlerYum:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class MahlerYum:\n    def peakmem_execution(self):\n        self._simulate_all()\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self._simulate_all()\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_mahler_yum.MahlerYum.peakmem_execution",
         "param_names": [],
         "params": [],
         "timeout": 1200,
         "type": "peakmemory",
         "unit": "bytes",
-        "version": "c4563c75c0c674584673c74d077b93a9c646d36a1bcf6f4e9be61800e93ed85d"
+        "version": "baaf60da939f7312ad2b32674aa6a65957a343d4b22816bee4f6199ae2dd6967"
     },
     "bench_mahler_yum.MahlerYum.time_execution": {
-        "code": "class MahlerYum:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class MahlerYum:\n    def time_execution(self):\n        self._simulate_all()\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self._simulate_all()\n        self._compile_time = time.perf_counter() - start",
         "min_run_count": 2,
         "name": "bench_mahler_yum.MahlerYum.time_execution",
         "number": 0,
@@ -22,18 +22,18 @@
         "timeout": 1200,
         "type": "time",
         "unit": "seconds",
-        "version": "3a8a79f3690bad3e523de6a456669c046c0c4b847daa89d049d280fa4bb7e6a1",
+        "version": "a63e271c7736306d701fc55f0608cc0adf37418b482add385f0ad74070d9f2da",
         "warmup_time": -1
     },
     "bench_mahler_yum.MahlerYum.track_compilation_time": {
-        "code": "class MahlerYum:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class MahlerYum:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self._simulate_all()\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_mahler_yum.MahlerYum.track_compilation_time",
         "param_names": [],
         "params": [],
         "timeout": 1200,
         "type": "track",
         "unit": "seconds",
-        "version": "43c988103dd279dc0bcf95df4f4d4757358eaafc41845f8282945ee4261dc540"
+        "version": "01ff75324ced05d4ab9ab4ed519df7137557294d99fbc629b89c895fbaa72c5e"
     },
     "bench_mahler_yum.MahlerYumGpuPeakMem.track_gpu_peak_mem": {
         "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
