@@ -1,4 +1,53 @@
 {
+    "bench_aca_baseline.AcaBaseline.peakmem_execution": {
+        "code": "class AcaBaseline:\n    def peakmem_execution(self, cache: bytes | None = None) -> None:\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self, cache: bytes) -> None:\n        self.model, self.model_params, self.initial_conditions = cloudpickle.loads(\n            cache\n        )\n        # Warm-trigger compilation so time_execution runs on a hot kernel.\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start\n\n    def setup_cache(self) -> bytes:\n        # Build once per ASV benchmark class run and hand the result to\n        # every method via ASV's setup_cache mechanism. ASV pickles the\n        # return value with stdlib `pickle`, which can't handle the\n        # `MappingProxyType` leaves or user callables inside a pylcm\n        # `Model` \u2014 so wrap the triple in cloudpickle bytes. ASV then\n        # ships plain bytes; each method's setup(cache) reconstructs.\n        return cloudpickle.dumps(_build())",
+        "name": "bench_aca_baseline.AcaBaseline.peakmem_execution",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "bench_aca_baseline:75",
+        "timeout": 3600,
+        "type": "peakmemory",
+        "unit": "bytes",
+        "version": "e5cc8407f60743a0875c3fb9b558f2398f470e9da5123225ddada075c0d3c72e"
+    },
+    "bench_aca_baseline.AcaBaseline.time_execution": {
+        "code": "class AcaBaseline:\n    def time_execution(self, cache: bytes | None = None) -> None:\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self, cache: bytes) -> None:\n        self.model, self.model_params, self.initial_conditions = cloudpickle.loads(\n            cache\n        )\n        # Warm-trigger compilation so time_execution runs on a hot kernel.\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start\n\n    def setup_cache(self) -> bytes:\n        # Build once per ASV benchmark class run and hand the result to\n        # every method via ASV's setup_cache mechanism. ASV pickles the\n        # return value with stdlib `pickle`, which can't handle the\n        # `MappingProxyType` leaves or user callables inside a pylcm\n        # `Model` \u2014 so wrap the triple in cloudpickle bytes. ASV then\n        # ships plain bytes; each method's setup(cache) reconstructs.\n        return cloudpickle.dumps(_build())",
+        "min_run_count": 2,
+        "name": "bench_aca_baseline.AcaBaseline.time_execution",
+        "number": 1,
+        "param_names": [],
+        "params": [],
+        "repeat": 1,
+        "rounds": 1,
+        "sample_time": 0.01,
+        "setup_cache_key": "bench_aca_baseline:75",
+        "timeout": 3600,
+        "type": "time",
+        "unit": "seconds",
+        "version": "dda94dfca02449b98085093e2415b8efcb86aae37c4f3b61e6c925d1a8c3068a",
+        "warmup_time": 0
+    },
+    "bench_aca_baseline.AcaBaseline.track_compilation_time": {
+        "code": "class AcaBaseline:\n    def track_compilation_time(self, cache: bytes | None = None) -> float:\n        return self._compile_time\n\n    def setup(self, cache: bytes) -> None:\n        self.model, self.model_params, self.initial_conditions = cloudpickle.loads(\n            cache\n        )\n        # Warm-trigger compilation so time_execution runs on a hot kernel.\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start\n\n    def setup_cache(self) -> bytes:\n        # Build once per ASV benchmark class run and hand the result to\n        # every method via ASV's setup_cache mechanism. ASV pickles the\n        # return value with stdlib `pickle`, which can't handle the\n        # `MappingProxyType` leaves or user callables inside a pylcm\n        # `Model` \u2014 so wrap the triple in cloudpickle bytes. ASV then\n        # ships plain bytes; each method's setup(cache) reconstructs.\n        return cloudpickle.dumps(_build())",
+        "name": "bench_aca_baseline.AcaBaseline.track_compilation_time",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "bench_aca_baseline:75",
+        "timeout": 3600,
+        "type": "track",
+        "unit": "seconds",
+        "version": "5f6d0fb939878d622243c975827fa431131a90f2055c0a4e5497b82602882504"
+    },
+    "bench_aca_baseline.AcaBaselineGpuPeakMem.track_gpu_peak_mem": {
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "name": "bench_aca_baseline.AcaBaselineGpuPeakMem.track_gpu_peak_mem",
+        "param_names": [],
+        "params": [],
+        "timeout": 3600,
+        "type": "track",
+        "unit": "bytes",
+        "version": "a03a30394aab996af4d481042aa192a377f8716a8db7d351a1f768e0e4ae3958"
+    },
     "bench_mahler_yum.MahlerYum.peakmem_execution": {
         "code": "class MahlerYum:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_mahler_yum.MahlerYum.peakmem_execution",
@@ -38,52 +87,6 @@
     "bench_mahler_yum.MahlerYumGpuPeakMem.track_gpu_peak_mem": {
         "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
         "name": "bench_mahler_yum.MahlerYumGpuPeakMem.track_gpu_peak_mem",
-        "param_names": [],
-        "params": [],
-        "timeout": 1200,
-        "type": "track",
-        "unit": "bytes",
-        "version": "a03a30394aab996af4d481042aa192a377f8716a8db7d351a1f768e0e4ae3958"
-    },
-    "bench_mortality.Mortality.peakmem_execution": {
-        "code": "class Mortality:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
-        "name": "bench_mortality.Mortality.peakmem_execution",
-        "param_names": [],
-        "params": [],
-        "timeout": 600,
-        "type": "peakmemory",
-        "unit": "bytes",
-        "version": "036975c3c500839011de3fa76150c7c24f2fe19c77b25238d68de4f808302243"
-    },
-    "bench_mortality.Mortality.time_execution": {
-        "code": "class Mortality:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
-        "min_run_count": 2,
-        "name": "bench_mortality.Mortality.time_execution",
-        "number": 0,
-        "param_names": [],
-        "params": [],
-        "repeat": 0,
-        "rounds": 2,
-        "sample_time": 0.01,
-        "timeout": 600,
-        "type": "time",
-        "unit": "seconds",
-        "version": "9ff9c508da33f0612d8f247f31b3711a270c74c82b02ce2ea6617cb81f2b35d9",
-        "warmup_time": -1
-    },
-    "bench_mortality.Mortality.track_compilation_time": {
-        "code": "class Mortality:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n            check_initial_conditions=False,\n        )\n        self._compile_time = time.perf_counter() - start",
-        "name": "bench_mortality.Mortality.track_compilation_time",
-        "param_names": [],
-        "params": [],
-        "timeout": 600,
-        "type": "track",
-        "unit": "seconds",
-        "version": "0324a4f581d4124aeb2226d175aa708595d4a3a54e6c6cbdab0edfe382c45a08"
-    },
-    "bench_mortality.MortalityGpuPeakMem.track_gpu_peak_mem": {
-        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
-        "name": "bench_mortality.MortalityGpuPeakMem.track_gpu_peak_mem",
         "param_names": [],
         "params": [],
         "timeout": 1200,
