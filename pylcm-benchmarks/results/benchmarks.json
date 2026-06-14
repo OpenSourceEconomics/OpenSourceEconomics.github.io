@@ -97,6 +97,98 @@
         "unit": "bytes",
         "version": "1"
     },
+    "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.peakmem_execution": {
+        "code": "class IskhakovEtAl2017Simulate:\n    def peakmem_execution(self) -> None:\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.peakmem_execution",
+        "param_names": [],
+        "params": [],
+        "timeout": 600,
+        "type": "peakmemory",
+        "unit": "bytes",
+        "version": "1"
+    },
+    "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.time_execution": {
+        "code": "class IskhakovEtAl2017Simulate:\n    def time_execution(self) -> None:\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "min_run_count": 2,
+        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.time_execution",
+        "number": 0,
+        "param_names": [],
+        "params": [],
+        "repeat": 0,
+        "rounds": 2,
+        "sample_time": 0.01,
+        "timeout": 600,
+        "type": "time",
+        "unit": "seconds",
+        "version": "1",
+        "warmup_time": -1
+    },
+    "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.track_compilation_time": {
+        "code": "class IskhakovEtAl2017Simulate:\n    def track_compilation_time(self) -> float:\n        return self._compile_time\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.track_compilation_time",
+        "param_names": [],
+        "params": [],
+        "timeout": 600,
+        "type": "track",
+        "unit": "seconds",
+        "version": "1"
+    },
+    "bench_iskhakov_et_al_2017.IskhakovEtAl2017SimulateGpuPeakMem.track_gpu_peak_mem": {
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017SimulateGpuPeakMem.track_gpu_peak_mem",
+        "param_names": [],
+        "params": [],
+        "timeout": 1200,
+        "type": "track",
+        "unit": "bytes",
+        "version": "1"
+    },
+    "bench_iskhakov_et_al_2017.IskhakovEtAl2017Solve.peakmem_execution": {
+        "code": "class IskhakovEtAl2017Solve:\n    def peakmem_execution(self) -> None:\n        self.model.solve(params=self.model_params, log_level=\"off\")\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
+        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017Solve.peakmem_execution",
+        "param_names": [],
+        "params": [],
+        "timeout": 600,
+        "type": "peakmemory",
+        "unit": "bytes",
+        "version": "1"
+    },
+    "bench_iskhakov_et_al_2017.IskhakovEtAl2017Solve.time_execution": {
+        "code": "class IskhakovEtAl2017Solve:\n    def time_execution(self) -> None:\n        self.model.solve(params=self.model_params, log_level=\"off\")\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
+        "min_run_count": 2,
+        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017Solve.time_execution",
+        "number": 0,
+        "param_names": [],
+        "params": [],
+        "repeat": 0,
+        "rounds": 2,
+        "sample_time": 0.01,
+        "timeout": 600,
+        "type": "time",
+        "unit": "seconds",
+        "version": "1",
+        "warmup_time": -1
+    },
+    "bench_iskhakov_et_al_2017.IskhakovEtAl2017Solve.track_compilation_time": {
+        "code": "class IskhakovEtAl2017Solve:\n    def track_compilation_time(self) -> float:\n        return self._compile_time\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
+        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017Solve.track_compilation_time",
+        "param_names": [],
+        "params": [],
+        "timeout": 600,
+        "type": "track",
+        "unit": "seconds",
+        "version": "1"
+    },
+    "bench_iskhakov_et_al_2017.IskhakovEtAl2017SolveGpuPeakMem.track_gpu_peak_mem": {
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017SolveGpuPeakMem.track_gpu_peak_mem",
+        "param_names": [],
+        "params": [],
+        "timeout": 1200,
+        "type": "track",
+        "unit": "bytes",
+        "version": "1"
+    },
     "bench_mahler_yum.MahlerYum.peakmem_execution": {
         "code": "class MahlerYum:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_mahler_yum.MahlerYum.peakmem_execution",
