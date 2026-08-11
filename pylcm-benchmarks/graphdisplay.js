@@ -1400,6 +1400,9 @@ $(document).ready(function() {
                 date_scale = true;
             }
             delete params['x-axis-scale'];
+        } else {
+            $('#date-scale').addClass('active');
+            date_scale = true;
         }
 
         var show_legend_button = $('#show-legend')
