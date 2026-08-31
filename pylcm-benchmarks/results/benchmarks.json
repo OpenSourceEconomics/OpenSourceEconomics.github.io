@@ -97,6 +97,221 @@
         "unit": "bytes",
         "version": "1"
     },
+    "bench_collective_household.CollectiveHouseholdConstruct.peakmem_execution": {
+        "code": "class CollectiveHouseholdConstruct:\n    def peakmem_execution(self):\n        _make_model()\n\n    def setup(self):\n        # Warm the imports so the measured call is construction, not the first\n        # import of jax and pylcm.\n        _make_model()",
+        "name": "bench_collective_household.CollectiveHouseholdConstruct.peakmem_execution",
+        "param_names": [],
+        "params": [],
+        "timeout": 600,
+        "type": "peakmemory",
+        "unit": "bytes",
+        "version": "1"
+    },
+    "bench_collective_household.CollectiveHouseholdConstruct.time_execution": {
+        "code": "class CollectiveHouseholdConstruct:\n    def time_execution(self):\n        _make_model()\n\n    def setup(self):\n        # Warm the imports so the measured call is construction, not the first\n        # import of jax and pylcm.\n        _make_model()",
+        "min_run_count": 2,
+        "name": "bench_collective_household.CollectiveHouseholdConstruct.time_execution",
+        "number": 0,
+        "param_names": [],
+        "params": [],
+        "repeat": 0,
+        "rounds": 2,
+        "sample_time": 0.01,
+        "timeout": 600,
+        "type": "time",
+        "unit": "seconds",
+        "version": "1",
+        "warmup_time": -1
+    },
+    "bench_collective_household.CollectiveHouseholdSimulate.peakmem_execution": {
+        "code": "class CollectiveHouseholdSimulate:\n    def peakmem_execution(self, n_subjects):\n        self._simulate()\n\n    def setup(self, n_subjects):\n        self._build(n_subjects)\n        start = time.perf_counter()\n        self._simulate()\n        self._compile_time = time.perf_counter() - start",
+        "name": "bench_collective_household.CollectiveHouseholdSimulate.peakmem_execution",
+        "param_names": [
+            "n_subjects"
+        ],
+        "params": [
+            [
+                "1000",
+                "10000",
+                "100000"
+            ]
+        ],
+        "timeout": 900,
+        "type": "peakmemory",
+        "unit": "bytes",
+        "version": "1"
+    },
+    "bench_collective_household.CollectiveHouseholdSimulate.time_execution": {
+        "code": "class CollectiveHouseholdSimulate:\n    def time_execution(self, n_subjects=_GPU_N_SUBJECTS):\n        self._simulate()\n\n    def setup(self, n_subjects):\n        self._build(n_subjects)\n        start = time.perf_counter()\n        self._simulate()\n        self._compile_time = time.perf_counter() - start",
+        "min_run_count": 2,
+        "name": "bench_collective_household.CollectiveHouseholdSimulate.time_execution",
+        "number": 0,
+        "param_names": [
+            "n_subjects"
+        ],
+        "params": [
+            [
+                "1000",
+                "10000",
+                "100000"
+            ]
+        ],
+        "repeat": 0,
+        "rounds": 2,
+        "sample_time": 0.01,
+        "timeout": 900,
+        "type": "time",
+        "unit": "seconds",
+        "version": "1",
+        "warmup_time": -1
+    },
+    "bench_collective_household.CollectiveHouseholdSimulate.track_compilation_time": {
+        "code": "class CollectiveHouseholdSimulate:\n    def track_compilation_time(self, n_subjects):\n        return self._compile_time\n\n    def setup(self, n_subjects):\n        self._build(n_subjects)\n        start = time.perf_counter()\n        self._simulate()\n        self._compile_time = time.perf_counter() - start",
+        "name": "bench_collective_household.CollectiveHouseholdSimulate.track_compilation_time",
+        "param_names": [
+            "n_subjects"
+        ],
+        "params": [
+            [
+                "1000",
+                "10000",
+                "100000"
+            ]
+        ],
+        "timeout": 900,
+        "type": "track",
+        "unit": "seconds",
+        "version": "1"
+    },
+    "bench_collective_household.CollectiveHouseholdSimulateGpuPeakMem.track_gpu_peak_mem": {
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "name": "bench_collective_household.CollectiveHouseholdSimulateGpuPeakMem.track_gpu_peak_mem",
+        "param_names": [],
+        "params": [],
+        "timeout": 1200,
+        "type": "track",
+        "unit": "bytes",
+        "version": "1"
+    },
+    "bench_collective_household.CollectiveHouseholdSolve.peakmem_execution": {
+        "code": "class CollectiveHouseholdSolve:\n    def peakmem_execution(self):\n        self.model.solve(params=self.model_params, log_level=\"off\")\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
+        "name": "bench_collective_household.CollectiveHouseholdSolve.peakmem_execution",
+        "param_names": [],
+        "params": [],
+        "timeout": 900,
+        "type": "peakmemory",
+        "unit": "bytes",
+        "version": "1"
+    },
+    "bench_collective_household.CollectiveHouseholdSolve.time_execution": {
+        "code": "class CollectiveHouseholdSolve:\n    def time_execution(self):\n        self.model.solve(params=self.model_params, log_level=\"off\")\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
+        "min_run_count": 2,
+        "name": "bench_collective_household.CollectiveHouseholdSolve.time_execution",
+        "number": 0,
+        "param_names": [],
+        "params": [],
+        "repeat": 0,
+        "rounds": 2,
+        "sample_time": 0.01,
+        "timeout": 900,
+        "type": "time",
+        "unit": "seconds",
+        "version": "1",
+        "warmup_time": -1
+    },
+    "bench_collective_household.CollectiveHouseholdSolve.track_compilation_time": {
+        "code": "class CollectiveHouseholdSolve:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
+        "name": "bench_collective_household.CollectiveHouseholdSolve.track_compilation_time",
+        "param_names": [],
+        "params": [],
+        "timeout": 900,
+        "type": "track",
+        "unit": "seconds",
+        "version": "1"
+    },
+    "bench_collective_household.CollectiveHouseholdSolveGpuPeakMem.track_gpu_peak_mem": {
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "name": "bench_collective_household.CollectiveHouseholdSolveGpuPeakMem.track_gpu_peak_mem",
+        "param_names": [],
+        "params": [],
+        "timeout": 1200,
+        "type": "track",
+        "unit": "bytes",
+        "version": "1"
+    },
+    "bench_collective_household.ReferenceChainSolve.peakmem_execution": {
+        "code": "class ReferenceChainSolve:\n    def peakmem_execution(self, depth):\n        self.model.solve(params=self.model_params, log_level=\"off\")\n\n    def setup(self, depth):\n        self._build(depth)\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
+        "name": "bench_collective_household.ReferenceChainSolve.peakmem_execution",
+        "param_names": [
+            "depth"
+        ],
+        "params": [
+            [
+                "1",
+                "2",
+                "4",
+                "8"
+            ]
+        ],
+        "timeout": 900,
+        "type": "peakmemory",
+        "unit": "bytes",
+        "version": "1"
+    },
+    "bench_collective_household.ReferenceChainSolve.time_execution": {
+        "code": "class ReferenceChainSolve:\n    def time_execution(self, depth=_GPU_DEPTH):\n        self.model.solve(params=self.model_params, log_level=\"off\")\n\n    def setup(self, depth):\n        self._build(depth)\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
+        "min_run_count": 2,
+        "name": "bench_collective_household.ReferenceChainSolve.time_execution",
+        "number": 0,
+        "param_names": [
+            "depth"
+        ],
+        "params": [
+            [
+                "1",
+                "2",
+                "4",
+                "8"
+            ]
+        ],
+        "repeat": 0,
+        "rounds": 2,
+        "sample_time": 0.01,
+        "timeout": 900,
+        "type": "time",
+        "unit": "seconds",
+        "version": "1",
+        "warmup_time": -1
+    },
+    "bench_collective_household.ReferenceChainSolve.track_compilation_time": {
+        "code": "class ReferenceChainSolve:\n    def track_compilation_time(self, depth):\n        return self._compile_time\n\n    def setup(self, depth):\n        self._build(depth)\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
+        "name": "bench_collective_household.ReferenceChainSolve.track_compilation_time",
+        "param_names": [
+            "depth"
+        ],
+        "params": [
+            [
+                "1",
+                "2",
+                "4",
+                "8"
+            ]
+        ],
+        "timeout": 900,
+        "type": "track",
+        "unit": "seconds",
+        "version": "1"
+    },
+    "bench_collective_household.ReferenceChainSolveGpuPeakMem.track_gpu_peak_mem": {
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "name": "bench_collective_household.ReferenceChainSolveGpuPeakMem.track_gpu_peak_mem",
+        "param_names": [],
+        "params": [],
+        "timeout": 1200,
+        "type": "track",
+        "unit": "bytes",
+        "version": "1"
+    },
     "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulate.peakmem_execution": {
         "code": "class IskhakovEtAl2017DCEGMSimulate:\n    def peakmem_execution(self) -> None:\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulate.peakmem_execution",
