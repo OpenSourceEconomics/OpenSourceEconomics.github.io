@@ -78,7 +78,7 @@
         "version": "1"
     },
     "bench_aca_baseline.AcaBaselineDebugLogGpuPeakMem.track_gpu_peak_mem": {
-        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
         "name": "bench_aca_baseline.AcaBaselineDebugLogGpuPeakMem.track_gpu_peak_mem",
         "param_names": [],
         "params": [],
@@ -88,7 +88,7 @@
         "version": "1"
     },
     "bench_aca_baseline.AcaBaselineGpuPeakMem.track_gpu_peak_mem": {
-        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
         "name": "bench_aca_baseline.AcaBaselineGpuPeakMem.track_gpu_peak_mem",
         "param_names": [],
         "params": [],
@@ -184,7 +184,7 @@
         "version": "1"
     },
     "bench_collective_household.CollectiveHouseholdSimulateGpuPeakMem.track_gpu_peak_mem": {
-        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
         "name": "bench_collective_household.CollectiveHouseholdSimulateGpuPeakMem.track_gpu_peak_mem",
         "param_names": [],
         "params": [],
@@ -230,7 +230,7 @@
         "version": "1"
     },
     "bench_collective_household.CollectiveHouseholdSolveGpuPeakMem.track_gpu_peak_mem": {
-        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
         "name": "bench_collective_household.CollectiveHouseholdSolveGpuPeakMem.track_gpu_peak_mem",
         "param_names": [],
         "params": [],
@@ -303,7 +303,7 @@
         "version": "1"
     },
     "bench_collective_household.ReferenceChainSolveGpuPeakMem.track_gpu_peak_mem": {
-        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
         "name": "bench_collective_household.ReferenceChainSolveGpuPeakMem.track_gpu_peak_mem",
         "param_names": [],
         "params": [],
@@ -349,7 +349,7 @@
         "version": "1"
     },
     "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulateGpuPeakMem.track_gpu_peak_mem": {
-        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
         "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulateGpuPeakMem.track_gpu_peak_mem",
         "param_names": [],
         "params": [],
@@ -395,7 +395,7 @@
         "version": "2"
     },
     "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSolveGpuPeakMem.track_gpu_peak_mem": {
-        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
         "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSolveGpuPeakMem.track_gpu_peak_mem",
         "param_names": [],
         "params": [],
@@ -441,7 +441,7 @@
         "version": "1"
     },
     "bench_iskhakov_et_al_2017.IskhakovEtAl2017SimulateGpuPeakMem.track_gpu_peak_mem": {
-        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
         "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017SimulateGpuPeakMem.track_gpu_peak_mem",
         "param_names": [],
         "params": [],
@@ -487,7 +487,7 @@
         "version": "1"
     },
     "bench_iskhakov_et_al_2017.IskhakovEtAl2017SolveGpuPeakMem.track_gpu_peak_mem": {
-        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
         "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017SolveGpuPeakMem.track_gpu_peak_mem",
         "param_names": [],
         "params": [],
@@ -533,7 +533,7 @@
         "version": "1"
     },
     "bench_mahler_yum.MahlerYumGpuPeakMem.track_gpu_peak_mem": {
-        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
         "name": "bench_mahler_yum.MahlerYumGpuPeakMem.track_gpu_peak_mem",
         "param_names": [],
         "params": [],
@@ -579,7 +579,7 @@
         "version": "1"
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulateGpuPeakMem.track_gpu_peak_mem": {
-        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulateGpuPeakMem.track_gpu_peak_mem",
         "param_names": [],
         "params": [],
@@ -625,7 +625,7 @@
         "version": "1"
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveGpuPeakMem.track_gpu_peak_mem": {
-        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveGpuPeakMem.track_gpu_peak_mem",
         "param_names": [],
         "params": [],
@@ -671,7 +671,7 @@
         "version": "1"
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrregGpuPeakMem.track_gpu_peak_mem": {
-        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrregGpuPeakMem.track_gpu_peak_mem",
         "param_names": [],
         "params": [],
@@ -717,7 +717,7 @@
         "version": "1"
     },
     "bench_precautionary_savings.PrecautionarySavingsSolveGpuPeakMem.track_gpu_peak_mem": {
-        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(self.bench_module, self.bench_class)\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
+        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
         "name": "bench_precautionary_savings.PrecautionarySavingsSolveGpuPeakMem.track_gpu_peak_mem",
         "param_names": [],
         "params": [],
