@@ -1,97 +1,87 @@
 {
-    "bench_aca_baseline.AcaBaseline.peakmem_execution": {
-        "code": "class AcaBaseline:\n    def peakmem_execution(self, cache: bytes | None = None) -> None:\n        self._simulate()\n\n    def setup(self, cache: bytes) -> None:\n        self.model, self.model_params, self.initial_conditions = cloudpickle.loads(\n            cache\n        )\n        # Warm-trigger compilation so time_execution runs on a hot kernel.\n        start = time.perf_counter()\n        self._simulate()\n        self._compile_time = time.perf_counter() - start\n\n    def setup_cache(self) -> bytes:\n        # Build once per ASV benchmark class run and hand the result to\n        # every method via ASV's setup_cache mechanism. ASV pickles the\n        # return value with stdlib `pickle`, which can't handle the\n        # `MappingProxyType` leaves or user callables inside a pylcm\n        # `Model` \u2014 so wrap the triple in cloudpickle bytes. ASV then\n        # ships plain bytes; each method's setup(cache) reconstructs.\n        return cloudpickle.dumps(_build())",
-        "name": "bench_aca_baseline.AcaBaseline.peakmem_execution",
-        "param_names": [],
-        "params": [],
-        "setup_cache_key": "bench_aca_baseline:161",
-        "timeout": 3600,
-        "type": "peakmemory",
-        "unit": "bytes",
-        "version": "1"
-    },
-    "bench_aca_baseline.AcaBaseline.time_execution": {
-        "code": "class AcaBaseline:\n    def time_execution(self, cache: bytes | None = None) -> None:\n        self._simulate()\n\n    def setup(self, cache: bytes) -> None:\n        self.model, self.model_params, self.initial_conditions = cloudpickle.loads(\n            cache\n        )\n        # Warm-trigger compilation so time_execution runs on a hot kernel.\n        start = time.perf_counter()\n        self._simulate()\n        self._compile_time = time.perf_counter() - start\n\n    def setup_cache(self) -> bytes:\n        # Build once per ASV benchmark class run and hand the result to\n        # every method via ASV's setup_cache mechanism. ASV pickles the\n        # return value with stdlib `pickle`, which can't handle the\n        # `MappingProxyType` leaves or user callables inside a pylcm\n        # `Model` \u2014 so wrap the triple in cloudpickle bytes. ASV then\n        # ships plain bytes; each method's setup(cache) reconstructs.\n        return cloudpickle.dumps(_build())",
-        "min_run_count": 2,
-        "name": "bench_aca_baseline.AcaBaseline.time_execution",
-        "number": 1,
-        "param_names": [],
-        "params": [],
-        "repeat": 1,
-        "rounds": 1,
-        "sample_time": 0.01,
-        "setup_cache_key": "bench_aca_baseline:161",
-        "timeout": 3600,
-        "type": "time",
-        "unit": "seconds",
-        "version": "1",
-        "warmup_time": 0
-    },
     "bench_aca_baseline.AcaBaseline.track_compilation_time": {
-        "code": "class AcaBaseline:\n    def track_compilation_time(self, cache: bytes | None = None) -> float:\n        return self._compile_time\n\n    def setup(self, cache: bytes) -> None:\n        self.model, self.model_params, self.initial_conditions = cloudpickle.loads(\n            cache\n        )\n        # Warm-trigger compilation so time_execution runs on a hot kernel.\n        start = time.perf_counter()\n        self._simulate()\n        self._compile_time = time.perf_counter() - start\n\n    def setup_cache(self) -> bytes:\n        # Build once per ASV benchmark class run and hand the result to\n        # every method via ASV's setup_cache mechanism. ASV pickles the\n        # return value with stdlib `pickle`, which can't handle the\n        # `MappingProxyType` leaves or user callables inside a pylcm\n        # `Model` \u2014 so wrap the triple in cloudpickle bytes. ASV then\n        # ships plain bytes; each method's setup(cache) reconstructs.\n        return cloudpickle.dumps(_build())",
+        "code": "class AcaBaseline:\n    def track_compilation_time(self, cache: dict[str, float] | None = None) -> float:\n        return self._measurements[\"compilation_time\"]\n\n    def setup(self, cache: dict[str, float]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float]:\n        return _gpu_mem.measure_combined(\n            bench_module=\"benchmarks.asv.bench_aca_baseline\",\n            bench_class=\"AcaBaseline\",\n        )",
         "name": "bench_aca_baseline.AcaBaseline.track_compilation_time",
         "param_names": [],
         "params": [],
-        "setup_cache_key": "bench_aca_baseline:161",
+        "setup_cache_key": "bench_aca_baseline:137",
         "timeout": 3600,
         "type": "track",
         "unit": "seconds",
         "version": "1"
     },
-    "bench_aca_baseline.AcaBaselineDebugLog.peakmem_execution": {
-        "code": "class AcaBaseline:\n    def peakmem_execution(self, cache: bytes | None = None) -> None:\n        self._simulate()\n\nclass AcaBaselineDebugLog:\n    def setup(self, cache: bytes) -> None:\n        self.log_path = _make_log_dir()\n        super().setup(cache)\n\nclass AcaBaseline:\n    def setup_cache(self) -> bytes:\n        # Build once per ASV benchmark class run and hand the result to\n        # every method via ASV's setup_cache mechanism. ASV pickles the\n        # return value with stdlib `pickle`, which can't handle the\n        # `MappingProxyType` leaves or user callables inside a pylcm\n        # `Model` \u2014 so wrap the triple in cloudpickle bytes. ASV then\n        # ships plain bytes; each method's setup(cache) reconstructs.\n        return cloudpickle.dumps(_build())",
-        "name": "bench_aca_baseline.AcaBaselineDebugLog.peakmem_execution",
+    "bench_aca_baseline.AcaBaseline.track_execution_time": {
+        "code": "class AcaBaseline:\n    def track_execution_time(self, cache: dict[str, float] | None = None) -> float:\n        return self._measurements[\"execution_time\"]\n\n    def setup(self, cache: dict[str, float]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float]:\n        return _gpu_mem.measure_combined(\n            bench_module=\"benchmarks.asv.bench_aca_baseline\",\n            bench_class=\"AcaBaseline\",\n        )",
+        "name": "bench_aca_baseline.AcaBaseline.track_execution_time",
         "param_names": [],
         "params": [],
-        "setup_cache_key": "bench_aca_baseline:161",
+        "setup_cache_key": "bench_aca_baseline:137",
         "timeout": 3600,
-        "type": "peakmemory",
+        "type": "track",
+        "unit": "seconds",
+        "version": "1"
+    },
+    "bench_aca_baseline.AcaBaseline.track_peak_cpu_mem": {
+        "code": "class AcaBaseline:\n    def track_peak_cpu_mem(self, cache: dict[str, float] | None = None) -> float:\n        return self._measurements[\"peak_cpu_mem\"]\n\n    def setup(self, cache: dict[str, float]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float]:\n        return _gpu_mem.measure_combined(\n            bench_module=\"benchmarks.asv.bench_aca_baseline\",\n            bench_class=\"AcaBaseline\",\n        )",
+        "name": "bench_aca_baseline.AcaBaseline.track_peak_cpu_mem",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "bench_aca_baseline:137",
+        "timeout": 3600,
+        "type": "track",
         "unit": "bytes",
         "version": "1"
     },
-    "bench_aca_baseline.AcaBaselineDebugLog.time_execution": {
-        "code": "class AcaBaseline:\n    def time_execution(self, cache: bytes | None = None) -> None:\n        self._simulate()\n\nclass AcaBaselineDebugLog:\n    def setup(self, cache: bytes) -> None:\n        self.log_path = _make_log_dir()\n        super().setup(cache)\n\nclass AcaBaseline:\n    def setup_cache(self) -> bytes:\n        # Build once per ASV benchmark class run and hand the result to\n        # every method via ASV's setup_cache mechanism. ASV pickles the\n        # return value with stdlib `pickle`, which can't handle the\n        # `MappingProxyType` leaves or user callables inside a pylcm\n        # `Model` \u2014 so wrap the triple in cloudpickle bytes. ASV then\n        # ships plain bytes; each method's setup(cache) reconstructs.\n        return cloudpickle.dumps(_build())",
-        "min_run_count": 2,
-        "name": "bench_aca_baseline.AcaBaselineDebugLog.time_execution",
-        "number": 1,
+    "bench_aca_baseline.AcaBaseline.track_peak_gpu_mem": {
+        "code": "class AcaBaseline:\n    def track_peak_gpu_mem(self, cache: dict[str, float] | None = None) -> float:\n        return self._measurements[\"peak_gpu_mem\"]\n\n    def setup(self, cache: dict[str, float]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float]:\n        return _gpu_mem.measure_combined(\n            bench_module=\"benchmarks.asv.bench_aca_baseline\",\n            bench_class=\"AcaBaseline\",\n        )",
+        "name": "bench_aca_baseline.AcaBaseline.track_peak_gpu_mem",
         "param_names": [],
         "params": [],
-        "repeat": 1,
-        "rounds": 1,
-        "sample_time": 0.01,
-        "setup_cache_key": "bench_aca_baseline:161",
+        "setup_cache_key": "bench_aca_baseline:137",
         "timeout": 3600,
-        "type": "time",
-        "unit": "seconds",
-        "version": "1",
-        "warmup_time": 0
+        "type": "track",
+        "unit": "bytes",
+        "version": "1"
     },
     "bench_aca_baseline.AcaBaselineDebugLog.track_compilation_time": {
-        "code": "class AcaBaseline:\n    def track_compilation_time(self, cache: bytes | None = None) -> float:\n        return self._compile_time\n\nclass AcaBaselineDebugLog:\n    def setup(self, cache: bytes) -> None:\n        self.log_path = _make_log_dir()\n        super().setup(cache)\n\nclass AcaBaseline:\n    def setup_cache(self) -> bytes:\n        # Build once per ASV benchmark class run and hand the result to\n        # every method via ASV's setup_cache mechanism. ASV pickles the\n        # return value with stdlib `pickle`, which can't handle the\n        # `MappingProxyType` leaves or user callables inside a pylcm\n        # `Model` \u2014 so wrap the triple in cloudpickle bytes. ASV then\n        # ships plain bytes; each method's setup(cache) reconstructs.\n        return cloudpickle.dumps(_build())",
+        "code": "class AcaBaseline:\n    def track_compilation_time(self, cache: dict[str, float] | None = None) -> float:\n        return self._measurements[\"compilation_time\"]\n\n    def setup(self, cache: dict[str, float]) -> None:\n        self._measurements = cache\n\nclass AcaBaselineDebugLog:\n    def setup_cache(self) -> dict[str, float]:\n        return _gpu_mem.measure_combined(\n            bench_module=\"benchmarks.asv.bench_aca_baseline\",\n            bench_class=\"AcaBaselineDebugLog\",\n        )",
         "name": "bench_aca_baseline.AcaBaselineDebugLog.track_compilation_time",
         "param_names": [],
         "params": [],
-        "setup_cache_key": "bench_aca_baseline:161",
+        "setup_cache_key": "bench_aca_baseline:191",
         "timeout": 3600,
         "type": "track",
         "unit": "seconds",
         "version": "1"
     },
-    "bench_aca_baseline.AcaBaselineDebugLogGpuPeakMem.track_gpu_peak_mem": {
-        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
-        "name": "bench_aca_baseline.AcaBaselineDebugLogGpuPeakMem.track_gpu_peak_mem",
+    "bench_aca_baseline.AcaBaselineDebugLog.track_execution_time": {
+        "code": "class AcaBaseline:\n    def track_execution_time(self, cache: dict[str, float] | None = None) -> float:\n        return self._measurements[\"execution_time\"]\n\n    def setup(self, cache: dict[str, float]) -> None:\n        self._measurements = cache\n\nclass AcaBaselineDebugLog:\n    def setup_cache(self) -> dict[str, float]:\n        return _gpu_mem.measure_combined(\n            bench_module=\"benchmarks.asv.bench_aca_baseline\",\n            bench_class=\"AcaBaselineDebugLog\",\n        )",
+        "name": "bench_aca_baseline.AcaBaselineDebugLog.track_execution_time",
         "param_names": [],
         "params": [],
+        "setup_cache_key": "bench_aca_baseline:191",
+        "timeout": 3600,
+        "type": "track",
+        "unit": "seconds",
+        "version": "1"
+    },
+    "bench_aca_baseline.AcaBaselineDebugLog.track_peak_cpu_mem": {
+        "code": "class AcaBaseline:\n    def track_peak_cpu_mem(self, cache: dict[str, float] | None = None) -> float:\n        return self._measurements[\"peak_cpu_mem\"]\n\n    def setup(self, cache: dict[str, float]) -> None:\n        self._measurements = cache\n\nclass AcaBaselineDebugLog:\n    def setup_cache(self) -> dict[str, float]:\n        return _gpu_mem.measure_combined(\n            bench_module=\"benchmarks.asv.bench_aca_baseline\",\n            bench_class=\"AcaBaselineDebugLog\",\n        )",
+        "name": "bench_aca_baseline.AcaBaselineDebugLog.track_peak_cpu_mem",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "bench_aca_baseline:191",
         "timeout": 3600,
         "type": "track",
         "unit": "bytes",
         "version": "1"
     },
-    "bench_aca_baseline.AcaBaselineGpuPeakMem.track_gpu_peak_mem": {
-        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
-        "name": "bench_aca_baseline.AcaBaselineGpuPeakMem.track_gpu_peak_mem",
+    "bench_aca_baseline.AcaBaselineDebugLog.track_peak_gpu_mem": {
+        "code": "class AcaBaseline:\n    def track_peak_gpu_mem(self, cache: dict[str, float] | None = None) -> float:\n        return self._measurements[\"peak_gpu_mem\"]\n\n    def setup(self, cache: dict[str, float]) -> None:\n        self._measurements = cache\n\nclass AcaBaselineDebugLog:\n    def setup_cache(self) -> dict[str, float]:\n        return _gpu_mem.measure_combined(\n            bench_module=\"benchmarks.asv.bench_aca_baseline\",\n            bench_class=\"AcaBaselineDebugLog\",\n        )",
+        "name": "bench_aca_baseline.AcaBaselineDebugLog.track_peak_gpu_mem",
         "param_names": [],
         "params": [],
+        "setup_cache_key": "bench_aca_baseline:191",
         "timeout": 3600,
         "type": "track",
         "unit": "bytes",
@@ -313,7 +303,7 @@
         "version": "1"
     },
     "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulate.peakmem_execution": {
-        "code": "class IskhakovEtAl2017DCEGMSimulate:\n    def peakmem_execution(self) -> None:\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class IskhakovEtAl2017DCEGMSimulate:\n    def peakmem_execution(self) -> None:\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulate.peakmem_execution",
         "param_names": [],
         "params": [],
@@ -323,7 +313,7 @@
         "version": "1"
     },
     "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulate.time_execution": {
-        "code": "class IskhakovEtAl2017DCEGMSimulate:\n    def time_execution(self) -> None:\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class IskhakovEtAl2017DCEGMSimulate:\n    def time_execution(self) -> None:\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
         "min_run_count": 2,
         "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulate.time_execution",
         "number": 0,
@@ -339,7 +329,7 @@
         "warmup_time": -1
     },
     "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulate.track_compilation_time": {
-        "code": "class IskhakovEtAl2017DCEGMSimulate:\n    def track_compilation_time(self) -> float:\n        return self._compile_time\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class IskhakovEtAl2017DCEGMSimulate:\n    def track_compilation_time(self) -> float:\n        return self._compile_time\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulate.track_compilation_time",
         "param_names": [],
         "params": [],
@@ -405,7 +395,7 @@
         "version": "1"
     },
     "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.peakmem_execution": {
-        "code": "class IskhakovEtAl2017Simulate:\n    def peakmem_execution(self) -> None:\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class IskhakovEtAl2017Simulate:\n    def peakmem_execution(self) -> None:\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.peakmem_execution",
         "param_names": [],
         "params": [],
@@ -415,7 +405,7 @@
         "version": "1"
     },
     "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.time_execution": {
-        "code": "class IskhakovEtAl2017Simulate:\n    def time_execution(self) -> None:\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class IskhakovEtAl2017Simulate:\n    def time_execution(self) -> None:\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
         "min_run_count": 2,
         "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.time_execution",
         "number": 0,
@@ -431,7 +421,7 @@
         "warmup_time": -1
     },
     "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.track_compilation_time": {
-        "code": "class IskhakovEtAl2017Simulate:\n    def track_compilation_time(self) -> float:\n        return self._compile_time\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class IskhakovEtAl2017Simulate:\n    def track_compilation_time(self) -> float:\n        return self._compile_time\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.track_compilation_time",
         "param_names": [],
         "params": [],
@@ -497,7 +487,7 @@
         "version": "1"
     },
     "bench_mahler_yum.MahlerYum.peakmem_execution": {
-        "code": "class MahlerYum:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class MahlerYum:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_mahler_yum.MahlerYum.peakmem_execution",
         "param_names": [],
         "params": [],
@@ -507,7 +497,7 @@
         "version": "1"
     },
     "bench_mahler_yum.MahlerYum.time_execution": {
-        "code": "class MahlerYum:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class MahlerYum:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
         "min_run_count": 2,
         "name": "bench_mahler_yum.MahlerYum.time_execution",
         "number": 0,
@@ -523,7 +513,7 @@
         "warmup_time": -1
     },
     "bench_mahler_yum.MahlerYum.track_compilation_time": {
-        "code": "class MahlerYum:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class MahlerYum:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_mahler_yum.MahlerYum.track_compilation_time",
         "param_names": [],
         "params": [],
@@ -543,7 +533,7 @@
         "version": "1"
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulate.peakmem_execution": {
-        "code": "class PrecautionarySavingsSimulate:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSimulate:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulate.peakmem_execution",
         "param_names": [],
         "params": [],
@@ -553,7 +543,7 @@
         "version": "1"
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulate.time_execution": {
-        "code": "class PrecautionarySavingsSimulate:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSimulate:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
         "min_run_count": 2,
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulate.time_execution",
         "number": 0,
@@ -569,7 +559,7 @@
         "warmup_time": -1
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulate.track_compilation_time": {
-        "code": "class PrecautionarySavingsSimulate:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSimulate:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulate.track_compilation_time",
         "param_names": [],
         "params": [],
@@ -589,7 +579,7 @@
         "version": "1"
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.peakmem_execution": {
-        "code": "class PrecautionarySavingsSimulateWithSolve:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSimulateWithSolve:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.peakmem_execution",
         "param_names": [],
         "params": [],
@@ -599,7 +589,7 @@
         "version": "1"
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.time_execution": {
-        "code": "class PrecautionarySavingsSimulateWithSolve:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSimulateWithSolve:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
         "min_run_count": 2,
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.time_execution",
         "number": 0,
@@ -615,7 +605,7 @@
         "warmup_time": -1
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.track_compilation_time": {
-        "code": "class PrecautionarySavingsSimulateWithSolve:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSimulateWithSolve:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.track_compilation_time",
         "param_names": [],
         "params": [],
@@ -635,7 +625,7 @@
         "version": "1"
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.peakmem_execution": {
-        "code": "class PrecautionarySavingsSimulateWithSolveIrreg:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSimulateWithSolveIrreg:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.peakmem_execution",
         "param_names": [],
         "params": [],
@@ -645,7 +635,7 @@
         "version": "1"
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.time_execution": {
-        "code": "class PrecautionarySavingsSimulateWithSolveIrreg:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSimulateWithSolveIrreg:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
         "min_run_count": 2,
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.time_execution",
         "number": 0,
@@ -661,7 +651,7 @@
         "warmup_time": -1
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.track_compilation_time": {
-        "code": "class PrecautionarySavingsSimulateWithSolveIrreg:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            period_to_regime_to_V_arr=None,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSimulateWithSolveIrreg:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.track_compilation_time",
         "param_names": [],
         "params": [],
