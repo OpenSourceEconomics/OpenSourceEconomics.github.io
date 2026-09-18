@@ -4,114 +4,154 @@
         "name": "bench_aca_baseline.AcaBaseline.track_compilation_time",
         "param_names": [],
         "params": [],
-        "setup_cache_key": "bench_aca_baseline:137",
-        "timeout": 3600,
+        "setup_cache_key": "bench_aca_baseline:143",
+        "timeout": 14400,
         "type": "track",
         "unit": "seconds",
-        "version": "1"
+        "version": "2"
     },
     "bench_aca_baseline.AcaBaseline.track_execution_time": {
         "code": "class AcaBaseline:\n    def track_execution_time(self, cache: dict[str, float] | None = None) -> float:\n        return self._measurements[\"execution_time\"]\n\n    def setup(self, cache: dict[str, float]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float]:\n        return _gpu_mem.measure_combined(\n            bench_module=\"benchmarks.asv.bench_aca_baseline\",\n            bench_class=\"AcaBaseline\",\n        )",
         "name": "bench_aca_baseline.AcaBaseline.track_execution_time",
         "param_names": [],
         "params": [],
-        "setup_cache_key": "bench_aca_baseline:137",
-        "timeout": 3600,
+        "setup_cache_key": "bench_aca_baseline:143",
+        "timeout": 14400,
         "type": "track",
         "unit": "seconds",
-        "version": "1"
+        "version": "2"
     },
     "bench_aca_baseline.AcaBaseline.track_peak_cpu_mem": {
         "code": "class AcaBaseline:\n    def track_peak_cpu_mem(self, cache: dict[str, float] | None = None) -> float:\n        return self._measurements[\"peak_cpu_mem\"]\n\n    def setup(self, cache: dict[str, float]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float]:\n        return _gpu_mem.measure_combined(\n            bench_module=\"benchmarks.asv.bench_aca_baseline\",\n            bench_class=\"AcaBaseline\",\n        )",
         "name": "bench_aca_baseline.AcaBaseline.track_peak_cpu_mem",
         "param_names": [],
         "params": [],
-        "setup_cache_key": "bench_aca_baseline:137",
-        "timeout": 3600,
+        "setup_cache_key": "bench_aca_baseline:143",
+        "timeout": 14400,
         "type": "track",
         "unit": "bytes",
-        "version": "1"
-    },
-    "bench_aca_baseline.AcaBaseline.track_peak_gpu_mem": {
-        "code": "class AcaBaseline:\n    def track_peak_gpu_mem(self, cache: dict[str, float] | None = None) -> float:\n        return self._measurements[\"peak_gpu_mem\"]\n\n    def setup(self, cache: dict[str, float]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float]:\n        return _gpu_mem.measure_combined(\n            bench_module=\"benchmarks.asv.bench_aca_baseline\",\n            bench_class=\"AcaBaseline\",\n        )",
-        "name": "bench_aca_baseline.AcaBaseline.track_peak_gpu_mem",
-        "param_names": [],
-        "params": [],
-        "setup_cache_key": "bench_aca_baseline:137",
-        "timeout": 3600,
-        "type": "track",
-        "unit": "bytes",
-        "version": "1"
+        "version": "2"
     },
     "bench_aca_baseline.AcaBaselineDebugLog.track_compilation_time": {
         "code": "class AcaBaseline:\n    def track_compilation_time(self, cache: dict[str, float] | None = None) -> float:\n        return self._measurements[\"compilation_time\"]\n\n    def setup(self, cache: dict[str, float]) -> None:\n        self._measurements = cache\n\nclass AcaBaselineDebugLog:\n    def setup_cache(self) -> dict[str, float]:\n        return _gpu_mem.measure_combined(\n            bench_module=\"benchmarks.asv.bench_aca_baseline\",\n            bench_class=\"AcaBaselineDebugLog\",\n        )",
         "name": "bench_aca_baseline.AcaBaselineDebugLog.track_compilation_time",
         "param_names": [],
         "params": [],
-        "setup_cache_key": "bench_aca_baseline:191",
-        "timeout": 3600,
+        "setup_cache_key": "bench_aca_baseline:239",
+        "timeout": 14400,
         "type": "track",
         "unit": "seconds",
-        "version": "1"
+        "version": "2"
     },
     "bench_aca_baseline.AcaBaselineDebugLog.track_execution_time": {
         "code": "class AcaBaseline:\n    def track_execution_time(self, cache: dict[str, float] | None = None) -> float:\n        return self._measurements[\"execution_time\"]\n\n    def setup(self, cache: dict[str, float]) -> None:\n        self._measurements = cache\n\nclass AcaBaselineDebugLog:\n    def setup_cache(self) -> dict[str, float]:\n        return _gpu_mem.measure_combined(\n            bench_module=\"benchmarks.asv.bench_aca_baseline\",\n            bench_class=\"AcaBaselineDebugLog\",\n        )",
         "name": "bench_aca_baseline.AcaBaselineDebugLog.track_execution_time",
         "param_names": [],
         "params": [],
-        "setup_cache_key": "bench_aca_baseline:191",
-        "timeout": 3600,
+        "setup_cache_key": "bench_aca_baseline:239",
+        "timeout": 14400,
         "type": "track",
         "unit": "seconds",
-        "version": "1"
+        "version": "2"
     },
     "bench_aca_baseline.AcaBaselineDebugLog.track_peak_cpu_mem": {
         "code": "class AcaBaseline:\n    def track_peak_cpu_mem(self, cache: dict[str, float] | None = None) -> float:\n        return self._measurements[\"peak_cpu_mem\"]\n\n    def setup(self, cache: dict[str, float]) -> None:\n        self._measurements = cache\n\nclass AcaBaselineDebugLog:\n    def setup_cache(self) -> dict[str, float]:\n        return _gpu_mem.measure_combined(\n            bench_module=\"benchmarks.asv.bench_aca_baseline\",\n            bench_class=\"AcaBaselineDebugLog\",\n        )",
         "name": "bench_aca_baseline.AcaBaselineDebugLog.track_peak_cpu_mem",
         "param_names": [],
         "params": [],
-        "setup_cache_key": "bench_aca_baseline:191",
-        "timeout": 3600,
+        "setup_cache_key": "bench_aca_baseline:239",
+        "timeout": 14400,
         "type": "track",
         "unit": "bytes",
-        "version": "1"
+        "version": "2"
     },
-    "bench_aca_baseline.AcaBaselineDebugLog.track_peak_gpu_mem": {
-        "code": "class AcaBaseline:\n    def track_peak_gpu_mem(self, cache: dict[str, float] | None = None) -> float:\n        return self._measurements[\"peak_gpu_mem\"]\n\n    def setup(self, cache: dict[str, float]) -> None:\n        self._measurements = cache\n\nclass AcaBaselineDebugLog:\n    def setup_cache(self) -> dict[str, float]:\n        return _gpu_mem.measure_combined(\n            bench_module=\"benchmarks.asv.bench_aca_baseline\",\n            bench_class=\"AcaBaselineDebugLog\",\n        )",
-        "name": "bench_aca_baseline.AcaBaselineDebugLog.track_peak_gpu_mem",
+    "bench_aca_baseline.AcaBaselineDebugLogGpuPeakMem.track_peak_gpu_mem_automatic_solve_simulate": {
+        "code": "def _track_peak_gpu_mem_automatic_solve_simulate(\n    self, cache: dict[str, int] | None = None\n) -> int:\n    measurements = self._measurements if cache is None else cache\n    return measurements[AUTOMATIC_SOLVE_SIMULATE]\n\nclass GpuPeakMemProfile:\n    def setup(self, cache: dict[str, int]) -> None:\n        self._measurements = cache\n\ndef _profile_setup_cache(self) -> dict[str, int]:\n    return measure_gpu_memory_profile(\n        bench_module=self.bench_module,\n        bench_class=self.bench_class,\n        phases=self.phases,\n    )",
+        "name": "bench_aca_baseline.AcaBaselineDebugLogGpuPeakMem.track_peak_gpu_mem_automatic_solve_simulate",
         "param_names": [],
         "params": [],
-        "setup_cache_key": "bench_aca_baseline:191",
-        "timeout": 3600,
+        "setup_cache_key": "_gpu_mem:839",
+        "timeout": 14400,
         "type": "track",
         "unit": "bytes",
-        "version": "1"
+        "version": "2"
     },
-    "bench_collective_household.CollectiveHouseholdConstruct.peakmem_execution": {
-        "code": "class CollectiveHouseholdConstruct:\n    def peakmem_execution(self):\n        _make_model()\n\n    def setup(self):\n        # Warm the imports so the measured call is construction, not the first\n        # import of jax and pylcm.\n        _make_model()",
-        "name": "bench_collective_household.CollectiveHouseholdConstruct.peakmem_execution",
+    "bench_aca_baseline.AcaBaselineDebugLogGpuPeakMem.track_peak_gpu_mem_load_supplied_solution_simulate": {
+        "code": "def _track_peak_gpu_mem_load_supplied_solution_simulate(\n    self, cache: dict[str, int] | None = None\n) -> int:\n    measurements = self._measurements if cache is None else cache\n    return measurements[LOAD_SUPPLIED_SOLUTION_SIMULATE]\n\nclass GpuPeakMemProfile:\n    def setup(self, cache: dict[str, int]) -> None:\n        self._measurements = cache\n\ndef _profile_setup_cache(self) -> dict[str, int]:\n    return measure_gpu_memory_profile(\n        bench_module=self.bench_module,\n        bench_class=self.bench_class,\n        phases=self.phases,\n    )",
+        "name": "bench_aca_baseline.AcaBaselineDebugLogGpuPeakMem.track_peak_gpu_mem_load_supplied_solution_simulate",
         "param_names": [],
         "params": [],
-        "timeout": 600,
-        "type": "peakmemory",
+        "setup_cache_key": "_gpu_mem:839",
+        "timeout": 14400,
+        "type": "track",
         "unit": "bytes",
-        "version": "1"
+        "version": "2"
     },
-    "bench_collective_household.CollectiveHouseholdConstruct.time_execution": {
-        "code": "class CollectiveHouseholdConstruct:\n    def time_execution(self):\n        _make_model()\n\n    def setup(self):\n        # Warm the imports so the measured call is construction, not the first\n        # import of jax and pylcm.\n        _make_model()",
-        "min_run_count": 2,
-        "name": "bench_collective_household.CollectiveHouseholdConstruct.time_execution",
-        "number": 0,
+    "bench_aca_baseline.AcaBaselineDebugLogGpuPeakMem.track_peak_gpu_mem_solve_save_all_persistable": {
+        "code": "def _track_peak_gpu_mem_solve_save_all_persistable(\n    self, cache: dict[str, int] | None = None\n) -> int:\n    measurements = self._measurements if cache is None else cache\n    return measurements[SOLVE_SAVE_ALL_PERSISTABLE]\n\nclass GpuPeakMemProfile:\n    def setup(self, cache: dict[str, int]) -> None:\n        self._measurements = cache\n\ndef _profile_setup_cache(self) -> dict[str, int]:\n    return measure_gpu_memory_profile(\n        bench_module=self.bench_module,\n        bench_class=self.bench_class,\n        phases=self.phases,\n    )",
+        "name": "bench_aca_baseline.AcaBaselineDebugLogGpuPeakMem.track_peak_gpu_mem_solve_save_all_persistable",
         "param_names": [],
         "params": [],
-        "repeat": 0,
-        "rounds": 2,
-        "sample_time": 0.01,
+        "setup_cache_key": "_gpu_mem:839",
+        "timeout": 14400,
+        "type": "track",
+        "unit": "bytes",
+        "version": "2"
+    },
+    "bench_aca_baseline.AcaBaselineGpuPeakMem.track_peak_gpu_mem_automatic_solve_simulate": {
+        "code": "def _track_peak_gpu_mem_automatic_solve_simulate(\n    self, cache: dict[str, int] | None = None\n) -> int:\n    measurements = self._measurements if cache is None else cache\n    return measurements[AUTOMATIC_SOLVE_SIMULATE]\n\nclass GpuPeakMemProfile:\n    def setup(self, cache: dict[str, int]) -> None:\n        self._measurements = cache\n\ndef _profile_setup_cache(self) -> dict[str, int]:\n    return measure_gpu_memory_profile(\n        bench_module=self.bench_module,\n        bench_class=self.bench_class,\n        phases=self.phases,\n    )",
+        "name": "bench_aca_baseline.AcaBaselineGpuPeakMem.track_peak_gpu_mem_automatic_solve_simulate",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "_gpu_mem:839",
+        "timeout": 14400,
+        "type": "track",
+        "unit": "bytes",
+        "version": "2"
+    },
+    "bench_aca_baseline.AcaBaselineGpuPeakMem.track_peak_gpu_mem_load_supplied_solution_simulate": {
+        "code": "def _track_peak_gpu_mem_load_supplied_solution_simulate(\n    self, cache: dict[str, int] | None = None\n) -> int:\n    measurements = self._measurements if cache is None else cache\n    return measurements[LOAD_SUPPLIED_SOLUTION_SIMULATE]\n\nclass GpuPeakMemProfile:\n    def setup(self, cache: dict[str, int]) -> None:\n        self._measurements = cache\n\ndef _profile_setup_cache(self) -> dict[str, int]:\n    return measure_gpu_memory_profile(\n        bench_module=self.bench_module,\n        bench_class=self.bench_class,\n        phases=self.phases,\n    )",
+        "name": "bench_aca_baseline.AcaBaselineGpuPeakMem.track_peak_gpu_mem_load_supplied_solution_simulate",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "_gpu_mem:839",
+        "timeout": 14400,
+        "type": "track",
+        "unit": "bytes",
+        "version": "2"
+    },
+    "bench_aca_baseline.AcaBaselineGpuPeakMem.track_peak_gpu_mem_solve_save_all_persistable": {
+        "code": "def _track_peak_gpu_mem_solve_save_all_persistable(\n    self, cache: dict[str, int] | None = None\n) -> int:\n    measurements = self._measurements if cache is None else cache\n    return measurements[SOLVE_SAVE_ALL_PERSISTABLE]\n\nclass GpuPeakMemProfile:\n    def setup(self, cache: dict[str, int]) -> None:\n        self._measurements = cache\n\ndef _profile_setup_cache(self) -> dict[str, int]:\n    return measure_gpu_memory_profile(\n        bench_module=self.bench_module,\n        bench_class=self.bench_class,\n        phases=self.phases,\n    )",
+        "name": "bench_aca_baseline.AcaBaselineGpuPeakMem.track_peak_gpu_mem_solve_save_all_persistable",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "_gpu_mem:839",
+        "timeout": 14400,
+        "type": "track",
+        "unit": "bytes",
+        "version": "2"
+    },
+    "bench_collective_household.CollectiveHouseholdConstruct.track_execution_time": {
+        "code": "class CollectiveHouseholdConstruct:\n    def track_execution_time(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return statistics.median(measurements[\"warm_samples\"])\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_collective_household\",\n            bench_class=\"CollectiveHouseholdConstruct\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_collective_household.CollectiveHouseholdConstruct.track_execution_time",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "bench_collective_household:104",
         "timeout": 600,
-        "type": "time",
+        "type": "track",
         "unit": "seconds",
-        "version": "1",
-        "warmup_time": -1
+        "version": "2"
+    },
+    "bench_collective_household.CollectiveHouseholdConstruct.track_peak_cpu_mem": {
+        "code": "class CollectiveHouseholdConstruct:\n    def track_peak_cpu_mem(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"peak_cpu_mem\"]\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_collective_household\",\n            bench_class=\"CollectiveHouseholdConstruct\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_collective_household.CollectiveHouseholdConstruct.track_peak_cpu_mem",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "bench_collective_household:104",
+        "timeout": 600,
+        "type": "track",
+        "unit": "bytes",
+        "version": "2"
     },
     "bench_collective_household.CollectiveHouseholdSimulate.peakmem_execution": {
         "code": "class CollectiveHouseholdSimulate:\n    def peakmem_execution(self, n_subjects):\n        self._simulate()\n\n    def setup(self, n_subjects):\n        self._build(n_subjects)\n        start = time.perf_counter()\n        self._simulate()\n        self._compile_time = time.perf_counter() - start",
@@ -122,7 +162,6 @@
         "params": [
             [
                 "1000",
-                "10000",
                 "100000"
             ]
         ],
@@ -142,7 +181,6 @@
         "params": [
             [
                 "1000",
-                "10000",
                 "100000"
             ]
         ],
@@ -164,7 +202,6 @@
         "params": [
             [
                 "1000",
-                "10000",
                 "100000"
             ]
         ],
@@ -183,51 +220,38 @@
         "unit": "bytes",
         "version": "1"
     },
-    "bench_collective_household.CollectiveHouseholdSolve.peakmem_execution": {
-        "code": "class CollectiveHouseholdSolve:\n    def peakmem_execution(self):\n        self.model.solve(params=self.model_params, log_level=\"off\")\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
-        "name": "bench_collective_household.CollectiveHouseholdSolve.peakmem_execution",
-        "param_names": [],
-        "params": [],
-        "timeout": 900,
-        "type": "peakmemory",
-        "unit": "bytes",
-        "version": "1"
-    },
-    "bench_collective_household.CollectiveHouseholdSolve.time_execution": {
-        "code": "class CollectiveHouseholdSolve:\n    def time_execution(self):\n        self.model.solve(params=self.model_params, log_level=\"off\")\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
-        "min_run_count": 2,
-        "name": "bench_collective_household.CollectiveHouseholdSolve.time_execution",
-        "number": 0,
-        "param_names": [],
-        "params": [],
-        "repeat": 0,
-        "rounds": 2,
-        "sample_time": 0.01,
-        "timeout": 900,
-        "type": "time",
-        "unit": "seconds",
-        "version": "1",
-        "warmup_time": -1
-    },
     "bench_collective_household.CollectiveHouseholdSolve.track_compilation_time": {
-        "code": "class CollectiveHouseholdSolve:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
+        "code": "class CollectiveHouseholdSolve:\n    def track_compilation_time(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"compilation_time\"]\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_collective_household\",\n            bench_class=\"CollectiveHouseholdSolve\",\n            warm_samples=_WARM_SAMPLES,\n        )",
         "name": "bench_collective_household.CollectiveHouseholdSolve.track_compilation_time",
         "param_names": [],
         "params": [],
+        "setup_cache_key": "bench_collective_household:156",
         "timeout": 900,
         "type": "track",
         "unit": "seconds",
-        "version": "1"
+        "version": "2"
     },
-    "bench_collective_household.CollectiveHouseholdSolveGpuPeakMem.track_gpu_peak_mem": {
-        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
-        "name": "bench_collective_household.CollectiveHouseholdSolveGpuPeakMem.track_gpu_peak_mem",
+    "bench_collective_household.CollectiveHouseholdSolve.track_execution_time": {
+        "code": "class CollectiveHouseholdSolve:\n    def track_execution_time(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return statistics.median(measurements[\"warm_samples\"])\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_collective_household\",\n            bench_class=\"CollectiveHouseholdSolve\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_collective_household.CollectiveHouseholdSolve.track_execution_time",
         "param_names": [],
         "params": [],
-        "timeout": 1200,
+        "setup_cache_key": "bench_collective_household:156",
+        "timeout": 900,
+        "type": "track",
+        "unit": "seconds",
+        "version": "2"
+    },
+    "bench_collective_household.CollectiveHouseholdSolve.track_peak_cpu_mem": {
+        "code": "class CollectiveHouseholdSolve:\n    def track_peak_cpu_mem(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"peak_cpu_mem\"]\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_collective_household\",\n            bench_class=\"CollectiveHouseholdSolve\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_collective_household.CollectiveHouseholdSolve.track_peak_cpu_mem",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "bench_collective_household:156",
+        "timeout": 900,
         "type": "track",
         "unit": "bytes",
-        "version": "1"
+        "version": "2"
     },
     "bench_collective_household.ReferenceChainSolve.peakmem_execution": {
         "code": "class ReferenceChainSolve:\n    def peakmem_execution(self, depth):\n        self.model.solve(params=self.model_params, log_level=\"off\")\n\n    def setup(self, depth):\n        self._build(depth)\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
@@ -238,8 +262,6 @@
         "params": [
             [
                 "1",
-                "2",
-                "4",
                 "8"
             ]
         ],
@@ -259,8 +281,6 @@
         "params": [
             [
                 "1",
-                "2",
-                "4",
                 "8"
             ]
         ],
@@ -282,8 +302,6 @@
         "params": [
             [
                 "1",
-                "2",
-                "4",
                 "8"
             ]
         ],
@@ -292,51 +310,38 @@
         "unit": "seconds",
         "version": "1"
     },
-    "bench_collective_household.ReferenceChainSolveGpuPeakMem.track_gpu_peak_mem": {
-        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
-        "name": "bench_collective_household.ReferenceChainSolveGpuPeakMem.track_gpu_peak_mem",
-        "param_names": [],
-        "params": [],
-        "timeout": 1200,
-        "type": "track",
-        "unit": "bytes",
-        "version": "1"
-    },
-    "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulate.peakmem_execution": {
-        "code": "class IskhakovEtAl2017DCEGMSimulate:\n    def peakmem_execution(self) -> None:\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
-        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulate.peakmem_execution",
-        "param_names": [],
-        "params": [],
-        "timeout": 600,
-        "type": "peakmemory",
-        "unit": "bytes",
-        "version": "1"
-    },
-    "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulate.time_execution": {
-        "code": "class IskhakovEtAl2017DCEGMSimulate:\n    def time_execution(self) -> None:\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
-        "min_run_count": 2,
-        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulate.time_execution",
-        "number": 0,
-        "param_names": [],
-        "params": [],
-        "repeat": 0,
-        "rounds": 2,
-        "sample_time": 0.01,
-        "timeout": 600,
-        "type": "time",
-        "unit": "seconds",
-        "version": "1",
-        "warmup_time": -1
-    },
     "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulate.track_compilation_time": {
-        "code": "class IskhakovEtAl2017DCEGMSimulate:\n    def track_compilation_time(self) -> float:\n        return self._compile_time\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class IskhakovEtAl2017DCEGMSimulate:\n    def track_compilation_time(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"compilation_time\"]\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_iskhakov_et_al_2017\",\n            bench_class=\"IskhakovEtAl2017DCEGMSimulate\",\n            warm_samples=_WARM_SAMPLES,\n        )",
         "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulate.track_compilation_time",
         "param_names": [],
         "params": [],
+        "setup_cache_key": "bench_iskhakov_et_al_2017:499",
         "timeout": 600,
         "type": "track",
         "unit": "seconds",
-        "version": "1"
+        "version": "2"
+    },
+    "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulate.track_execution_time": {
+        "code": "class IskhakovEtAl2017DCEGMSimulate:\n    def track_execution_time(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return statistics.median(measurements[\"warm_samples\"])\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_iskhakov_et_al_2017\",\n            bench_class=\"IskhakovEtAl2017DCEGMSimulate\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulate.track_execution_time",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "bench_iskhakov_et_al_2017:499",
+        "timeout": 600,
+        "type": "track",
+        "unit": "seconds",
+        "version": "2"
+    },
+    "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulate.track_peak_cpu_mem": {
+        "code": "class IskhakovEtAl2017DCEGMSimulate:\n    def track_peak_cpu_mem(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"peak_cpu_mem\"]\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_iskhakov_et_al_2017\",\n            bench_class=\"IskhakovEtAl2017DCEGMSimulate\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulate.track_peak_cpu_mem",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "bench_iskhakov_et_al_2017:499",
+        "timeout": 600,
+        "type": "track",
+        "unit": "bytes",
+        "version": "2"
     },
     "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulateGpuPeakMem.track_gpu_peak_mem": {
         "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
@@ -348,87 +353,71 @@
         "unit": "bytes",
         "version": "1"
     },
-    "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSolve.peakmem_execution": {
-        "code": "class IskhakovEtAl2017DCEGMSolve:\n    def peakmem_execution(self) -> None:\n        self.model.solve(params=self.model_params, log_level=\"off\")\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
-        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSolve.peakmem_execution",
-        "param_names": [],
-        "params": [],
-        "timeout": 600,
-        "type": "peakmemory",
-        "unit": "bytes",
-        "version": "2"
-    },
-    "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSolve.time_execution": {
-        "code": "class IskhakovEtAl2017DCEGMSolve:\n    def time_execution(self) -> None:\n        self.model.solve(params=self.model_params, log_level=\"off\")\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
-        "min_run_count": 2,
-        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSolve.time_execution",
-        "number": 0,
-        "param_names": [],
-        "params": [],
-        "repeat": 0,
-        "rounds": 2,
-        "sample_time": 0.01,
-        "timeout": 600,
-        "type": "time",
-        "unit": "seconds",
-        "version": "2",
-        "warmup_time": -1
-    },
     "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSolve.track_compilation_time": {
-        "code": "class IskhakovEtAl2017DCEGMSolve:\n    def track_compilation_time(self) -> float:\n        return self._compile_time\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
+        "code": "class IskhakovEtAl2017DCEGMSolve:\n    def track_compilation_time(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"compilation_time\"]\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_iskhakov_et_al_2017\",\n            bench_class=\"IskhakovEtAl2017DCEGMSolve\",\n            warm_samples=_WARM_SAMPLES,\n        )",
         "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSolve.track_compilation_time",
         "param_names": [],
         "params": [],
+        "setup_cache_key": "bench_iskhakov_et_al_2017:359",
+        "timeout": 600,
+        "type": "track",
+        "unit": "seconds",
+        "version": "3"
+    },
+    "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSolve.track_execution_time": {
+        "code": "class IskhakovEtAl2017DCEGMSolve:\n    def track_execution_time(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return statistics.median(measurements[\"warm_samples\"])\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_iskhakov_et_al_2017\",\n            bench_class=\"IskhakovEtAl2017DCEGMSolve\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSolve.track_execution_time",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "bench_iskhakov_et_al_2017:359",
+        "timeout": 600,
+        "type": "track",
+        "unit": "seconds",
+        "version": "3"
+    },
+    "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSolve.track_peak_cpu_mem": {
+        "code": "class IskhakovEtAl2017DCEGMSolve:\n    def track_peak_cpu_mem(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"peak_cpu_mem\"]\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_iskhakov_et_al_2017\",\n            bench_class=\"IskhakovEtAl2017DCEGMSolve\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSolve.track_peak_cpu_mem",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "bench_iskhakov_et_al_2017:359",
+        "timeout": 600,
+        "type": "track",
+        "unit": "bytes",
+        "version": "3"
+    },
+    "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.track_compilation_time": {
+        "code": "class IskhakovEtAl2017Simulate:\n    def track_compilation_time(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"compilation_time\"]\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_iskhakov_et_al_2017\",\n            bench_class=\"IskhakovEtAl2017Simulate\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.track_compilation_time",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "bench_iskhakov_et_al_2017:423",
         "timeout": 600,
         "type": "track",
         "unit": "seconds",
         "version": "2"
     },
-    "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSolveGpuPeakMem.track_gpu_peak_mem": {
-        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
-        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSolveGpuPeakMem.track_gpu_peak_mem",
+    "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.track_execution_time": {
+        "code": "class IskhakovEtAl2017Simulate:\n    def track_execution_time(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return statistics.median(measurements[\"warm_samples\"])\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_iskhakov_et_al_2017\",\n            bench_class=\"IskhakovEtAl2017Simulate\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.track_execution_time",
         "param_names": [],
         "params": [],
-        "timeout": 1200,
-        "type": "track",
-        "unit": "bytes",
-        "version": "1"
-    },
-    "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.peakmem_execution": {
-        "code": "class IskhakovEtAl2017Simulate:\n    def peakmem_execution(self) -> None:\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
-        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.peakmem_execution",
-        "param_names": [],
-        "params": [],
-        "timeout": 600,
-        "type": "peakmemory",
-        "unit": "bytes",
-        "version": "1"
-    },
-    "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.time_execution": {
-        "code": "class IskhakovEtAl2017Simulate:\n    def time_execution(self) -> None:\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
-        "min_run_count": 2,
-        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.time_execution",
-        "number": 0,
-        "param_names": [],
-        "params": [],
-        "repeat": 0,
-        "rounds": 2,
-        "sample_time": 0.01,
-        "timeout": 600,
-        "type": "time",
-        "unit": "seconds",
-        "version": "1",
-        "warmup_time": -1
-    },
-    "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.track_compilation_time": {
-        "code": "class IskhakovEtAl2017Simulate:\n    def track_compilation_time(self) -> float:\n        return self._compile_time\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
-        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.track_compilation_time",
-        "param_names": [],
-        "params": [],
+        "setup_cache_key": "bench_iskhakov_et_al_2017:423",
         "timeout": 600,
         "type": "track",
         "unit": "seconds",
-        "version": "1"
+        "version": "2"
+    },
+    "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.track_peak_cpu_mem": {
+        "code": "class IskhakovEtAl2017Simulate:\n    def track_peak_cpu_mem(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"peak_cpu_mem\"]\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_iskhakov_et_al_2017\",\n            bench_class=\"IskhakovEtAl2017Simulate\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.track_peak_cpu_mem",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "bench_iskhakov_et_al_2017:423",
+        "timeout": 600,
+        "type": "track",
+        "unit": "bytes",
+        "version": "2"
     },
     "bench_iskhakov_et_al_2017.IskhakovEtAl2017SimulateGpuPeakMem.track_gpu_peak_mem": {
         "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
@@ -440,41 +429,38 @@
         "unit": "bytes",
         "version": "1"
     },
-    "bench_iskhakov_et_al_2017.IskhakovEtAl2017Solve.peakmem_execution": {
-        "code": "class IskhakovEtAl2017Solve:\n    def peakmem_execution(self) -> None:\n        self.model.solve(params=self.model_params, log_level=\"off\")\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
-        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017Solve.peakmem_execution",
-        "param_names": [],
-        "params": [],
-        "timeout": 600,
-        "type": "peakmemory",
-        "unit": "bytes",
-        "version": "1"
-    },
-    "bench_iskhakov_et_al_2017.IskhakovEtAl2017Solve.time_execution": {
-        "code": "class IskhakovEtAl2017Solve:\n    def time_execution(self) -> None:\n        self.model.solve(params=self.model_params, log_level=\"off\")\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
-        "min_run_count": 2,
-        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017Solve.time_execution",
-        "number": 0,
-        "param_names": [],
-        "params": [],
-        "repeat": 0,
-        "rounds": 2,
-        "sample_time": 0.01,
-        "timeout": 600,
-        "type": "time",
-        "unit": "seconds",
-        "version": "1",
-        "warmup_time": -1
-    },
     "bench_iskhakov_et_al_2017.IskhakovEtAl2017Solve.track_compilation_time": {
-        "code": "class IskhakovEtAl2017Solve:\n    def track_compilation_time(self) -> float:\n        return self._compile_time\n\n    def setup(self) -> None:\n        self._build()\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
+        "code": "class IskhakovEtAl2017Solve:\n    def track_compilation_time(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"compilation_time\"]\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_iskhakov_et_al_2017\",\n            bench_class=\"IskhakovEtAl2017Solve\",\n            warm_samples=_WARM_SAMPLES,\n        )",
         "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017Solve.track_compilation_time",
         "param_names": [],
         "params": [],
+        "setup_cache_key": "bench_iskhakov_et_al_2017:289",
         "timeout": 600,
         "type": "track",
         "unit": "seconds",
-        "version": "1"
+        "version": "2"
+    },
+    "bench_iskhakov_et_al_2017.IskhakovEtAl2017Solve.track_execution_time": {
+        "code": "class IskhakovEtAl2017Solve:\n    def track_execution_time(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return statistics.median(measurements[\"warm_samples\"])\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_iskhakov_et_al_2017\",\n            bench_class=\"IskhakovEtAl2017Solve\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017Solve.track_execution_time",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "bench_iskhakov_et_al_2017:289",
+        "timeout": 600,
+        "type": "track",
+        "unit": "seconds",
+        "version": "2"
+    },
+    "bench_iskhakov_et_al_2017.IskhakovEtAl2017Solve.track_peak_cpu_mem": {
+        "code": "class IskhakovEtAl2017Solve:\n    def track_peak_cpu_mem(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"peak_cpu_mem\"]\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_iskhakov_et_al_2017\",\n            bench_class=\"IskhakovEtAl2017Solve\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_iskhakov_et_al_2017.IskhakovEtAl2017Solve.track_peak_cpu_mem",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "bench_iskhakov_et_al_2017:289",
+        "timeout": 600,
+        "type": "track",
+        "unit": "bytes",
+        "version": "2"
     },
     "bench_iskhakov_et_al_2017.IskhakovEtAl2017SolveGpuPeakMem.track_gpu_peak_mem": {
         "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
@@ -486,87 +472,104 @@
         "unit": "bytes",
         "version": "1"
     },
-    "bench_mahler_yum.MahlerYum.peakmem_execution": {
-        "code": "class MahlerYum:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
-        "name": "bench_mahler_yum.MahlerYum.peakmem_execution",
+    "bench_mahler_yum.MahlerYumBudgetedGpu.track_compilation_time": {
+        "code": "class MahlerYumBudgetedGpu:\n    def track_compilation_time(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"compilation_time\"]\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples_and_gpu_peak(\n            bench_module=\"benchmarks.asv.bench_mahler_yum\",\n            bench_class=\"MahlerYumBudgetedGpu\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_mahler_yum.MahlerYumBudgetedGpu.track_compilation_time",
         "param_names": [],
         "params": [],
-        "timeout": 1200,
-        "type": "peakmemory",
-        "unit": "bytes",
-        "version": "1"
-    },
-    "bench_mahler_yum.MahlerYum.time_execution": {
-        "code": "class MahlerYum:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
-        "min_run_count": 2,
-        "name": "bench_mahler_yum.MahlerYum.time_execution",
-        "number": 0,
-        "param_names": [],
-        "params": [],
-        "repeat": 0,
-        "rounds": 2,
-        "sample_time": 0.01,
-        "timeout": 1200,
-        "type": "time",
-        "unit": "seconds",
-        "version": "1",
-        "warmup_time": -1
-    },
-    "bench_mahler_yum.MahlerYum.track_compilation_time": {
-        "code": "class MahlerYum:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
-        "name": "bench_mahler_yum.MahlerYum.track_compilation_time",
-        "param_names": [],
-        "params": [],
+        "setup_cache_key": "bench_mahler_yum:160",
         "timeout": 1200,
         "type": "track",
         "unit": "seconds",
-        "version": "1"
+        "version": "4"
     },
-    "bench_mahler_yum.MahlerYumGpuPeakMem.track_gpu_peak_mem": {
-        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
-        "name": "bench_mahler_yum.MahlerYumGpuPeakMem.track_gpu_peak_mem",
+    "bench_mahler_yum.MahlerYumBudgetedGpu.track_execution_time": {
+        "code": "class MahlerYumBudgetedGpu:\n    def track_execution_time(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return statistics.median(measurements[\"warm_samples\"])\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples_and_gpu_peak(\n            bench_module=\"benchmarks.asv.bench_mahler_yum\",\n            bench_class=\"MahlerYumBudgetedGpu\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_mahler_yum.MahlerYumBudgetedGpu.track_execution_time",
         "param_names": [],
         "params": [],
+        "setup_cache_key": "bench_mahler_yum:160",
+        "timeout": 1200,
+        "type": "track",
+        "unit": "seconds",
+        "version": "4"
+    },
+    "bench_mahler_yum.MahlerYumBudgetedGpu.track_peak_cpu_mem": {
+        "code": "class MahlerYumBudgetedGpu:\n    def track_peak_cpu_mem(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"peak_cpu_mem\"]\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples_and_gpu_peak(\n            bench_module=\"benchmarks.asv.bench_mahler_yum\",\n            bench_class=\"MahlerYumBudgetedGpu\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_mahler_yum.MahlerYumBudgetedGpu.track_peak_cpu_mem",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "bench_mahler_yum:160",
         "timeout": 1200,
         "type": "track",
         "unit": "bytes",
-        "version": "1"
+        "version": "4"
     },
-    "bench_precautionary_savings.PrecautionarySavingsSimulate.peakmem_execution": {
-        "code": "class PrecautionarySavingsSimulate:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
-        "name": "bench_precautionary_savings.PrecautionarySavingsSimulate.peakmem_execution",
+    "bench_mahler_yum.MahlerYumBudgetedGpu.track_peak_gpu_mem_automatic_solve_simulate": {
+        "code": "class MahlerYumBudgetedGpu:\n    def track_peak_gpu_mem_automatic_solve_simulate(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"peak_gpu_mem_automatic_solve_simulate\"]\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples_and_gpu_peak(\n            bench_module=\"benchmarks.asv.bench_mahler_yum\",\n            bench_class=\"MahlerYumBudgetedGpu\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_mahler_yum.MahlerYumBudgetedGpu.track_peak_gpu_mem_automatic_solve_simulate",
         "param_names": [],
         "params": [],
-        "timeout": 600,
-        "type": "peakmemory",
+        "setup_cache_key": "bench_mahler_yum:160",
+        "timeout": 1200,
+        "type": "track",
         "unit": "bytes",
-        "version": "1"
+        "version": "4"
     },
-    "bench_precautionary_savings.PrecautionarySavingsSimulate.time_execution": {
-        "code": "class PrecautionarySavingsSimulate:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
-        "min_run_count": 2,
-        "name": "bench_precautionary_savings.PrecautionarySavingsSimulate.time_execution",
-        "number": 0,
+    "bench_mahler_yum.MahlerYumBudgetedGpuPeakMem.track_peak_gpu_mem_load_supplied_solution_simulate": {
+        "code": "def _track_peak_gpu_mem_load_supplied_solution_simulate(\n    self, cache: dict[str, int] | None = None\n) -> int:\n    measurements = self._measurements if cache is None else cache\n    return measurements[LOAD_SUPPLIED_SOLUTION_SIMULATE]\n\nclass GpuPeakMemProfile:\n    def setup(self, cache: dict[str, int]) -> None:\n        self._measurements = cache\n\ndef _profile_setup_cache(self) -> dict[str, int]:\n    return measure_gpu_memory_profile(\n        bench_module=self.bench_module,\n        bench_class=self.bench_class,\n        phases=self.phases,\n    )",
+        "name": "bench_mahler_yum.MahlerYumBudgetedGpuPeakMem.track_peak_gpu_mem_load_supplied_solution_simulate",
         "param_names": [],
         "params": [],
-        "repeat": 0,
-        "rounds": 2,
-        "sample_time": 0.01,
-        "timeout": 600,
-        "type": "time",
-        "unit": "seconds",
-        "version": "1",
-        "warmup_time": -1
+        "setup_cache_key": "_gpu_mem:839",
+        "timeout": 3600,
+        "type": "track",
+        "unit": "bytes",
+        "version": "3"
+    },
+    "bench_mahler_yum.MahlerYumBudgetedGpuPeakMem.track_peak_gpu_mem_solve_save_all_persistable": {
+        "code": "def _track_peak_gpu_mem_solve_save_all_persistable(\n    self, cache: dict[str, int] | None = None\n) -> int:\n    measurements = self._measurements if cache is None else cache\n    return measurements[SOLVE_SAVE_ALL_PERSISTABLE]\n\nclass GpuPeakMemProfile:\n    def setup(self, cache: dict[str, int]) -> None:\n        self._measurements = cache\n\ndef _profile_setup_cache(self) -> dict[str, int]:\n    return measure_gpu_memory_profile(\n        bench_module=self.bench_module,\n        bench_class=self.bench_class,\n        phases=self.phases,\n    )",
+        "name": "bench_mahler_yum.MahlerYumBudgetedGpuPeakMem.track_peak_gpu_mem_solve_save_all_persistable",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "_gpu_mem:839",
+        "timeout": 3600,
+        "type": "track",
+        "unit": "bytes",
+        "version": "3"
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulate.track_compilation_time": {
-        "code": "class PrecautionarySavingsSimulate:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            solution=self.period_to_regime_to_V_arr,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSimulate:\n    def track_compilation_time(self, cache=None):\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"compilation_time\"]\n\n    def setup(self, cache):\n        self._measurements = cache\n\n    def setup_cache(self):\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_precautionary_savings\",\n            bench_class=\"PrecautionarySavingsSimulate\",\n            warm_samples=_WARM_SAMPLES,\n        )",
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulate.track_compilation_time",
         "param_names": [],
         "params": [],
+        "setup_cache_key": "bench_precautionary_savings:126",
         "timeout": 600,
         "type": "track",
         "unit": "seconds",
-        "version": "1"
+        "version": "2"
+    },
+    "bench_precautionary_savings.PrecautionarySavingsSimulate.track_execution_time": {
+        "code": "class PrecautionarySavingsSimulate:\n    def track_execution_time(self, cache=None):\n        measurements = self._measurements if cache is None else cache\n        return statistics.median(measurements[\"warm_samples\"])\n\n    def setup(self, cache):\n        self._measurements = cache\n\n    def setup_cache(self):\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_precautionary_savings\",\n            bench_class=\"PrecautionarySavingsSimulate\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_precautionary_savings.PrecautionarySavingsSimulate.track_execution_time",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "bench_precautionary_savings:126",
+        "timeout": 600,
+        "type": "track",
+        "unit": "seconds",
+        "version": "2"
+    },
+    "bench_precautionary_savings.PrecautionarySavingsSimulate.track_peak_cpu_mem": {
+        "code": "class PrecautionarySavingsSimulate:\n    def track_peak_cpu_mem(self, cache=None):\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"peak_cpu_mem\"]\n\n    def setup(self, cache):\n        self._measurements = cache\n\n    def setup_cache(self):\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_precautionary_savings\",\n            bench_class=\"PrecautionarySavingsSimulate\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_precautionary_savings.PrecautionarySavingsSimulate.track_peak_cpu_mem",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "bench_precautionary_savings:126",
+        "timeout": 600,
+        "type": "track",
+        "unit": "bytes",
+        "version": "2"
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulateGpuPeakMem.track_gpu_peak_mem": {
         "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
@@ -578,41 +581,38 @@
         "unit": "bytes",
         "version": "1"
     },
-    "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.peakmem_execution": {
-        "code": "class PrecautionarySavingsSimulateWithSolve:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
-        "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.peakmem_execution",
-        "param_names": [],
-        "params": [],
-        "timeout": 600,
-        "type": "peakmemory",
-        "unit": "bytes",
-        "version": "1"
-    },
-    "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.time_execution": {
-        "code": "class PrecautionarySavingsSimulateWithSolve:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
-        "min_run_count": 2,
-        "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.time_execution",
-        "number": 0,
-        "param_names": [],
-        "params": [],
-        "repeat": 0,
-        "rounds": 2,
-        "sample_time": 0.01,
-        "timeout": 600,
-        "type": "time",
-        "unit": "seconds",
-        "version": "1",
-        "warmup_time": -1
-    },
     "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.track_compilation_time": {
-        "code": "class PrecautionarySavingsSimulateWithSolve:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSimulateWithSolve:\n    def track_compilation_time(self, cache=None):\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"compilation_time\"]\n\n    def setup(self, cache):\n        self._measurements = cache\n\n    def setup_cache(self):\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_precautionary_savings\",\n            bench_class=\"PrecautionarySavingsSimulateWithSolve\",\n            warm_samples=_WARM_SAMPLES,\n        )",
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.track_compilation_time",
         "param_names": [],
         "params": [],
+        "setup_cache_key": "bench_precautionary_savings:183",
         "timeout": 600,
         "type": "track",
         "unit": "seconds",
-        "version": "1"
+        "version": "2"
+    },
+    "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.track_execution_time": {
+        "code": "class PrecautionarySavingsSimulateWithSolve:\n    def track_execution_time(self, cache=None):\n        measurements = self._measurements if cache is None else cache\n        return statistics.median(measurements[\"warm_samples\"])\n\n    def setup(self, cache):\n        self._measurements = cache\n\n    def setup_cache(self):\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_precautionary_savings\",\n            bench_class=\"PrecautionarySavingsSimulateWithSolve\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.track_execution_time",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "bench_precautionary_savings:183",
+        "timeout": 600,
+        "type": "track",
+        "unit": "seconds",
+        "version": "2"
+    },
+    "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.track_peak_cpu_mem": {
+        "code": "class PrecautionarySavingsSimulateWithSolve:\n    def track_peak_cpu_mem(self, cache=None):\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"peak_cpu_mem\"]\n\n    def setup(self, cache):\n        self._measurements = cache\n\n    def setup_cache(self):\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_precautionary_savings\",\n            bench_class=\"PrecautionarySavingsSimulateWithSolve\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.track_peak_cpu_mem",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "bench_precautionary_savings:183",
+        "timeout": 600,
+        "type": "track",
+        "unit": "bytes",
+        "version": "2"
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveGpuPeakMem.track_gpu_peak_mem": {
         "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
@@ -624,41 +624,38 @@
         "unit": "bytes",
         "version": "1"
     },
-    "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.peakmem_execution": {
-        "code": "class PrecautionarySavingsSimulateWithSolveIrreg:\n    def peakmem_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
-        "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.peakmem_execution",
-        "param_names": [],
-        "params": [],
-        "timeout": 600,
-        "type": "peakmemory",
-        "unit": "bytes",
-        "version": "1"
-    },
-    "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.time_execution": {
-        "code": "class PrecautionarySavingsSimulateWithSolveIrreg:\n    def time_execution(self):\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
-        "min_run_count": 2,
-        "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.time_execution",
-        "number": 0,
-        "param_names": [],
-        "params": [],
-        "repeat": 0,
-        "rounds": 2,
-        "sample_time": 0.01,
-        "timeout": 600,
-        "type": "time",
-        "unit": "seconds",
-        "version": "1",
-        "warmup_time": -1
-    },
     "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.track_compilation_time": {
-        "code": "class PrecautionarySavingsSimulateWithSolveIrreg:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.simulate(\n            params=self.model_params,\n            initial_conditions=self.initial_conditions,\n            log_level=\"off\",\n        )\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSimulateWithSolveIrreg:\n    def track_compilation_time(self, cache=None):\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"compilation_time\"]\n\n    def setup(self, cache):\n        self._measurements = cache\n\n    def setup_cache(self):\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_precautionary_savings\",\n            bench_class=\"PrecautionarySavingsSimulateWithSolveIrreg\",\n            warm_samples=_WARM_SAMPLES,\n        )",
         "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.track_compilation_time",
         "param_names": [],
         "params": [],
+        "setup_cache_key": "bench_precautionary_savings:241",
         "timeout": 600,
         "type": "track",
         "unit": "seconds",
-        "version": "1"
+        "version": "2"
+    },
+    "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.track_execution_time": {
+        "code": "class PrecautionarySavingsSimulateWithSolveIrreg:\n    def track_execution_time(self, cache=None):\n        measurements = self._measurements if cache is None else cache\n        return statistics.median(measurements[\"warm_samples\"])\n\n    def setup(self, cache):\n        self._measurements = cache\n\n    def setup_cache(self):\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_precautionary_savings\",\n            bench_class=\"PrecautionarySavingsSimulateWithSolveIrreg\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.track_execution_time",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "bench_precautionary_savings:241",
+        "timeout": 600,
+        "type": "track",
+        "unit": "seconds",
+        "version": "2"
+    },
+    "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.track_peak_cpu_mem": {
+        "code": "class PrecautionarySavingsSimulateWithSolveIrreg:\n    def track_peak_cpu_mem(self, cache=None):\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"peak_cpu_mem\"]\n\n    def setup(self, cache):\n        self._measurements = cache\n\n    def setup_cache(self):\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_precautionary_savings\",\n            bench_class=\"PrecautionarySavingsSimulateWithSolveIrreg\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.track_peak_cpu_mem",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "bench_precautionary_savings:241",
+        "timeout": 600,
+        "type": "track",
+        "unit": "bytes",
+        "version": "2"
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrregGpuPeakMem.track_gpu_peak_mem": {
         "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
@@ -670,51 +667,84 @@
         "unit": "bytes",
         "version": "1"
     },
-    "bench_precautionary_savings.PrecautionarySavingsSolve.peakmem_execution": {
-        "code": "class PrecautionarySavingsSolve:\n    def peakmem_execution(self):\n        self.model.solve(params=self.model_params, log_level=\"off\")\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
-        "name": "bench_precautionary_savings.PrecautionarySavingsSolve.peakmem_execution",
-        "param_names": [],
-        "params": [],
-        "timeout": 600,
-        "type": "peakmemory",
-        "unit": "bytes",
-        "version": "1"
-    },
-    "bench_precautionary_savings.PrecautionarySavingsSolve.time_execution": {
-        "code": "class PrecautionarySavingsSolve:\n    def time_execution(self):\n        self.model.solve(params=self.model_params, log_level=\"off\")\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
-        "min_run_count": 2,
-        "name": "bench_precautionary_savings.PrecautionarySavingsSolve.time_execution",
-        "number": 0,
-        "param_names": [],
-        "params": [],
-        "repeat": 0,
-        "rounds": 2,
-        "sample_time": 0.01,
-        "timeout": 600,
-        "type": "time",
-        "unit": "seconds",
-        "version": "1",
-        "warmup_time": -1
-    },
     "bench_precautionary_savings.PrecautionarySavingsSolve.track_compilation_time": {
-        "code": "class PrecautionarySavingsSolve:\n    def track_compilation_time(self):\n        return self._compile_time\n\n    def setup(self):\n        self._build()\n        start = time.perf_counter()\n        self.model.solve(params=self.model_params, log_level=\"off\")\n        self._compile_time = time.perf_counter() - start",
+        "code": "class PrecautionarySavingsSolve:\n    def track_compilation_time(self, cache=None):\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"compilation_time\"]\n\n    def setup(self, cache):\n        self._measurements = cache\n\n    def setup_cache(self):\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_precautionary_savings\",\n            bench_class=\"PrecautionarySavingsSolve\",\n            warm_samples=_WARM_SAMPLES,\n        )",
         "name": "bench_precautionary_savings.PrecautionarySavingsSolve.track_compilation_time",
         "param_names": [],
         "params": [],
+        "setup_cache_key": "bench_precautionary_savings:73",
         "timeout": 600,
         "type": "track",
         "unit": "seconds",
-        "version": "1"
+        "version": "2"
     },
-    "bench_precautionary_savings.PrecautionarySavingsSolveGpuPeakMem.track_gpu_peak_mem": {
-        "code": "def _track_gpu_peak_mem(self):\n    return measure_gpu_peak(\n        bench_module=self.bench_module, bench_class=self.bench_class\n    )\n\nclass GpuPeakMem:\n    def setup(self):\n        pass",
-        "name": "bench_precautionary_savings.PrecautionarySavingsSolveGpuPeakMem.track_gpu_peak_mem",
+    "bench_precautionary_savings.PrecautionarySavingsSolve.track_execution_time": {
+        "code": "class PrecautionarySavingsSolve:\n    def track_execution_time(self, cache=None):\n        measurements = self._measurements if cache is None else cache\n        return statistics.median(measurements[\"warm_samples\"])\n\n    def setup(self, cache):\n        self._measurements = cache\n\n    def setup_cache(self):\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_precautionary_savings\",\n            bench_class=\"PrecautionarySavingsSolve\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_precautionary_savings.PrecautionarySavingsSolve.track_execution_time",
         "param_names": [],
         "params": [],
-        "timeout": 1200,
+        "setup_cache_key": "bench_precautionary_savings:73",
+        "timeout": 600,
+        "type": "track",
+        "unit": "seconds",
+        "version": "2"
+    },
+    "bench_precautionary_savings.PrecautionarySavingsSolve.track_peak_cpu_mem": {
+        "code": "class PrecautionarySavingsSolve:\n    def track_peak_cpu_mem(self, cache=None):\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"peak_cpu_mem\"]\n\n    def setup(self, cache):\n        self._measurements = cache\n\n    def setup_cache(self):\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_precautionary_savings\",\n            bench_class=\"PrecautionarySavingsSolve\",\n            warm_samples=_WARM_SAMPLES,\n        )",
+        "name": "bench_precautionary_savings.PrecautionarySavingsSolve.track_peak_cpu_mem",
+        "param_names": [],
+        "params": [],
+        "setup_cache_key": "bench_precautionary_savings:73",
+        "timeout": 600,
         "type": "track",
         "unit": "bytes",
-        "version": "1"
+        "version": "2"
+    },
+    "bench_simulation_dispatch.SimulationDispatch.track_host_ms_per_period_regime": {
+        "code": "class SimulationDispatch:\n    def track_host_ms_per_period_regime(\n        self,\n        cache: dict[tuple[str, str], dict[str, float]],\n        witness: str,\n        log_level: str,\n    ) -> float:\n        \"\"\"Return host milliseconds per (period, regime) of the measured call.\"\"\"\n        measurement = self._measurement\n        return 1e3 * measurement[\"elapsed\"] / measurement[\"period_regime_iterations\"]\n\n    def setup(\n        self,\n        cache: dict[tuple[str, str], dict[str, float]],\n        witness: str,\n        log_level: str,\n    ) -> None:\n        self._measurement = cache[(witness, log_level)]\n\n    def setup_cache(self) -> dict[tuple[str, str], dict[str, float]]:\n        \"\"\"Warm and measure each witness/log_level combination exactly once.\"\"\"\n        return {\n            (witness, log_level): _measure_combination(\n                witness=witness, log_level=log_level\n            )\n            for witness in WITNESS_NAMES\n            for log_level in LOG_LEVELS\n        }",
+        "name": "bench_simulation_dispatch.SimulationDispatch.track_host_ms_per_period_regime",
+        "param_names": [
+            "witness",
+            "log_level"
+        ],
+        "params": [
+            [
+                "'dissolution'",
+                "'multi_regime'"
+            ],
+            [
+                "'off'",
+                "'progress'"
+            ]
+        ],
+        "setup_cache_key": "bench_simulation_dispatch:95",
+        "timeout": 600,
+        "type": "track",
+        "unit": "unit",
+        "version": "2"
+    },
+    "bench_simulation_dispatch.SimulationDispatch.track_second_call_compiles": {
+        "code": "class SimulationDispatch:\n    def track_second_call_compiles(\n        self,\n        cache: dict[tuple[str, str], dict[str, float]],\n        witness: str,\n        log_level: str,\n    ) -> int:\n        \"\"\"Return the backend compilations the measured call issued.\"\"\"\n        return self._measurement[\"compile_requests\"]\n\n    def setup(\n        self,\n        cache: dict[tuple[str, str], dict[str, float]],\n        witness: str,\n        log_level: str,\n    ) -> None:\n        self._measurement = cache[(witness, log_level)]\n\n    def setup_cache(self) -> dict[tuple[str, str], dict[str, float]]:\n        \"\"\"Warm and measure each witness/log_level combination exactly once.\"\"\"\n        return {\n            (witness, log_level): _measure_combination(\n                witness=witness, log_level=log_level\n            )\n            for witness in WITNESS_NAMES\n            for log_level in LOG_LEVELS\n        }",
+        "name": "bench_simulation_dispatch.SimulationDispatch.track_second_call_compiles",
+        "param_names": [
+            "witness",
+            "log_level"
+        ],
+        "params": [
+            [
+                "'dissolution'",
+                "'multi_regime'"
+            ],
+            [
+                "'off'",
+                "'progress'"
+            ]
+        ],
+        "setup_cache_key": "bench_simulation_dispatch:95",
+        "timeout": 600,
+        "type": "track",
+        "unit": "unit",
+        "version": "2"
     },
     "version": 2
 }
