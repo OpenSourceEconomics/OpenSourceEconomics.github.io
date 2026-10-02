@@ -23,7 +23,7 @@ $(document).ready(function() {
         var groups = {};
         $.each(main_json.benchmarks, function(bm_name, bm) {
             var i = bm_name.indexOf('.');
-            var group = bm_name.slice(0, i);
+            var group = bm.pretty_name ? bm.pretty_name.split(" \u2014 ")[0] : bm_name.slice(0, i);
             var name = bm_name.slice(i + 1);
             if (groups[group] === undefined) {
                 groups[group] = [];
@@ -39,7 +39,7 @@ $(document).ready(function() {
             '"/>');
         var plot_div = $(
             '<div id="summarygrid-' + bm.name + '" class="benchmark-plot"/>');
-        var display_name = bm.pretty_name || bm.name.slice(bm.name.indexOf('.') + 1);
+        var display_name = bm.pretty_name ? bm.pretty_name.split(" \u2014 ").pop() : bm.name.slice(bm.name.indexOf('.') + 1);
         var name = $('<div class="benchmark-text">' + display_name + '</div>');
         name.tooltip({
             title: bm.name,
