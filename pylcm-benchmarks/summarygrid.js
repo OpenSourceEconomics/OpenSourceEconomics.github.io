@@ -85,7 +85,12 @@ $(document).ready(function() {
                     },
                     yaxis: {
                         ticks: [],
-                        min: 0
+                        transform: function (v) {
+                            return v > 0 ? Math.log(v) : null;
+                        },
+                        inverseTransform: function (v) {
+                            return Math.exp(v);
+                        }
                     },
                     legend: {
                         show: false

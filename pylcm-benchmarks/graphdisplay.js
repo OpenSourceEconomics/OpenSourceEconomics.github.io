@@ -213,7 +213,7 @@ $(document).ready(function() {
             $('#reference').removeClass('active');
             $('#zoom-y-axis').removeClass('active');
             reference = 1.0;
-            update_state_url({'y-axis-scale': log_scale ? ['log']: []});
+            update_state_url({'y-axis-scale': log_scale ? ['log'] : ['linear']});
         });
 
         $('#zoom-y-axis').on('click', function(evt) {
@@ -1389,6 +1389,9 @@ $(document).ready(function() {
                 zoom_y_axis = true;
             }
             delete params['y-axis-scale'];
+        } else {
+            $('#log-scale').addClass('active');
+            log_scale = true;
         }
 
         if (params['x-axis-scale']) {
