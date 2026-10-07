@@ -124,24 +124,6 @@
             1787790531920,
             574.12
         ],
-        "bench_aca_baseline.AcaBaselineDebugLogGpuPeakMem.track_peak_gpu_mem_automatic_solve_simulate": [
-            [
-                603099904
-            ],
-            [],
-            null,
-            1787792107220,
-            524.33
-        ],
-        "bench_aca_baseline.AcaBaselineGpuPeakMem.track_peak_gpu_mem_automatic_solve_simulate": [
-            [
-                601319168
-            ],
-            [],
-            null,
-            1787792631555,
-            490.71
-        ],
         "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulate.track_compilation_time": [
             [
                 7.563036282081157

@@ -102,60 +102,6 @@
             1790784032294,
             0.30564
         ],
-        "bench_aca_baseline.AcaBaselineDebugLogGpuPeakMem.track_peak_gpu_mem_automatic_solve_simulate": [
-            [
-                1244741632
-            ],
-            [],
-            null,
-            1790785924827,
-            0.35033
-        ],
-        "bench_aca_baseline.AcaBaselineDebugLogGpuPeakMem.track_peak_gpu_mem_load_supplied_solution_simulate": [
-            [
-                274723328
-            ],
-            [],
-            null,
-            1790785925178,
-            0.32696
-        ],
-        "bench_aca_baseline.AcaBaselineDebugLogGpuPeakMem.track_peak_gpu_mem_solve_save_all_persistable": [
-            [
-                1244741632
-            ],
-            [],
-            null,
-            1790785925505,
-            0.35375
-        ],
-        "bench_aca_baseline.AcaBaselineGpuPeakMem.track_peak_gpu_mem_automatic_solve_simulate": [
-            [
-                1244741632
-            ],
-            [],
-            null,
-            1790785925859,
-            0.32674
-        ],
-        "bench_aca_baseline.AcaBaselineGpuPeakMem.track_peak_gpu_mem_load_supplied_solution_simulate": [
-            [
-                274723328
-            ],
-            [],
-            null,
-            1790785926186,
-            0.34476
-        ],
-        "bench_aca_baseline.AcaBaselineGpuPeakMem.track_peak_gpu_mem_solve_save_all_persistable": [
-            [
-                1244741632
-            ],
-            [],
-            null,
-            1790785926531,
-            0.36231
-        ],
         "bench_collective_household.CollectiveHouseholdConstruct.track_execution_time": [
             [
                 0.6037461931118742
