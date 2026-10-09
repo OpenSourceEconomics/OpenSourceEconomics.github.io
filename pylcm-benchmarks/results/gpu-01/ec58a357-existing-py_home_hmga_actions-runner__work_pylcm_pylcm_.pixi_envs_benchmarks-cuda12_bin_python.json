@@ -1,0 +1,617 @@
+{
+    "commit_hash": "ec58a357b9142e2e0ca60a9cea3b3ae7662d815d",
+    "date": 1791466390000,
+    "durations": {
+        "<build>": 6.413459777832031e-05,
+        "<setup_cache bench_aca_baseline:143>": 889.203191,
+        "<setup_cache bench_aca_baseline:193>": 1000.408591,
+        "<setup_cache bench_collective_household:108>": 17.259956,
+        "<setup_cache bench_collective_household:160>": 20.803062,
+        "<setup_cache bench_iskhakov_et_al_2017:307>": 18.548271,
+        "<setup_cache bench_iskhakov_et_al_2017:377>": 24.675713,
+        "<setup_cache bench_iskhakov_et_al_2017:441>": 27.728421,
+        "<setup_cache bench_iskhakov_et_al_2017:517>": 33.975161,
+        "<setup_cache bench_mahler_yum:153>": 52.341767,
+        "<setup_cache bench_mahler_yum:226>": 66.001383,
+        "<setup_cache bench_precautionary_savings:134>": 14.076963,
+        "<setup_cache bench_precautionary_savings:191>": 13.801113,
+        "<setup_cache bench_precautionary_savings:249>": 14.418979,
+        "<setup_cache bench_precautionary_savings:81>": 9.980746,
+        "<setup_cache bench_simulation_dispatch:98>": 36.414254
+    },
+    "env_name": "existing-py_home_hmga_actions-runner__work_pylcm_pylcm_.pixi_envs_benchmarks-cuda12_bin_python",
+    "env_vars": {},
+    "params": {
+        "arch": "x86_64",
+        "cpu": "Intel(R) Xeon(R) Silver 4110 CPU @ 2.10GHz",
+        "machine": "gpu-01",
+        "num_cpu": "32",
+        "os": "Linux 6.8.0-106-generic",
+        "python": "/home/hmga/actions-runner/_work/pylcm/pylcm/.pixi/envs/benchmarks-cuda12/bin/python",
+        "ram": "135GB"
+    },
+    "python": "/home/hmga/actions-runner/_work/pylcm/pylcm/.pixi/envs/benchmarks-cuda12/bin/python",
+    "requirements": {},
+    "result_columns": [
+        "result",
+        "params",
+        "version",
+        "started_at",
+        "duration",
+        "stats_ci_99_a",
+        "stats_ci_99_b",
+        "stats_q_25",
+        "stats_q_75",
+        "stats_number",
+        "stats_repeat",
+        "samples",
+        "profile"
+    ],
+    "results": {
+        "bench_aca_baseline.AcaBaseline.track_compilation_time": [
+            [
+                768.7224890689831
+            ],
+            [],
+            null,
+            1791540865698,
+            0.30255
+        ],
+        "bench_aca_baseline.AcaBaseline.track_execution_time": [
+            [
+                52.39208104182035
+            ],
+            [],
+            null,
+            1791540866001,
+            0.32291
+        ],
+        "bench_aca_baseline.AcaBaseline.track_peak_cpu_mem": [
+            [
+                7355236352.0
+            ],
+            [],
+            null,
+            1791540866324,
+            0.30846
+        ],
+        "bench_aca_baseline.AcaBaselineDebugLog.track_compilation_time": [
+            [
+                834.4251737850718
+            ],
+            [],
+            null,
+            1791541867041,
+            0.32666
+        ],
+        "bench_aca_baseline.AcaBaselineDebugLog.track_execution_time": [
+            [
+                98.86307703983039
+            ],
+            [],
+            null,
+            1791541867368,
+            0.30494
+        ],
+        "bench_aca_baseline.AcaBaselineDebugLog.track_peak_cpu_mem": [
+            [
+                7999225856.0
+            ],
+            [],
+            null,
+            1791541867673,
+            0.30586
+        ],
+        "bench_collective_household.CollectiveHouseholdConstruct.track_execution_time": [
+            [
+                0.6889561240095645
+            ],
+            [],
+            null,
+            1791541885240,
+            6.4832
+        ],
+        "bench_collective_household.CollectiveHouseholdConstruct.track_peak_cpu_mem": [
+            [
+                1421123584.0
+            ],
+            [],
+            null,
+            1791541891723,
+            6.4601
+        ],
+        "bench_collective_household.CollectiveHouseholdSimulate.peakmem_execution": [
+            [
+                1519771648,
+                1559351296
+            ],
+            [
+                [
+                    "1000",
+                    "100000"
+                ]
+            ],
+            null,
+            1791541898184,
+            58.74
+        ],
+        "bench_collective_household.CollectiveHouseholdSimulate.track_compilation_time": [
+            [
+                14.888749412959442,
+                15.815932424040511
+            ],
+            [
+                [
+                    "1000",
+                    "100000"
+                ]
+            ],
+            null,
+            1791541956924,
+            57.647
+        ],
+        "bench_collective_household.CollectiveHouseholdSimulate.track_execution_time": [
+            [
+                1.059096765005961,
+                1.0490570031106472
+            ],
+            [
+                [
+                    "1000",
+                    "100000"
+                ]
+            ],
+            null,
+            1791542014572,
+            63.627
+        ],
+        "bench_collective_household.CollectiveHouseholdSimulateGpuPeakMem.track_gpu_peak_mem": [
+            [
+                130352896
+            ],
+            [],
+            null,
+            1791542078199,
+            35.28
+        ],
+        "bench_collective_household.CollectiveHouseholdSolve.track_compilation_time": [
+            [
+                4.28113099001348
+            ],
+            [],
+            null,
+            1791542313392,
+            6.5502
+        ],
+        "bench_collective_household.CollectiveHouseholdSolve.track_execution_time": [
+            [
+                0.4531235098838806
+            ],
+            [],
+            null,
+            1791542319942,
+            6.4673
+        ],
+        "bench_collective_household.CollectiveHouseholdSolve.track_peak_cpu_mem": [
+            [
+                1601998848.0
+            ],
+            [],
+            null,
+            1791542326410,
+            6.528
+        ],
+        "bench_collective_household.ReferenceChainSolve.peakmem_execution": [
+            [
+                1077452800,
+                1151590400
+            ],
+            [
+                [
+                    "1",
+                    "8"
+                ]
+            ],
+            null,
+            1791542113480,
+            22.99
+        ],
+        "bench_collective_household.ReferenceChainSolve.track_compilation_time": [
+            [
+                1.7041685939766467,
+                4.375792523147538
+            ],
+            [
+                [
+                    "1",
+                    "8"
+                ]
+            ],
+            null,
+            1791542136470,
+            22.734
+        ],
+        "bench_collective_household.ReferenceChainSolve.track_execution_time": [
+            [
+                0.19074015482328832,
+                0.4273947838228196
+            ],
+            [
+                [
+                    "1",
+                    "8"
+                ]
+            ],
+            null,
+            1791542159204,
+            24.596
+        ],
+        "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulate.track_compilation_time": [
+            [
+                7.409050825983286
+            ],
+            [],
+            null,
+            1791542366913,
+            6.5662
+        ],
+        "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulate.track_execution_time": [
+            [
+                1.0865994058549404
+            ],
+            [],
+            null,
+            1791542373480,
+            6.5493
+        ],
+        "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulate.track_peak_cpu_mem": [
+            [
+                1905971200.0
+            ],
+            [],
+            null,
+            1791542380030,
+            6.6454
+        ],
+        "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulateGpuPeakMem.track_gpu_peak_mem": [
+            [
+                388713728
+            ],
+            [],
+            null,
+            1791542183801,
+            30.838
+        ],
+        "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSolve.track_compilation_time": [
+            [
+                5.973200812935829
+            ],
+            [],
+            null,
+            1791542411351,
+            6.4867
+        ],
+        "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSolve.track_execution_time": [
+            [
+                0.5250999659765512
+            ],
+            [],
+            null,
+            1791542417838,
+            6.6396
+        ],
+        "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSolve.track_peak_cpu_mem": [
+            [
+                1815920640.0
+            ],
+            [],
+            null,
+            1791542424478,
+            6.676
+        ],
+        "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.track_compilation_time": [
+            [
+                7.180772227002308
+            ],
+            [],
+            null,
+            1791542458883,
+            6.6003
+        ],
+        "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.track_execution_time": [
+            [
+                0.8041421789675951
+            ],
+            [],
+            null,
+            1791542465483,
+            6.4957
+        ],
+        "bench_iskhakov_et_al_2017.IskhakovEtAl2017Simulate.track_peak_cpu_mem": [
+            [
+                1704931328.0
+            ],
+            [],
+            null,
+            1791542471979,
+            6.5147
+        ],
+        "bench_iskhakov_et_al_2017.IskhakovEtAl2017SimulateGpuPeakMem.track_gpu_peak_mem": [
+            [
+                388375808
+            ],
+            [],
+            null,
+            1791542214639,
+            25.038
+        ],
+        "bench_iskhakov_et_al_2017.IskhakovEtAl2017Solve.track_compilation_time": [
+            [
+                3.0903172108810395
+            ],
+            [],
+            null,
+            1791542497043,
+            6.4815
+        ],
+        "bench_iskhakov_et_al_2017.IskhakovEtAl2017Solve.track_execution_time": [
+            [
+                0.28383218101225793
+            ],
+            [],
+            null,
+            1791542503524,
+            6.4974
+        ],
+        "bench_iskhakov_et_al_2017.IskhakovEtAl2017Solve.track_peak_cpu_mem": [
+            [
+                1534574592.0
+            ],
+            [],
+            null,
+            1791542510022,
+            6.6443
+        ],
+        "bench_iskhakov_et_al_2017.IskhakovEtAl2017SolveGpuPeakMem.track_gpu_peak_mem": [
+            [
+                60189696
+            ],
+            [],
+            null,
+            1791542239677,
+            17.657
+        ],
+        "bench_mahler_yum.MahlerYumBudgetedGpu.track_compilation_time": [
+            [
+                20.028767351061106
+            ],
+            [],
+            null,
+            1791542569009,
+            0.96238
+        ],
+        "bench_mahler_yum.MahlerYumBudgetedGpu.track_execution_time": [
+            [
+                7.3976806229911745
+            ],
+            [],
+            null,
+            1791542569971,
+            0.96283
+        ],
+        "bench_mahler_yum.MahlerYumBudgetedGpu.track_peak_cpu_mem": [
+            [
+                1670533120.0
+            ],
+            [],
+            null,
+            1791542570934,
+            0.96458
+        ],
+        "bench_mahler_yum.MahlerYumBudgetedGpu.track_peak_gpu_mem_automatic_solve_simulate": [
+            [
+                1609071360.0
+            ],
+            [],
+            null,
+            1791542571899,
+            0.95559
+        ],
+        "bench_mahler_yum.MahlerYumBudgetedGpuPeakMem.track_peak_gpu_mem_load_supplied_solution_simulate": [
+            [
+                1888125440
+            ],
+            [],
+            null,
+            1791542638857,
+            0.31273
+        ],
+        "bench_mahler_yum.MahlerYumBudgetedGpuPeakMem.track_peak_gpu_mem_solve_save_all_persistable": [
+            [
+                1050950656
+            ],
+            [],
+            null,
+            1791542639170,
+            0.31273
+        ],
+        "bench_precautionary_savings.PrecautionarySavingsSimulate.track_compilation_time": [
+            [
+                2.694645451148972
+            ],
+            [],
+            null,
+            1791542653560,
+            0.30715
+        ],
+        "bench_precautionary_savings.PrecautionarySavingsSimulate.track_execution_time": [
+            [
+                0.647931267041713
+            ],
+            [],
+            null,
+            1791542653867,
+            0.3117
+        ],
+        "bench_precautionary_savings.PrecautionarySavingsSimulate.track_peak_cpu_mem": [
+            [
+                1550077952.0
+            ],
+            [],
+            null,
+            1791542654179,
+            0.3071
+        ],
+        "bench_precautionary_savings.PrecautionarySavingsSimulateGpuPeakMem.track_gpu_peak_mem": [
+            [
+                336016896
+            ],
+            [],
+            null,
+            1791542257334,
+            11.861
+        ],
+        "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.track_compilation_time": [
+            [
+                3.6449407530017197
+            ],
+            [],
+            null,
+            1791542668288,
+            0.30298
+        ],
+        "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.track_execution_time": [
+            [
+                0.7127672939095646
+            ],
+            [],
+            null,
+            1791542668591,
+            0.30516
+        ],
+        "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolve.track_peak_cpu_mem": [
+            [
+                1504555008.0
+            ],
+            [],
+            null,
+            1791542668897,
+            0.32031
+        ],
+        "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveGpuPeakMem.track_gpu_peak_mem": [
+            [
+                1802043136
+            ],
+            [],
+            null,
+            1791542269195,
+            11.578
+        ],
+        "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.track_compilation_time": [
+            [
+                3.832732698181644
+            ],
+            [],
+            null,
+            1791542683636,
+            0.30308
+        ],
+        "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.track_execution_time": [
+            [
+                0.8402467989362776
+            ],
+            [],
+            null,
+            1791542683940,
+            0.31194
+        ],
+        "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrreg.track_peak_cpu_mem": [
+            [
+                1508245504.0
+            ],
+            [],
+            null,
+            1791542684252,
+            0.30597
+        ],
+        "bench_precautionary_savings.PrecautionarySavingsSimulateWithSolveIrregGpuPeakMem.track_gpu_peak_mem": [
+            [
+                2300036096
+            ],
+            [],
+            null,
+            1791542280773,
+            11.815
+        ],
+        "bench_precautionary_savings.PrecautionarySavingsSolve.track_compilation_time": [
+            [
+                1.3656394260469824
+            ],
+            [],
+            null,
+            1791542694539,
+            0.30837
+        ],
+        "bench_precautionary_savings.PrecautionarySavingsSolve.track_execution_time": [
+            [
+                0.21130064805038273
+            ],
+            [],
+            null,
+            1791542694848,
+            0.31903
+        ],
+        "bench_precautionary_savings.PrecautionarySavingsSolve.track_peak_cpu_mem": [
+            [
+                1406701568.0
+            ],
+            [],
+            null,
+            1791542695167,
+            0.31042
+        ],
+        "bench_simulation_dispatch.SimulationDispatch.track_host_ms_per_period_regime": [
+            [
+                27.3723263759166,
+                34.58741898648441,
+                43.09598065447062,
+                54.00641747595122
+            ],
+            [
+                [
+                    "'dissolution'",
+                    "'multi_regime'"
+                ],
+                [
+                    "'off'",
+                    "'progress'"
+                ]
+            ],
+            null,
+            1791542731892,
+            1.2195
+        ],
+        "bench_simulation_dispatch.SimulationDispatch.track_second_call_compiles": [
+            [
+                0,
+                0,
+                0,
+                0
+            ],
+            [
+                [
+                    "'dissolution'",
+                    "'multi_regime'"
+                ],
+                [
+                    "'off'",
+                    "'progress'"
+                ]
+            ],
+            null,
+            1791542733113,
+            1.2126
+        ]
+    },
+    "version": 2
+}
