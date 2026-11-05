@@ -88,7 +88,7 @@
         "version": "2"
     },
     "bench_collective_household.CollectiveHouseholdSimulate.peakmem_execution": {
-        "code": "class CollectiveHouseholdSimulate:\n    def peakmem_execution(self, n_subjects):\n        self.execute_for_measurement()\n\n    def setup(self, n_subjects):\n        self._build(n_subjects)\n        start = time.perf_counter()\n        self.execute_for_measurement()\n        self._compile_time = time.perf_counter() - start",
+        "code": "class CollectiveHouseholdSimulate:\n    def peakmem_execution(self, n_subjects):\n        self.execute_for_measurement()\n\n    def setup(self, n_subjects):\n        self._build(n_subjects)\n        print(\"CollectiveHouseholdSimulate: first simulation\", flush=True)\n        start = time.perf_counter()\n        self.execute_for_measurement()\n        self._compile_time = time.perf_counter() - start\n        print(\n            \"CollectiveHouseholdSimulate: setup complete; \"\n            f\"first simulation {self._compile_time:.6f}s\",\n            flush=True,\n        )",
         "name": "bench_collective_household.CollectiveHouseholdSimulate.peakmem_execution",
         "param_names": [
             "n_subjects"
@@ -105,7 +105,7 @@
         "version": "1"
     },
     "bench_collective_household.CollectiveHouseholdSimulate.track_compilation_time": {
-        "code": "class CollectiveHouseholdSimulate:\n    def track_compilation_time(self, n_subjects):\n        return self._compile_time\n\n    def setup(self, n_subjects):\n        self._build(n_subjects)\n        start = time.perf_counter()\n        self.execute_for_measurement()\n        self._compile_time = time.perf_counter() - start",
+        "code": "class CollectiveHouseholdSimulate:\n    def track_compilation_time(self, n_subjects):\n        return self._compile_time\n\n    def setup(self, n_subjects):\n        self._build(n_subjects)\n        print(\"CollectiveHouseholdSimulate: first simulation\", flush=True)\n        start = time.perf_counter()\n        self.execute_for_measurement()\n        self._compile_time = time.perf_counter() - start\n        print(\n            \"CollectiveHouseholdSimulate: setup complete; \"\n            f\"first simulation {self._compile_time:.6f}s\",\n            flush=True,\n        )",
         "name": "bench_collective_household.CollectiveHouseholdSimulate.track_compilation_time",
         "param_names": [
             "n_subjects"
@@ -122,7 +122,7 @@
         "version": "1"
     },
     "bench_collective_household.CollectiveHouseholdSimulate.track_execution_time": {
-        "code": "class CollectiveHouseholdSimulate:\n    def track_execution_time(self, n_subjects):\n        return statistics.median(\n            _gpu_mem.warm_call_seconds(\n                execute=self.execute_for_measurement, warm_samples=_WARM_SAMPLES\n            )\n        )\n\n    def setup(self, n_subjects):\n        self._build(n_subjects)\n        start = time.perf_counter()\n        self.execute_for_measurement()\n        self._compile_time = time.perf_counter() - start",
+        "code": "class CollectiveHouseholdSimulate:\n    def track_execution_time(self, n_subjects):\n        return statistics.median(\n            _gpu_mem.warm_call_seconds(\n                execute=self.execute_for_measurement, warm_samples=_WARM_SAMPLES\n            )\n        )\n\n    def setup(self, n_subjects):\n        self._build(n_subjects)\n        print(\"CollectiveHouseholdSimulate: first simulation\", flush=True)\n        start = time.perf_counter()\n        self.execute_for_measurement()\n        self._compile_time = time.perf_counter() - start\n        print(\n            \"CollectiveHouseholdSimulate: setup complete; \"\n            f\"first simulation {self._compile_time:.6f}s\",\n            flush=True,\n        )",
         "name": "bench_collective_household.CollectiveHouseholdSimulate.track_execution_time",
         "param_names": [
             "n_subjects"
