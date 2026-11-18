@@ -403,7 +403,7 @@
         "timeout": 1200,
         "type": "track",
         "unit": "seconds",
-        "version": "4-capacity-half-planned-v2-fp64"
+        "version": "5-capacity-half-planned-v2-fp64"
     },
     "bench_mahler_yum.MahlerYumBudgetedGpu.track_execution_time": {
         "code": "class MahlerYumBudgetedGpu:\n    def track_execution_time(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return statistics.median(measurements[\"warm_samples\"])\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples_and_gpu_peak(\n            bench_module=\"benchmarks.asv.bench_mahler_yum\",\n            bench_class=\"MahlerYumBudgetedGpu\",\n            warm_samples=_WARM_SAMPLES,\n        )",
@@ -414,7 +414,7 @@
         "timeout": 1200,
         "type": "track",
         "unit": "seconds",
-        "version": "4-capacity-half-planned-v2-fp64"
+        "version": "5-capacity-half-planned-v2-fp64"
     },
     "bench_mahler_yum.MahlerYumBudgetedGpu.track_peak_cpu_mem": {
         "code": "class MahlerYumBudgetedGpu:\n    def track_peak_cpu_mem(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"peak_cpu_mem\"]\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples_and_gpu_peak(\n            bench_module=\"benchmarks.asv.bench_mahler_yum\",\n            bench_class=\"MahlerYumBudgetedGpu\",\n            warm_samples=_WARM_SAMPLES,\n        )",
@@ -425,7 +425,7 @@
         "timeout": 1200,
         "type": "track",
         "unit": "bytes",
-        "version": "4-capacity-half-planned-v2-fp64"
+        "version": "5-capacity-half-planned-v2-fp64"
     },
     "bench_mahler_yum.MahlerYumBudgetedGpu.track_peak_gpu_mem_automatic_solve_simulate": {
         "code": "class MahlerYumBudgetedGpu:\n    def track_peak_gpu_mem_automatic_solve_simulate(\n        self, cache: dict[str, float | list[float]] | None = None\n    ) -> float:\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"peak_gpu_mem_automatic_solve_simulate\"]\n\n    def setup(self, cache: dict[str, float | list[float]]) -> None:\n        self._measurements = cache\n\n    def setup_cache(self) -> dict[str, float | list[float]]:\n        return _gpu_mem.measure_combined_with_warm_samples_and_gpu_peak(\n            bench_module=\"benchmarks.asv.bench_mahler_yum\",\n            bench_class=\"MahlerYumBudgetedGpu\",\n            warm_samples=_WARM_SAMPLES,\n        )",
@@ -436,7 +436,7 @@
         "timeout": 1200,
         "type": "track",
         "unit": "bytes",
-        "version": "4-capacity-half-planned-v2-fp64"
+        "version": "5-capacity-half-planned-v2-fp64"
     },
     "bench_mahler_yum.MahlerYumBudgetedGpuPeakMem.track_peak_gpu_mem_load_supplied_solution_simulate": {
         "code": "def _track_peak_gpu_mem_load_supplied_solution_simulate(\n    self, cache: dict[str, int] | None = None\n) -> int:\n    measurements = self._measurements if cache is None else cache\n    return measurements[LOAD_SUPPLIED_SOLUTION_SIMULATE]\n\nclass GpuPeakMemProfile:\n    def setup(self, cache: dict[str, int]) -> None:\n        self._measurements = cache\n\nclass MahlerYumBudgetedGpuPeakMem:\n    def setup_cache(self) -> dict[str, int]:\n        return self._measure_profile()",
@@ -447,7 +447,7 @@
         "timeout": 3600,
         "type": "track",
         "unit": "bytes",
-        "version": "4-capacity-half-planned-v2-fp64"
+        "version": "5-capacity-half-planned-v2-fp64"
     },
     "bench_mahler_yum.MahlerYumBudgetedGpuPeakMem.track_peak_gpu_mem_solve_save_all_persistable": {
         "code": "def _track_peak_gpu_mem_solve_save_all_persistable(\n    self, cache: dict[str, int] | None = None\n) -> int:\n    measurements = self._measurements if cache is None else cache\n    return measurements[SOLVE_SAVE_ALL_PERSISTABLE]\n\nclass GpuPeakMemProfile:\n    def setup(self, cache: dict[str, int]) -> None:\n        self._measurements = cache\n\nclass MahlerYumBudgetedGpuPeakMem:\n    def setup_cache(self) -> dict[str, int]:\n        return self._measure_profile()",
@@ -458,7 +458,7 @@
         "timeout": 3600,
         "type": "track",
         "unit": "bytes",
-        "version": "4-capacity-half-planned-v2-fp64"
+        "version": "5-capacity-half-planned-v2-fp64"
     },
     "bench_precautionary_savings.PrecautionarySavingsSimulate.track_compilation_time": {
         "code": "class PrecautionarySavingsSimulate:\n    def track_compilation_time(self, cache=None):\n        measurements = self._measurements if cache is None else cache\n        return measurements[\"compilation_time\"]\n\n    def setup(self, cache):\n        self._measurements = cache\n\n    def setup_cache(self):\n        return _gpu_mem.measure_combined_with_warm_samples(\n            bench_module=\"benchmarks.asv.bench_precautionary_savings\",\n            bench_class=\"PrecautionarySavingsSimulate\",\n            warm_samples=_WARM_SAMPLES,\n        )",
