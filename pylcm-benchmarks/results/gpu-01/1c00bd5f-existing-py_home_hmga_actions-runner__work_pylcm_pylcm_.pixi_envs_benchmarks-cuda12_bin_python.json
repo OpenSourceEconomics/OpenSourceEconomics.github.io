@@ -201,51 +201,6 @@
             1791836060936,
             0.91546
         ],
-        "bench_collective_household.ReferenceChainSolve.peakmem_execution": [
-            [
-                1094336512,
-                1233076224
-            ],
-            [
-                [
-                    "1",
-                    "8"
-                ]
-            ],
-            null,
-            1791835801233,
-            33.115
-        ],
-        "bench_collective_household.ReferenceChainSolve.track_compilation_time": [
-            [
-                1.8978833430010127,
-                7.496786360999977
-            ],
-            [
-                [
-                    "1",
-                    "8"
-                ]
-            ],
-            null,
-            1791835834349,
-            32.309
-        ],
-        "bench_collective_household.ReferenceChainSolve.track_execution_time": [
-            [
-                0.1982188949987176,
-                0.45000095200521173
-            ],
-            [
-                [
-                    "1",
-                    "8"
-                ]
-            ],
-            null,
-            1791835866659,
-            34.47
-        ],
         "bench_iskhakov_et_al_2017.IskhakovEtAl2017DCEGMSimulate.track_compilation_time": [
             [
                 7.718793429005018
